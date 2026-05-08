@@ -10,6 +10,8 @@ public class Inimigo : MonoBehaviour
     public float dano = 10f;
     public float defesa = 0f;
 
+    private bool estaVivo = true;
+
     void Start()
     {
         vidaAtual = vidaMaxima;
@@ -17,11 +19,14 @@ public class Inimigo : MonoBehaviour
 
     public void ReceberDano(float quantidade)
     {
+        if (!estaVivo) return;
+
         float danoFinal = Mathf.Max(quantidade - defesa, 0);
         vidaAtual -= danoFinal;
 
         if (vidaAtual <= 0)
         {
+            estaVivo = false;
             Morrer();
         }
     }

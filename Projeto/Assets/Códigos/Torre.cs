@@ -7,6 +7,7 @@ public class Torre : MonoBehaviour
     public float alcance = 3f;
     public float taxaAtaque = 1f;
     public float dano = 10f;
+    public int custo = 50;
 
     [Header("Projétil")]
     public GameObject prefabProjetil;

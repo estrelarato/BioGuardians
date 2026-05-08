@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MovimentoInimigo : MonoBehaviour
 {
-    public Transform[] pontosDeCaminho;
+    private Transform[] pontosDeCaminho;
     private int indiceAtual = 0;
 
     private Inimigo inimigo;
@@ -12,9 +12,22 @@ public class MovimentoInimigo : MonoBehaviour
         inimigo = GetComponent<Inimigo>();
     }
 
+    public void DefinirCaminho(Transform[] novosPontos)
+    {
+        pontosDeCaminho = novosPontos;
+    }
+
     void Update()
     {
+        if (pontosDeCaminho == null || pontosDeCaminho.Length == 0)
+            return;
+
         Mover();
+
+        if (pontosDeCaminho == null)
+        {
+        Debug.Log("SEM CAMINHO!");
+        }
     }
 
     void Mover()
@@ -27,13 +40,13 @@ public class MovimentoInimigo : MonoBehaviour
 
         Transform alvo = pontosDeCaminho[indiceAtual];
 
-        transform.position = Vector3.MoveTowards(
+        transform.position = Vector2.MoveTowards(
             transform.position,
             alvo.position,
             inimigo.velocidade * Time.deltaTime
         );
 
-        if (Vector3.Distance(transform.position, alvo.position) < 0.1f)
+        if (Vector2.Distance(transform.position, alvo.position) < 0.1f)
         {
             indiceAtual++;
         }
@@ -41,9 +54,6 @@ public class MovimentoInimigo : MonoBehaviour
 
     void ChegouNoFinal()
     {
-        // Exemplo:
-        // GerenciadorJogo.Instancia.ReceberDano(inimigo.dano);
-
         Destroy(gameObject);
     }
 }
