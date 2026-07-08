@@ -8,7 +8,9 @@ public class Torre : MonoBehaviour
     public float taxaAtaque = 1f;
     public float dano = 10f;
     public int custo = 50;
-
+    public bool emConstrucao = true;
+    
+    
     [Header("Projétil")]
     public GameObject prefabProjetil;
     public Transform pontoDisparo;
@@ -20,6 +22,7 @@ public class Torre : MonoBehaviour
 
     void Update()
     {
+        
         LimparLista();
         EscolherAlvo();
 
