@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 6732788571017393216}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.492, y: 2.582, z: 0}
+  m_LocalScale: {x: 0.754, y: 0.754, z: 0.754}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7380589045347384102}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3487280944031182007, guid: 9f45a5f50c69bfc42896cadc1756c913, type: 3}
+  m_Sprite: {fileID: -7627819191866995224, guid: fa5bdb3e8178ce54ea55ad566657448e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Torre
   alcance: 5
-  taxaAtaque: 1
+  taxaAtaque: 3
   dano: 5
   custo: 50
   emConstrucao: 1
@@ -308,7 +308,7 @@ Transform:
   m_GameObject: {fileID: 8993337760384813075}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.93, y: -0.5, z: 0}
+  m_LocalPosition: {x: 3.33, y: 4.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -8,23 +8,32 @@ public class Torre : MonoBehaviour
     public float taxaAtaque = 1f;
     public float dano = 10f;
     public int custo = 50;
+
     public bool emConstrucao = true;
-    
-    
+
+
     [Header("Projétil")]
     public GameObject prefabProjetil;
     public Transform pontoDisparo;
+
 
     private float tempoProximoAtaque = 0f;
 
     private List<Inimigo> inimigosNoAlcance = new List<Inimigo>();
     private Inimigo alvoAtual;
 
+
+
     void Update()
     {
-        
+        // Enquanto está seguindo o mouse, não faz nada
+        if (emConstrucao)
+            return;
+
+
         LimparLista();
         EscolherAlvo();
+
 
         if (alvoAtual != null)
         {
@@ -32,8 +41,15 @@ public class Torre : MonoBehaviour
         }
     }
 
+
+
     void OnTriggerEnter2D(Collider2D other)
     {
+        // Não adiciona inimigos enquanto está sendo posicionada
+        if (emConstrucao)
+            return;
+
+
         Inimigo inimigo = other.GetComponent<Inimigo>();
 
         if (inimigo != null && !inimigosNoAlcance.Contains(inimigo))
@@ -41,6 +57,8 @@ public class Torre : MonoBehaviour
             inimigosNoAlcance.Add(inimigo);
         }
     }
+
+
 
     void OnTriggerExit2D(Collider2D other)
     {
@@ -52,19 +70,28 @@ public class Torre : MonoBehaviour
         }
     }
 
+
+
     void LimparLista()
     {
         inimigosNoAlcance.RemoveAll(inimigo => inimigo == null);
     }
+
+
 
     void EscolherAlvo()
     {
         float menorDistancia = Mathf.Infinity;
         Inimigo melhorAlvo = null;
 
+
         foreach (Inimigo inimigo in inimigosNoAlcance)
         {
-            float distancia = Vector2.Distance(transform.position, inimigo.transform.position);
+            float distancia = Vector2.Distance(
+                transform.position,
+                inimigo.transform.position
+            );
+
 
             if (distancia < menorDistancia)
             {
@@ -73,25 +100,39 @@ public class Torre : MonoBehaviour
             }
         }
 
+
         alvoAtual = melhorAlvo;
     }
+
+
 
     void Atacar()
     {
         if (Time.time >= tempoProximoAtaque)
         {
             Disparar();
+
             tempoProximoAtaque = Time.time + 1f / taxaAtaque;
         }
     }
 
+
+
     void Disparar()
     {
-        if (prefabProjetil == null || pontoDisparo == null || alvoAtual == null) return;
+        if (prefabProjetil == null || pontoDisparo == null || alvoAtual == null)
+            return;
 
-        GameObject projetilObj = Instantiate(prefabProjetil, pontoDisparo.position, Quaternion.identity);
+
+        GameObject projetilObj = Instantiate(
+            prefabProjetil,
+            pontoDisparo.position,
+            Quaternion.identity
+        );
+
 
         Projetil projetil = projetilObj.GetComponent<Projetil>();
+
 
         if (projetil != null)
         {
@@ -99,6 +140,22 @@ public class Torre : MonoBehaviour
             projetil.DefinirAlvo(alvoAtual);
         }
     }
+
+
+
+    // Chamado pelo Gerador quando a torre é colocada
+    public void FinalizarConstrucao()
+    {
+        emConstrucao = false;
+
+        inimigosNoAlcance.Clear();
+        alvoAtual = null;
+
+        // evita tiro instantâneo
+        tempoProximoAtaque = Time.time + 0.2f;
+    }
+
+
 
     void OnDrawGizmosSelected()
     {
