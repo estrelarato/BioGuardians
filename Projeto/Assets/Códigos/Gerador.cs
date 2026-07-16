@@ -11,20 +11,32 @@ public class Gerador : MonoBehaviour
         if (objetoAtual == null)
             return;
 
-        Vector3 mouse = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        mouse.z = Camera.main.nearClipPlane;
-        Vector3 mundo = Camera.main.ScreenToWorldPoint(mouse);
+        // Posição do mouse no mundo
+        Vector3 mundo = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         mundo.z = 0;
 
-        objetoAtual.transform.position = mouse;
+        // Faz a torre seguir o mouse
+        objetoAtual.transform.position = mundo;
 
+        // Clique esquerdo
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Collider2D local = Physics2D.OverlapPoint(mouse);
+            Collider2D local = Physics2D.OverlapPoint(mundo);
 
             if (local != null && local.CompareTag("LocalDeConstrucao"))
             {
+                // Encaixa a torre no local
                 objetoAtual.transform.position = local.transform.position;
+
+                // Ativa a torre
+                Torre torre = objetoAtual.GetComponent<Torre>();
+
+                if (torre != null)
+                {
+                    torre.emConstrucao = false;
+                }
+
+                // Permite construir outra
                 objetoAtual = null;
             }
         }
@@ -33,6 +45,15 @@ public class Gerador : MonoBehaviour
     public void CriarObjeto()
     {
         if (objetoAtual == null)
+        {
             objetoAtual = Instantiate(prefab);
+
+            Torre torre = objetoAtual.GetComponent<Torre>();
+
+            if (torre != null)
+            {
+                torre.emConstrucao = true;
+            }
+        }
     }
 }

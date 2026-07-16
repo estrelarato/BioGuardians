@@ -19,10 +19,12 @@ public class Torre : MonoBehaviour
 
     private List<Inimigo> inimigosNoAlcance = new List<Inimigo>();
     private Inimigo alvoAtual;
-
+    
     void Update()
     {
-        
+        if (emConstrucao)
+            return;
+
         LimparLista();
         EscolherAlvo();
 
