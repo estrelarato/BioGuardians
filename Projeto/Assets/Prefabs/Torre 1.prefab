@@ -103,7 +103,6 @@ GameObject:
   - component: {fileID: 2568845668019361823}
   - component: {fileID: 2278391324309783450}
   - component: {fileID: 2696002730598943973}
-  - component: {fileID: 6570465233391432718}
   m_Layer: 0
   m_Name: Torre 1
   m_TagString: Untagged
@@ -205,24 +204,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Torre
   alcance: 5
   taxaAtaque: 1
-  dano: 5
+  dano: 10
   custo: 50
   emConstrucao: 1
   prefabProjetil: {fileID: 4732030833341360399, guid: d49cd0b1a76e17d42902eb67c163d05a, type: 3}
   pontoDisparo: {fileID: 3777555913186057170}
---- !u!114 &6570465233391432718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8113988333330881459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36c20df11d2652e498a309d959ed51a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PosicionamentoTorre
-  localAtual: {fileID: 0}
 --- !u!1 &8993337760384813075
 GameObject:
   m_ObjectHideFlags: 0

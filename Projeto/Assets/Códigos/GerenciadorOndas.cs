@@ -40,7 +40,18 @@ public class GerenciadorOndas : MonoBehaviour
 
             indiceOndaAtual++;
 
-            yield return new WaitForSeconds(tempoEntreOndas);
+            if (indiceOndaAtual < ondas.Length)
+            {
+                yield return new WaitForSeconds(tempoEntreOndas);
+            }
+        }
+
+        // --- MUDANÇA AQUI ---
+        // Avisa o Gerenciador de Jogo que todas as ondas já foram spawnadas
+        GameManager gameManager = FindFirstObjectByType<GameManager>();
+        if (gameManager != null)
+        {
+            gameManager.AtivarChecagemVitoria();
         }
     }
 
@@ -55,9 +66,11 @@ public class GerenciadorOndas : MonoBehaviour
 
     void SpawnarInimigo(GameObject prefab)
     {
+        if (prefab == null) return;
+
         GameObject inimigoObj = Instantiate(prefab, pontoSpawn.position, Quaternion.identity);
 
-        MovimentoInimigo movimento = inimigoObj.GetComponent<MovimentoInimigo>();
+        Inimigo movimento = inimigoObj.GetComponent<Inimigo>();
 
         if (movimento != null)
         {

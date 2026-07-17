@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Inimigo
   - LocalDeConstrucao
+  - FimDoCaminho
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Slots
   - Water
   - UI
   - 
