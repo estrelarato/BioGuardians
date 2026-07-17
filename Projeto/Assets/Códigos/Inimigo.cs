@@ -10,9 +10,10 @@ public class Inimigo : MonoBehaviour
     public float dano = 10f;
     public float defesa = 0f;
 
-    private bool estaVivo = true;
+    [Header("Economia")]
+    public int recompensaMoedas = 20; // Quanto este inimigo dá de ouro ao morrer
 
-    // --- VARIÁVEIS DO CAMINHO (ADICIONADAS) ---
+    private bool estaVivo = true;
     private Transform[] caminhos;
     private int indiceCaminhoAtual = 0;
 
@@ -21,20 +22,15 @@ public class Inimigo : MonoBehaviour
         vidaAtual = vidaMaxima;
     }
 
-    // --- LÓGICA DE MOVIMENTAÇÃO (ADICIONADA) ---
     void Update()
     {
         if (!estaVivo) return;
 
-        // Se o caminho foi definido, move o inimigo em direção ao ponto atual
         if (caminhos != null && indiceCaminhoAtual < caminhos.Length)
         {
             Transform alvoAtual = caminhos[indiceCaminhoAtual];
-            
-            // Move o inimigo até o ponto de caminho
             transform.position = Vector2.MoveTowards(transform.position, alvoAtual.position, velocidade * Time.deltaTime);
 
-            // Se chegou muito perto do ponto atual, avança para o próximo ponto
             if (Vector2.Distance(transform.position, alvoAtual.position) < 0.1f)
             {
                 indiceCaminhoAtual++;
@@ -42,12 +38,10 @@ public class Inimigo : MonoBehaviour
         }
     }
 
-    // --- FUNÇÃO QUE O GERENCIADOR CHAMA (ADICIONADA) ---
-    // Ela DEVE ser 'public' para o GerenciadorOndas conseguir usá-la
     public void DefinirCaminho(Transform[] pontosDeCaminho)
     {
         caminhos = pontosDeCaminho;
-        indiceCaminhoAtual = 0; // Começa do primeiro ponto
+        indiceCaminhoAtual = 0;
     }
 
     public void ReceberDano(float quantidade)
@@ -60,6 +54,14 @@ public class Inimigo : MonoBehaviour
         if (vidaAtual <= 0)
         {
             estaVivo = false;
+
+            // --- NOVO: Dá moedas ao jogador apenas se morrer para as torres ---
+            GameManager gameManager = FindFirstObjectByType<GameManager>();
+            if (gameManager != null)
+            {
+                gameManager.GanharDinheiro(recompensaMoedas);
+            }
+
             Morrer();
         }
     }
@@ -80,6 +82,7 @@ public class Inimigo : MonoBehaviour
                 sistemaVida.TomarDano((int)dano); 
             }
 
+            // Se o inimigo fugir e passar da base, ele apenas se destrói (não dá moedas)
             Destroy(gameObject);
         }
     }

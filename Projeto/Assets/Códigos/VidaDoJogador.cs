@@ -6,22 +6,9 @@ public class VidaDoJogador : MonoBehaviour
     public int vidaMaxima = 20;
     private int vidaAtual;
 
-    [Header("Interface de Game Over")]
-    public GameObject painelGameOver; // <-- Arraste o painel preto para cá no Inspector
-
     void Start()
     {
-        // Garante que o tempo do jogo está normal ao iniciar
-        Time.timeScale = 1f; 
-        
         vidaAtual = vidaMaxima;
-        
-        // Garante que a tela de Game Over comece escondida
-        if (painelGameOver != null)
-        {
-            painelGameOver.SetActive(false);
-        }
-        
         Debug.Log("Jogo Iniciado! Vida da Base: " + vidaAtual);
     }
 
@@ -33,21 +20,13 @@ public class VidaDoJogador : MonoBehaviour
         if (vidaAtual <= 0)
         {
             vidaAtual = 0;
-            Derrota();
+            
+            // --- NOVO: Avisa o GameManager para disparar a derrota ---
+            GameManager gameManager = FindFirstObjectByType<GameManager>();
+            if (gameManager != null)
+            {
+                gameManager.PerderJogo();
+            }
         }
-    }
-
-    void Derrota()
-    {
-        Debug.Log("Game Over! A base foi destruída.");
-        
-        // Ativa a tela preta de Game Over
-        if (painelGameOver != null)
-        {
-            painelGameOver.SetActive(true);
-        }
-
-        // Pausa o jogo (congela inimigos e torres)
-        Time.timeScale = 0f; 
     }
 }

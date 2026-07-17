@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5404683836360709044}
   - component: {fileID: 3213644137571717469}
   - component: {fileID: 5179140709645149362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Inimigo 1
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
@@ -112,6 +112,7 @@ MonoBehaviour:
   velocidade: 2
   dano: 10
   defesa: 0
+  recompensaMoedas: 5
 --- !u!114 &5404683836360709044
 MonoBehaviour:
   m_ObjectHideFlags: 0

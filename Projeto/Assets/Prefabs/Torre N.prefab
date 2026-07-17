@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 2278391324309783450}
   - component: {fileID: 2696002730598943973}
   m_Layer: 0
-  m_Name: Torre 1
+  m_Name: Torre N
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -188,8 +188,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.49480355, y: 1.765016}
-  m_Radius: 6.0149436
+  m_Offset: {x: 0.49480355, y: 0.23519607}
+  m_Radius: 10
 --- !u!114 &2696002730598943973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,10 +202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eee4cd2d95487e44bb6ec99383fed05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Torre
-  alcance: 5
+  alcance: 7
   taxaAtaque: 1
-  dano: 10
-  custo: 50
+  dano: 5
+  custo: 10
   emConstrucao: 1
   prefabProjetil: {fileID: 4732030833341360399, guid: d49cd0b1a76e17d42902eb67c163d05a, type: 3}
   pontoDisparo: {fileID: 3777555913186057170}

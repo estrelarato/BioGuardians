@@ -3,7 +3,8 @@ using UnityEngine.InputSystem;
 
 public class Gerador : MonoBehaviour
 {
-    public GameObject prefab;
+    // Este pode continuar aqui como um padrão, mas não ficaremos presos a ele
+    public GameObject prefabPadrao; 
     private GameObject objetoAtual;
 
     void Update()
@@ -11,33 +12,25 @@ public class Gerador : MonoBehaviour
         if (objetoAtual == null)
             return;
 
-        // Posição do mouse no mundo
         Vector3 mundo = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         mundo.z = 0;
 
-        // Faz a torre seguir o mouse
         objetoAtual.transform.position = mundo;
 
-        // Clique esquerdo
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            // Como desativamos o colisor da torre ao criar, o OverlapPoint 
-            // agora vai direto no quadrado branco sem NENHUM bloqueio!
             Collider2D local = Physics2D.OverlapPoint(mundo);
 
             if (local != null && local.CompareTag("LocalDeConstrucao"))
             {
-                // Encaixa a torre no local
                 objetoAtual.transform.position = local.transform.position;
 
-                // Ativa a torre e suas funções
                 Torre torre = objetoAtual.GetComponent<Torre>();
 
                 if (torre != null)
                 {
                     torre.emConstrucao = false;
                     
-                    // REATIVA o colisor da torre para ela começar a detectar inimigos
                     Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
                     if (colisorTorre != null)
                     {
@@ -45,29 +38,47 @@ public class Gerador : MonoBehaviour
                     }
                 }
 
-                // Permite construir outra
                 objetoAtual = null;
             }
         }
     }
 
+    // Mantive a sua função original caso você já a use em algum lugar
     public void CriarObjeto()
     {
+        CriarTorreEspecifica(prefabPadrao);
+    }
+
+    // --- NOVA FUNÇÃO INTELIGENTE PARA OS BOTÕES ---
+    // Esta função recebe o Prefab direto do botão que foi clicado!
+    public void CriarTorreEspecifica(GameObject prefabEscolhido)
+    {
+        if (prefabEscolhido == null) return;
+
         if (objetoAtual == null)
         {
-            objetoAtual = Instantiate(prefab);
+            GameManager gameManager = FindFirstObjectByType<GameManager>();
+            Torre componenteTorre = prefabEscolhido.GetComponent<Torre>();
 
-            Torre torre = objetoAtual.GetComponent<Torre>();
-
-            if (torre != null)
+            if (gameManager != null && componenteTorre != null)
             {
-                torre.emConstrucao = true;
-
-                // DESATIVA o colisor da torre temporariamente enquanto ela segue o mouse
-                Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
-                if (colisorTorre != null)
+                // Tenta gastar o dinheiro baseado no custo da torre escolhida
+                if (gameManager.TentarGastarDinheiro(componenteTorre.custo))
                 {
-                    colisorTorre.enabled = false;
+                    objetoAtual = Instantiate(prefabEscolhido);
+
+                    Torre torre = objetoAtual.GetComponent<Torre>();
+
+                    if (torre != null)
+                    {
+                        torre.emConstrucao = true;
+
+                        Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
+                        if (colisorTorre != null)
+                        {
+                            colisorTorre.enabled = false;
+                        }
+                    }
                 }
             }
         }

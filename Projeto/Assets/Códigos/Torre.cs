@@ -10,7 +10,6 @@ public class Torre : MonoBehaviour
     public int custo = 50;
     public bool emConstrucao = true;
     
-    
     [Header("Projétil")]
     public GameObject prefabProjetil;
     public Transform pontoDisparo;
@@ -91,21 +90,32 @@ public class Torre : MonoBehaviour
     {
         if (prefabProjetil == null || pontoDisparo == null || alvoAtual == null) return;
 
+        // Cria o projétil na posição do ponto de disparo
         GameObject projetilObj = Instantiate(prefabProjetil, pontoDisparo.position, Quaternion.identity);
 
-        Projetil projetil = projetilObj.GetComponent<Projetil>();
-
-        if (projetil != null)
+        // 1. Tenta definir o alvo se for um Projétil Normal
+        Projetil projetilNormal = projetilObj.GetComponent<Projetil>();
+        if (projetilNormal != null)
         {
-            projetil.dano = dano;
-            projetil.DefinirAlvo(alvoAtual);
+            // Podes passar o dano da própria torre para o projétil se quiseres modular:
+            projetilNormal.dano = this.dano; 
+            projetilNormal.DefinirAlvo(alvoAtual);
+        }
+
+        // 2. Tenta definir o alvo se for o novo Projétil Explosivo (Dano em Área)
+        ProjetilExplosivo projetilArea = projetilObj.GetComponent<ProjetilExplosivo>();
+        if (projetilArea != null)
+        {
+            // Passa o dano configurado na torre para a explosão
+            projetilArea.dano = this.dano; 
+            projetilArea.DefinirAlvo(alvoAtual);
         }
     }
 
-    void OnDrawGizmosSelected()
+    // Cria um círculo azul no editor da Unity para veres o alcance da torre facilmente!
+    private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.green;
+        Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, alcance);
     }
-    
 }
