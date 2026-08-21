@@ -9,16 +9,19 @@ public class Torre : MonoBehaviour
     public float dano = 10f;
     public int custo = 50;
     public bool emConstrucao = true;
-    
+
+    [Header("Animadores")]
+    public Animator animadorTorre;   
+    public Animator animadorAtirador;
+
     [Header("Projétil")]
     public GameObject prefabProjetil;
     public Transform pontoDisparo;
 
     private float tempoProximoAtaque = 0f;
-
     private List<Inimigo> inimigosNoAlcance = new List<Inimigo>();
     private Inimigo alvoAtual;
-    
+
     void Update()
     {
         if (emConstrucao)
@@ -27,10 +30,22 @@ public class Torre : MonoBehaviour
         LimparLista();
         EscolherAlvo();
 
-        if (alvoAtual != null)
+        bool temAlvo = (alvoAtual != null);
+        AtualizarAnimacoesEstado(temAlvo);
+
+        if (temAlvo)
         {
             Atacar();
         }
+    }
+
+    void AtualizarAnimacoesEstado(bool emAlerta)
+    {
+        if (animadorTorre != null)
+            animadorTorre.SetBool("EmAlerta", emAlerta);
+
+        if (animadorAtirador != null)
+            animadorAtirador.SetBool("EmAlerta", emAlerta);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -81,6 +96,11 @@ public class Torre : MonoBehaviour
     {
         if (Time.time >= tempoProximoAtaque)
         {
+            if (animadorAtirador != null)
+            {
+                animadorAtirador.SetTrigger("Atacar");
+            }
+
             Disparar();
             tempoProximoAtaque = Time.time + 1f / taxaAtaque;
         }
@@ -90,29 +110,23 @@ public class Torre : MonoBehaviour
     {
         if (prefabProjetil == null || pontoDisparo == null || alvoAtual == null) return;
 
-        // Cria o projétil na posição do ponto de disparo
         GameObject projetilObj = Instantiate(prefabProjetil, pontoDisparo.position, Quaternion.identity);
 
-        // 1. Tenta definir o alvo se for um Projétil Normal
         Projetil projetilNormal = projetilObj.GetComponent<Projetil>();
         if (projetilNormal != null)
         {
-            // Podes passar o dano da própria torre para o projétil se quiseres modular:
-            projetilNormal.dano = this.dano; 
+            projetilNormal.dano = this.dano;
             projetilNormal.DefinirAlvo(alvoAtual);
         }
 
-        // 2. Tenta definir o alvo se for o novo Projétil Explosivo (Dano em Área)
         ProjetilExplosivo projetilArea = projetilObj.GetComponent<ProjetilExplosivo>();
         if (projetilArea != null)
         {
-            // Passa o dano configurado na torre para a explosão
-            projetilArea.dano = this.dano; 
+            projetilArea.dano = this.dano;
             projetilArea.DefinirAlvo(alvoAtual);
         }
     }
 
-    // Cria um círculo azul no editor da Unity para veres o alcance da torre facilmente!
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.blue;
