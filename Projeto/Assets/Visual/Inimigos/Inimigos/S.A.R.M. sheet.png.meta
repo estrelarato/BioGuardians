@@ -193,12 +193,12 @@ TextureImporter:
       name: S.A.R.M. sheet_0
       rect:
         serializedVersion: 2
-        x: 139
-        y: 5136
-        width: 727
-        height: 670
+        x: 0
+        y: 5000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,20 +215,20 @@ TextureImporter:
       name: S.A.R.M. sheet_1
       rect:
         serializedVersion: 2
-        x: 1139
-        y: 5136
-        width: 727
-        height: 670
+        x: 1000
+        y: 5000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d6d85efda8fcc5770800000000000000
-      internalID: 8600977583739604333
+      spriteID: 5c27c3e068538574b9002a1409ad785f
+      internalID: 1999059408
       vertices: []
       indices: 
       edges: []
@@ -237,20 +237,20 @@ TextureImporter:
       name: S.A.R.M. sheet_2
       rect:
         serializedVersion: 2
-        x: 2139
-        y: 5136
-        width: 727
-        height: 670
+        x: 2000
+        y: 5000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bab673752b9d354a0800000000000000
-      internalID: -6605696868431729749
+      spriteID: cb99bb4001ed321478349cf120aab4b9
+      internalID: 1986759661
       vertices: []
       indices: 
       edges: []
@@ -259,20 +259,20 @@ TextureImporter:
       name: S.A.R.M. sheet_3
       rect:
         serializedVersion: 2
-        x: 3139
-        y: 5136
-        width: 727
-        height: 579
+        x: 3000
+        y: 5000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7ec8065006b0535b0800000000000000
-      internalID: -5389388872043950873
+      spriteID: de9523bb718ff0e42bf6ad04475fe5f9
+      internalID: 1360824400
       vertices: []
       indices: 
       edges: []
@@ -281,20 +281,20 @@ TextureImporter:
       name: S.A.R.M. sheet_4
       rect:
         serializedVersion: 2
-        x: 4139
-        y: 5136
-        width: 727
-        height: 579
+        x: 4000
+        y: 5000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3f607435def9d6100800000000000000
-      internalID: 102914208152618739
+      spriteID: 845449d4ec31cd14a93a6258a3f04916
+      internalID: -193992162
       vertices: []
       indices: 
       edges: []
@@ -303,20 +303,20 @@ TextureImporter:
       name: S.A.R.M. sheet_5
       rect:
         serializedVersion: 2
-        x: 5139
-        y: 5136
-        width: 727
-        height: 543
+        x: 5000
+        y: 5000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a8f82f464fab65120800000000000000
-      internalID: 2402313010077142922
+      spriteID: 6955645cf8ee4d34a88f7eb34de2c17a
+      internalID: 1783597247
       vertices: []
       indices: 
       edges: []
@@ -325,20 +325,20 @@ TextureImporter:
       name: S.A.R.M. sheet_6
       rect:
         serializedVersion: 2
-        x: 139
-        y: 4136
-        width: 727
-        height: 543
+        x: 0
+        y: 4000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8fef892cde53a6a20800000000000000
-      internalID: 3056314592412630776
+      spriteID: 134268b5ff22ee848be0928e3a039567
+      internalID: -780184167
       vertices: []
       indices: 
       edges: []
@@ -347,20 +347,20 @@ TextureImporter:
       name: S.A.R.M. sheet_7
       rect:
         serializedVersion: 2
-        x: 1148
-        y: 4135
-        width: 731
-        height: 483
+        x: 1000
+        y: 4000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c40d0682a8c469d70800000000000000
-      internalID: 9049504657514221644
+      spriteID: 373742ad5e6a10c429b7c28f7b438179
+      internalID: -1304055025
       vertices: []
       indices: 
       edges: []
@@ -369,20 +369,20 @@ TextureImporter:
       name: S.A.R.M. sheet_8
       rect:
         serializedVersion: 2
-        x: 2148
-        y: 4135
-        width: 731
-        height: 483
+        x: 2000
+        y: 4000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d5e357921ee0c6130800000000000000
-      internalID: 3561237765569199709
+      spriteID: d5c6a3223ce3f8e4584181778751544e
+      internalID: -436596941
       vertices: []
       indices: 
       edges: []
@@ -391,20 +391,20 @@ TextureImporter:
       name: S.A.R.M. sheet_9
       rect:
         serializedVersion: 2
-        x: 3148
-        y: 4135
-        width: 731
-        height: 483
+        x: 3000
+        y: 4000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7d876aac1e5f8e2d0800000000000000
-      internalID: -3249076781031458601
+      spriteID: 0e195669b0b9eb340995431110582764
+      internalID: -1663422693
       vertices: []
       indices: 
       edges: []
@@ -413,20 +413,20 @@ TextureImporter:
       name: S.A.R.M. sheet_10
       rect:
         serializedVersion: 2
-        x: 4148
-        y: 4135
-        width: 731
-        height: 483
+        x: 4000
+        y: 4000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 19fabb313a0bcf7d0800000000000000
-      internalID: -2883235446966734959
+      spriteID: 1eb567c46be1bb94fa3fbecb2dc0acdd
+      internalID: -363248122
       vertices: []
       indices: 
       edges: []
@@ -435,20 +435,20 @@ TextureImporter:
       name: S.A.R.M. sheet_11
       rect:
         serializedVersion: 2
-        x: 5167
-        y: 4204
-        width: 739
-        height: 736
+        x: 5000
+        y: 4000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ef9d7d2f55748330800000000000000
-      internalID: 3712221044505681894
+      spriteID: 995ec62c875c5204cbaf3361d2cc4908
+      internalID: 127120036
       vertices: []
       indices: 
       edges: []
@@ -457,20 +457,20 @@ TextureImporter:
       name: S.A.R.M. sheet_12
       rect:
         serializedVersion: 2
-        x: 167
-        y: 3204
-        width: 739
-        height: 736
+        x: 0
+        y: 3000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c1dbfaf784c1b25b0800000000000000
-      internalID: -5392185031140590308
+      spriteID: 47a502fb9f345144cbed6fa132a7e61e
+      internalID: 1798288523
       vertices: []
       indices: 
       edges: []
@@ -479,20 +479,20 @@ TextureImporter:
       name: S.A.R.M. sheet_13
       rect:
         serializedVersion: 2
-        x: 1157
-        y: 3280
-        width: 735
-        height: 672
+        x: 1000
+        y: 3000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a65a225acdaab1ed0800000000000000
-      internalID: -2442170508278323862
+      spriteID: 40b51081bf9810e44b25d60c34bbdc0e
+      internalID: 848281333
       vertices: []
       indices: 
       edges: []
@@ -501,20 +501,20 @@ TextureImporter:
       name: S.A.R.M. sheet_14
       rect:
         serializedVersion: 2
-        x: 2157
-        y: 3280
-        width: 735
-        height: 672
+        x: 2000
+        y: 3000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: facd30e7d24a977d0800000000000000
-      internalID: -2920122368078390097
+      spriteID: 47b3fda41f26cf44ea0dd64878487bab
+      internalID: -1209404356
       vertices: []
       indices: 
       edges: []
@@ -523,20 +523,20 @@ TextureImporter:
       name: S.A.R.M. sheet_15
       rect:
         serializedVersion: 2
-        x: 3137
-        y: 3309
-        width: 727
-        height: 670
+        x: 3000
+        y: 3000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3c1162cbc49d75b40800000000000000
-      internalID: 5429046799415775683
+      spriteID: b5a1a08048aa8744cb7549a0f711deab
+      internalID: -646892777
       vertices: []
       indices: 
       edges: []
@@ -545,20 +545,20 @@ TextureImporter:
       name: S.A.R.M. sheet_16
       rect:
         serializedVersion: 2
-        x: 4137
-        y: 3309
-        width: 727
-        height: 670
+        x: 4000
+        y: 3000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1cf5c69b652808300800000000000000
-      internalID: 252344888122433473
+      spriteID: ea3fb8e5bc12c6f47bd51d9205b00f88
+      internalID: 789095334
       vertices: []
       indices: 
       edges: []
@@ -567,20 +567,20 @@ TextureImporter:
       name: S.A.R.M. sheet_17
       rect:
         serializedVersion: 2
-        x: 5132
-        y: 3341
-        width: 724
-        height: 654
+        x: 5000
+        y: 3000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: decb86b4e8d642340800000000000000
-      internalID: 4838112357620694253
+      spriteID: af69e02ff18e0e242baa0e69b36eccf0
+      internalID: -611085820
       vertices: []
       indices: 
       edges: []
@@ -589,20 +589,20 @@ TextureImporter:
       name: S.A.R.M. sheet_18
       rect:
         serializedVersion: 2
-        x: 132
-        y: 2341
-        width: 724
-        height: 654
+        x: 0
+        y: 2000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0d5bb60ab5fc18080800000000000000
-      internalID: -9186833772418714160
+      spriteID: 618fb602a955d154bb9533eeaee58f7d
+      internalID: 133270441
       vertices: []
       indices: 
       edges: []
@@ -611,20 +611,20 @@ TextureImporter:
       name: S.A.R.M. sheet_19
       rect:
         serializedVersion: 2
-        x: 1137
-        y: 2150
-        width: 727
-        height: 845
+        x: 1000
+        y: 2000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 886da860c5e7101d0800000000000000
-      internalID: -3386286511094049144
+      spriteID: 04d2ce51562676443ae42cb26433a8e1
+      internalID: -2109363556
       vertices: []
       indices: 
       edges: []
@@ -633,20 +633,20 @@ TextureImporter:
       name: S.A.R.M. sheet_20
       rect:
         serializedVersion: 2
-        x: 2139
-        y: 2136
-        width: 727
-        height: 579
+        x: 2000
+        y: 2000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 291b95f7b682c7fd0800000000000000
-      internalID: -2342953263976304238
+      spriteID: a58183f72ab3ef141932c09bc286c66d
+      internalID: 2025308609
       vertices: []
       indices: 
       edges: []
@@ -655,20 +655,20 @@ TextureImporter:
       name: S.A.R.M. sheet_21
       rect:
         serializedVersion: 2
-        x: 3139
-        y: 2136
-        width: 727
-        height: 433
+        x: 3000
+        y: 2000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8d12bee65b7c9b7d0800000000000000
-      internalID: -2902068902799662632
+      spriteID: dec0e6f10c995fd44af1504df8063492
+      internalID: 853783634
       vertices: []
       indices: 
       edges: []
@@ -677,20 +677,20 @@ TextureImporter:
       name: S.A.R.M. sheet_22
       rect:
         serializedVersion: 2
-        x: 4139
-        y: 2136
-        width: 727
-        height: 697
+        x: 4000
+        y: 2000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 84a7a192da231df10800000000000000
-      internalID: 2292669404608625224
+      spriteID: 935d95f96979f0d4bb223d892ffad32b
+      internalID: -103572338
       vertices: []
       indices: 
       edges: []
@@ -699,20 +699,20 @@ TextureImporter:
       name: S.A.R.M. sheet_23
       rect:
         serializedVersion: 2
-        x: 5139
-        y: 2136
-        width: 727
-        height: 697
+        x: 5000
+        y: 2000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5f978cde57d391640800000000000000
-      internalID: 5051136033782528501
+      spriteID: 05010bef74ed1104f97d83f808ebbdbb
+      internalID: 556568676
       vertices: []
       indices: 
       edges: []
@@ -721,20 +721,20 @@ TextureImporter:
       name: S.A.R.M. sheet_24
       rect:
         serializedVersion: 2
-        x: 139
-        y: 1136
-        width: 727
-        height: 568
+        x: 0
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 27dda56fb4672ba00800000000000000
-      internalID: 770808554861550962
+      spriteID: 1fab60e9384765b4ab2fdeeba8eae261
+      internalID: 461012070
       vertices: []
       indices: 
       edges: []
@@ -743,20 +743,20 @@ TextureImporter:
       name: S.A.R.M. sheet_25
       rect:
         serializedVersion: 2
-        x: 1139
-        y: 1136
-        width: 727
-        height: 550
+        x: 1000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 897fe085bfff78aa0800000000000000
-      internalID: -6158672510426613864
+      spriteID: 5501727b2ca68374d82b6d1096971660
+      internalID: -381383973
       vertices: []
       indices: 
       edges: []
@@ -765,20 +765,20 @@ TextureImporter:
       name: S.A.R.M. sheet_26
       rect:
         serializedVersion: 2
-        x: 2139
-        y: 1136
-        width: 727
-        height: 682
+        x: 2000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4db56d8f31daa4410800000000000000
-      internalID: 1462171330325928916
+      spriteID: 3d3902ac2f7e3aa4bb798cfc81ebc0eb
+      internalID: 1983002858
       vertices: []
       indices: 
       edges: []
@@ -787,20 +787,20 @@ TextureImporter:
       name: S.A.R.M. sheet_27
       rect:
         serializedVersion: 2
-        x: 3139
-        y: 1136
-        width: 727
-        height: 682
+        x: 3000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 354e9844001f88f10800000000000000
-      internalID: 2272330995460596819
+      spriteID: d3b54f2392af27f49aae6b08597184b6
+      internalID: 637763728
       vertices: []
       indices: 
       edges: []
@@ -809,20 +809,20 @@ TextureImporter:
       name: S.A.R.M. sheet_28
       rect:
         serializedVersion: 2
-        x: 4139
-        y: 1136
-        width: 727
-        height: 634
+        x: 4000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f0cb411ab0fd33890800000000000000
-      internalID: -7479389315092136945
+      spriteID: caddb62fe9d65f64da1c4e9a81375512
+      internalID: 793936307
       vertices: []
       indices: 
       edges: []
@@ -831,20 +831,20 @@ TextureImporter:
       name: S.A.R.M. sheet_29
       rect:
         serializedVersion: 2
-        x: 5139
-        y: 1136
-        width: 727
-        height: 670
+        x: 5000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0c832f6bc3f64ec40800000000000000
-      internalID: 5540675748130601152
+      spriteID: d171843e579c15145a3ee9fa34a45682
+      internalID: 550690982
       vertices: []
       indices: 
       edges: []
@@ -853,20 +853,20 @@ TextureImporter:
       name: S.A.R.M. sheet_30
       rect:
         serializedVersion: 2
-        x: 139
-        y: 136
-        width: 727
-        height: 659
+        x: 0
+        y: 0
+        width: 1000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 479a73604423308e0800000000000000
-      internalID: -1728482564236662412
+      spriteID: 9aa423bc4742c624f81df009c8477a85
+      internalID: 427438582
       vertices: []
       indices: 
       edges: []
@@ -875,7 +875,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 51b255a222a701541a03d5b0aa347d62
     internalID: 0
     vertices: []
     indices: 
@@ -883,39 +883,41 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       S.A.R.M. sheet_0: -3983294705011323048
-      S.A.R.M. sheet_1: 8600977583739604333
-      S.A.R.M. sheet_10: -2883235446966734959
-      S.A.R.M. sheet_11: 3712221044505681894
-      S.A.R.M. sheet_12: -5392185031140590308
-      S.A.R.M. sheet_13: -2442170508278323862
-      S.A.R.M. sheet_14: -2920122368078390097
-      S.A.R.M. sheet_15: 5429046799415775683
-      S.A.R.M. sheet_16: 252344888122433473
-      S.A.R.M. sheet_17: 4838112357620694253
-      S.A.R.M. sheet_18: -9186833772418714160
-      S.A.R.M. sheet_19: -3386286511094049144
-      S.A.R.M. sheet_2: -6605696868431729749
-      S.A.R.M. sheet_20: -2342953263976304238
-      S.A.R.M. sheet_21: -2902068902799662632
-      S.A.R.M. sheet_22: 2292669404608625224
-      S.A.R.M. sheet_23: 5051136033782528501
-      S.A.R.M. sheet_24: 770808554861550962
-      S.A.R.M. sheet_25: -6158672510426613864
-      S.A.R.M. sheet_26: 1462171330325928916
-      S.A.R.M. sheet_27: 2272330995460596819
-      S.A.R.M. sheet_28: -7479389315092136945
-      S.A.R.M. sheet_29: 5540675748130601152
-      S.A.R.M. sheet_3: -5389388872043950873
-      S.A.R.M. sheet_30: -1728482564236662412
-      S.A.R.M. sheet_4: 102914208152618739
-      S.A.R.M. sheet_5: 2402313010077142922
-      S.A.R.M. sheet_6: 3056314592412630776
-      S.A.R.M. sheet_7: 9049504657514221644
-      S.A.R.M. sheet_8: 3561237765569199709
-      S.A.R.M. sheet_9: -3249076781031458601
+      S.A.R.M. sheet_1: 1999059408
+      S.A.R.M. sheet_10: -363248122
+      S.A.R.M. sheet_11: 127120036
+      S.A.R.M. sheet_12: 1798288523
+      S.A.R.M. sheet_13: 848281333
+      S.A.R.M. sheet_14: -1209404356
+      S.A.R.M. sheet_15: -646892777
+      S.A.R.M. sheet_16: 789095334
+      S.A.R.M. sheet_17: -611085820
+      S.A.R.M. sheet_18: 133270441
+      S.A.R.M. sheet_19: -2109363556
+      S.A.R.M. sheet_2: 1986759661
+      S.A.R.M. sheet_20: 2025308609
+      S.A.R.M. sheet_21: 853783634
+      S.A.R.M. sheet_22: -103572338
+      S.A.R.M. sheet_23: 556568676
+      S.A.R.M. sheet_24: 461012070
+      S.A.R.M. sheet_25: -381383973
+      S.A.R.M. sheet_26: 1983002858
+      S.A.R.M. sheet_27: 637763728
+      S.A.R.M. sheet_28: 793936307
+      S.A.R.M. sheet_29: 550690982
+      S.A.R.M. sheet_3: 1360824400
+      S.A.R.M. sheet_30: 427438582
+      S.A.R.M. sheet_4: -193992162
+      S.A.R.M. sheet_5: 1783597247
+      S.A.R.M. sheet_6: -780184167
+      S.A.R.M. sheet_7: -1304055025
+      S.A.R.M. sheet_8: -436596941
+      S.A.R.M. sheet_9: -1663422693
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

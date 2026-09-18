@@ -172,12 +172,12 @@ TextureImporter:
       name: StAu sheet_0
       rect:
         serializedVersion: 2
-        x: 66
-        y: 2089
-        width: 355
-        height: 329
+        x: 0
+        y: 2000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: StAu sheet_1
       rect:
         serializedVersion: 2
-        x: 566
-        y: 2089
-        width: 355
-        height: 341
+        x: 500
+        y: 2000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: StAu sheet_2
       rect:
         serializedVersion: 2
-        x: 1066
-        y: 2089
-        width: 355
-        height: 341
+        x: 1000
+        y: 2000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: StAu sheet_3
       rect:
         serializedVersion: 2
-        x: 1564
-        y: 2087
-        width: 355
-        height: 313
+        x: 1500
+        y: 2000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: StAu sheet_4
       rect:
         serializedVersion: 2
-        x: 2064
-        y: 2087
-        width: 355
-        height: 313
+        x: 2000
+        y: 2000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -282,12 +282,12 @@ TextureImporter:
       name: StAu sheet_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1587
-        width: 355
-        height: 313
+        x: 0
+        y: 1500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: StAu sheet_6
       rect:
         serializedVersion: 2
-        x: 562
-        y: 1582
-        width: 352
-        height: 276
+        x: 500
+        y: 1500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -326,12 +326,12 @@ TextureImporter:
       name: StAu sheet_7
       rect:
         serializedVersion: 2
-        x: 1062
-        y: 1582
-        width: 368
-        height: 276
+        x: 1000
+        y: 1500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -348,12 +348,12 @@ TextureImporter:
       name: StAu sheet_8
       rect:
         serializedVersion: 2
-        x: 1562
-        y: 1582
-        width: 368
-        height: 276
+        x: 1500
+        y: 1500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -370,12 +370,12 @@ TextureImporter:
       name: StAu sheet_9
       rect:
         serializedVersion: 2
-        x: 2062
-        y: 1586
-        width: 355
-        height: 300
+        x: 2000
+        y: 1500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -392,12 +392,12 @@ TextureImporter:
       name: StAu sheet_10
       rect:
         serializedVersion: 2
-        x: 62
-        y: 1086
-        width: 355
-        height: 300
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -414,12 +414,12 @@ TextureImporter:
       name: StAu sheet_11
       rect:
         serializedVersion: 2
-        x: 562
-        y: 1086
-        width: 355
-        height: 300
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -436,12 +436,12 @@ TextureImporter:
       name: StAu sheet_12
       rect:
         serializedVersion: 2
-        x: 1066
-        y: 1089
-        width: 355
-        height: 337
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -458,12 +458,12 @@ TextureImporter:
       name: StAu sheet_13
       rect:
         serializedVersion: 2
-        x: 1566
-        y: 1089
-        width: 355
-        height: 346
+        x: 1500
+        y: 1000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -480,12 +480,12 @@ TextureImporter:
       name: StAu sheet_14
       rect:
         serializedVersion: 2
-        x: 2066
-        y: 1089
-        width: 355
-        height: 346
+        x: 2000
+        y: 1000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -502,12 +502,12 @@ TextureImporter:
       name: StAu sheet_15
       rect:
         serializedVersion: 2
-        x: 70
-        y: 590
-        width: 360
-        height: 308
+        x: 0
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -524,12 +524,12 @@ TextureImporter:
       name: StAu sheet_16
       rect:
         serializedVersion: 2
-        x: 570
-        y: 590
-        width: 360
-        height: 308
+        x: 500
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -546,12 +546,12 @@ TextureImporter:
       name: StAu sheet_17
       rect:
         serializedVersion: 2
-        x: 1070
-        y: 590
-        width: 360
-        height: 308
+        x: 1000
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -568,12 +568,12 @@ TextureImporter:
       name: StAu sheet_18
       rect:
         serializedVersion: 2
-        x: 1573
-        y: 588
-        width: 358
-        height: 260
+        x: 1500
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -590,12 +590,12 @@ TextureImporter:
       name: StAu sheet_19
       rect:
         serializedVersion: 2
-        x: 2049
-        y: 588
-        width: 381
-        height: 261
+        x: 2000
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -612,12 +612,12 @@ TextureImporter:
       name: StAu sheet_20
       rect:
         serializedVersion: 2
-        x: 49
-        y: 88
-        width: 381
-        height: 261
+        x: 0
+        y: 0
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -634,12 +634,12 @@ TextureImporter:
       name: StAu sheet_21
       rect:
         serializedVersion: 2
-        x: 567
-        y: 91
-        width: 358
-        height: 297
+        x: 500
+        y: 0
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -656,12 +656,12 @@ TextureImporter:
       name: StAu sheet_22
       rect:
         serializedVersion: 2
-        x: 1067
-        y: 91
-        width: 358
-        height: 297
+        x: 1000
+        y: 0
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -678,12 +678,12 @@ TextureImporter:
       name: StAu sheet_23
       rect:
         serializedVersion: 2
-        x: 1567
-        y: 91
-        width: 358
-        height: 297
+        x: 1500
+        y: 0
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -700,7 +700,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5c66c15d832204647a2c790d44b2d1be
     internalID: 0
     vertices: []
     indices: 
@@ -708,7 +708,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":500.0,"y":500.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       StAu sheet_0: -6403697995241277246
       StAu sheet_1: 7534678254916858342

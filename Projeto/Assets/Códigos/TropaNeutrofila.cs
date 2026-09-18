@@ -11,10 +11,23 @@ public class TropaNeutrofila : MonoBehaviour
 
     [Header("Componentes e Efeitos")]
     public Animator animadorTropa;
+    public SpriteRenderer spriteRenderer;
     public GameObject efeitoExplosaoPrefab;
+
+    [Header("Tempo da Animação")]
+    [Tooltip("Duração em segundos da animação de explosão")]
+    public float tempoAnimacaoExplosao = 0.5f;
 
     private Transform alvoAtual;
     private bool estaExplodindo = false;
+
+    void Start()
+    {
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        }
+    }
 
     void Update()
     {
@@ -26,15 +39,16 @@ public class TropaNeutrofila : MonoBehaviour
         {
             AtualizarAnimacao(true);
 
+            // Move-se diretamente para o alvo
             transform.position = Vector2.MoveTowards(
                 transform.position, 
                 alvoAtual.position, 
                 velocidade * Time.deltaTime
             );
 
-            Vector2 direcao = (alvoAtual.position - transform.position).normalized;
-            float angulo = Mathf.Atan2(direcao.y, direcao.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0, 0, angulo);
+            // Flip do sprite baseado no movimento horizontal
+            float direcaoX = alvoAtual.position.x - transform.position.x;
+            AtualizarFlipSprite(direcaoX);
 
             float distancia = Vector2.Distance(transform.position, alvoAtual.position);
             if (distancia <= distanciaParaExplodir)
@@ -45,6 +59,14 @@ public class TropaNeutrofila : MonoBehaviour
         else
         {
             AtualizarAnimacao(false);
+        }
+    }
+
+    void AtualizarFlipSprite(float direcaoX)
+    {
+        if (Mathf.Abs(direcaoX) > 0.05f && spriteRenderer != null)
+        {
+            spriteRenderer.flipX = (direcaoX < 0);
         }
     }
 
@@ -79,6 +101,10 @@ public class TropaNeutrofila : MonoBehaviour
     {
         estaExplodindo = true;
 
+        // Desativa colisor para não causar múltiplos impactos
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+
         if (animadorTropa != null)
         {
             animadorTropa.SetTrigger("Explodir");
@@ -90,16 +116,17 @@ public class TropaNeutrofila : MonoBehaviour
         }
 
         Collider2D[] acertos = Physics2D.OverlapCircleAll(transform.position, raioExplosao);
-        foreach (Collider2D col in acertos)
+        foreach (Collider2D colisor in acertos)
         {
-            Inimigo inimigo = col.GetComponent<Inimigo>();
+            Inimigo inimigo = colisor.GetComponent<Inimigo>();
             if (inimigo != null)
             {
                 inimigo.SendMessage("ReceberDano", dano, SendMessageOptions.DontRequireReceiver);
             }
         }
 
-        Destroy(gameObject, 0.1f);
+        // Aguarda a animação terminar antes de destruir o minion
+        Destroy(gameObject, tempoAnimacaoExplosao);
     }
 
     private void OnDrawGizmosSelected()

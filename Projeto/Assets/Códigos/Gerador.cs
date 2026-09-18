@@ -24,18 +24,15 @@ public class Gerador : MonoBehaviour
             {
                 objetoAtual.transform.position = local.transform.position;
 
-                // --- FINALIZA A CONSTRUÇÃO (Suporta Torre e TorreN) ---
+                // --- FINALIZA A CONSTRUÇÃO ---
                 Torre torreNormal = objetoAtual.GetComponent<Torre>();
-                if (torreNormal != null)
-                {
-                    torreNormal.emConstrucao = false;
-                }
+                if (torreNormal != null) torreNormal.emConstrucao = false;
 
                 TorreN torreNova = objetoAtual.GetComponent<TorreN>();
-                if (torreNova != null)
-                {
-                    torreNova.emConstrucao = false;
-                }
+                if (torreNova != null) torreNova.emConstrucao = false;
+
+                TorreMacrofaga torreMacrofaga = objetoAtual.GetComponent<TorreMacrofaga>();
+                if (torreMacrofaga != null) torreMacrofaga.emConstrucao = false;
 
                 // Ativa o colisor da torre posicionada
                 Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
@@ -62,7 +59,6 @@ public class Gerador : MonoBehaviour
         {
             GameManager gameManager = FindFirstObjectByType<GameManager>();
             
-            // Pega o custo de qualquer um dos dois tipos de torre
             int custoTorre = ObterCustoDaTorre(prefabEscolhido);
 
             if (gameManager != null && custoTorre > 0)
@@ -71,18 +67,15 @@ public class Gerador : MonoBehaviour
                 {
                     objetoAtual = Instantiate(prefabEscolhido);
 
-                    // --- INICIA A CONSTRUÇÃO (Suporta Torre e TorreN) ---
+                    // --- INICIA A CONSTRUÇÃO ---
                     Torre torreNormal = objetoAtual.GetComponent<Torre>();
-                    if (torreNormal != null)
-                    {
-                        torreNormal.emConstrucao = true;
-                    }
+                    if (torreNormal != null) torreNormal.emConstrucao = true;
 
                     TorreN torreNova = objetoAtual.GetComponent<TorreN>();
-                    if (torreNova != null)
-                    {
-                        torreNova.emConstrucao = true;
-                    }
+                    if (torreNova != null) torreNova.emConstrucao = true;
+
+                    TorreMacrofaga torreMacrofaga = objetoAtual.GetComponent<TorreMacrofaga>();
+                    if (torreMacrofaga != null) torreMacrofaga.emConstrucao = true;
 
                     // Desativa o colisor durante o posicionamento
                     Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
@@ -95,7 +88,6 @@ public class Gerador : MonoBehaviour
         }
     }
 
-    // Função auxiliar para verificar o custo independente do script da torre
     private int ObterCustoDaTorre(GameObject prefab)
     {
         Torre torreNormal = prefab.GetComponent<Torre>();
@@ -104,6 +96,9 @@ public class Gerador : MonoBehaviour
         TorreN torreNova = prefab.GetComponent<TorreN>();
         if (torreNova != null) return torreNova.custo;
 
-        return 0; // Caso o prefab não tenha script de torre reconhecido
+        TorreMacrofaga torreMacrofaga = prefab.GetComponent<TorreMacrofaga>();
+        if (torreMacrofaga != null) return torreMacrofaga.custo;
+
+        return 0;
     }
 }

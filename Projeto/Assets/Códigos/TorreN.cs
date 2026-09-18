@@ -1,11 +1,12 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class TorreN : MonoBehaviour
 {
     [Header("Configurações Gerais")]
     public float tempoEntreSpawns = 3f;
-    public int limiteTropasVivas = 5;
+    public int limiteTropasVivas = 3;
     public int custo = 50;
     public bool emConstrucao = true;
 
@@ -22,9 +23,15 @@ public class TorreN : MonoBehaviour
     private float tempoProximoSpawn = 0f;
     private Coroutine corrotinaSpawn;
 
+    // Lista individual para esta torre controlar suas próprias tropas
+    private List<GameObject> minhasTropas = new List<GameObject>();
+
     void Update()
     {
         if (emConstrucao) return;
+
+        // Limpa referências de tropas que foram destruídas (explodiram/morreram)
+        LimparListaTropas();
 
         if (Time.time >= tempoProximoSpawn)
         {
@@ -35,11 +42,16 @@ public class TorreN : MonoBehaviour
         }
     }
 
+    void LimparListaTropas()
+    {
+        // Remove da lista os objetos que já foram destruídos da cena
+        minhasTropas.RemoveAll(tropa => tropa == null);
+    }
+
     bool PodeSpawnar()
     {
-        // Busca na cena pelo novo nome do componente TropaNeutrofila
-        int tropasAtivas = FindObjectsOfType<TropaNeutrofila>().Length;
-        return tropasAtivas < limiteTropasVivas;
+        // Verifica apenas a quantidade de tropas pertencentes a ESTA torre
+        return minhasTropas.Count < limiteTropasVivas;
     }
 
     void GerarTropa()
@@ -53,7 +65,10 @@ public class TorreN : MonoBehaviour
 
         if (prefabTropa != null && pontoSpawn != null)
         {
-            Instantiate(prefabTropa, pontoSpawn.position, Quaternion.identity);
+            GameObject novaTropa = Instantiate(prefabTropa, pontoSpawn.position, Quaternion.identity);
+            
+            // Adiciona a nova tropa à lista exclusiva desta torre
+            minhasTropas.Add(novaTropa);
         }
 
         tempoProximoSpawn = Time.time + tempoEntreSpawns;
@@ -66,6 +81,5 @@ public class TorreN : MonoBehaviour
         yield return new WaitForSeconds(duracaoAnimacaoSpawn);
 
         if (animadorTorre != null) animadorTorre.SetBool("EmAlerta", false);
-
     }
 }
