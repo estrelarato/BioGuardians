@@ -5,14 +5,16 @@ TagManager:
   serializedVersion: 3
   tags:
   - Inimigo
+  - LocalDeConstrucao
+  - FimDoCaminho
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Slots
   - Water
   - UI
-  - 
+  - Inimigos
   - 
   - 
   - 
