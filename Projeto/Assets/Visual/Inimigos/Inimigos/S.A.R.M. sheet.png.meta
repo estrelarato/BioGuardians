@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 42bf74b3e1772204e9dd07bd6fab5946
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3983294705011323048
+    second: S.A.R.M. sheet_0
+  - first:
+      213: 8600977583739604333
+    second: S.A.R.M. sheet_1
+  - first:
+      213: -6605696868431729749
+    second: S.A.R.M. sheet_2
+  - first:
+      213: -5389388872043950873
+    second: S.A.R.M. sheet_3
+  - first:
+      213: 102914208152618739
+    second: S.A.R.M. sheet_4
+  - first:
+      213: 2402313010077142922
+    second: S.A.R.M. sheet_5
+  - first:
+      213: 3056314592412630776
+    second: S.A.R.M. sheet_6
+  - first:
+      213: 9049504657514221644
+    second: S.A.R.M. sheet_7
+  - first:
+      213: 3561237765569199709
+    second: S.A.R.M. sheet_8
+  - first:
+      213: -3249076781031458601
+    second: S.A.R.M. sheet_9
+  - first:
+      213: -2883235446966734959
+    second: S.A.R.M. sheet_10
+  - first:
+      213: 3712221044505681894
+    second: S.A.R.M. sheet_11
+  - first:
+      213: -5392185031140590308
+    second: S.A.R.M. sheet_12
+  - first:
+      213: -2442170508278323862
+    second: S.A.R.M. sheet_13
+  - first:
+      213: -2920122368078390097
+    second: S.A.R.M. sheet_14
+  - first:
+      213: 5429046799415775683
+    second: S.A.R.M. sheet_15
+  - first:
+      213: 252344888122433473
+    second: S.A.R.M. sheet_16
+  - first:
+      213: 4838112357620694253
+    second: S.A.R.M. sheet_17
+  - first:
+      213: -9186833772418714160
+    second: S.A.R.M. sheet_18
+  - first:
+      213: -3386286511094049144
+    second: S.A.R.M. sheet_19
+  - first:
+      213: -2342953263976304238
+    second: S.A.R.M. sheet_20
+  - first:
+      213: -2902068902799662632
+    second: S.A.R.M. sheet_21
+  - first:
+      213: 2292669404608625224
+    second: S.A.R.M. sheet_22
+  - first:
+      213: 5051136033782528501
+    second: S.A.R.M. sheet_23
+  - first:
+      213: 770808554861550962
+    second: S.A.R.M. sheet_24
+  - first:
+      213: -6158672510426613864
+    second: S.A.R.M. sheet_25
+  - first:
+      213: 1462171330325928916
+    second: S.A.R.M. sheet_26
+  - first:
+      213: 2272330995460596819
+    second: S.A.R.M. sheet_27
+  - first:
+      213: -7479389315092136945
+    second: S.A.R.M. sheet_28
+  - first:
+      213: 5540675748130601152
+    second: S.A.R.M. sheet_29
+  - first:
+      213: -1728482564236662412
+    second: S.A.R.M. sheet_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_0
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 5136
+        width: 727
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f0b18f19e78b8c0800000000000000
+      internalID: -3983294705011323048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 5136
+        width: 727
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d85efda8fcc5770800000000000000
+      internalID: 8600977583739604333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 5136
+        width: 727
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab673752b9d354a0800000000000000
+      internalID: -6605696868431729749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3139
+        y: 5136
+        width: 727
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec8065006b0535b0800000000000000
+      internalID: -5389388872043950873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 5136
+        width: 727
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f607435def9d6100800000000000000
+      internalID: 102914208152618739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_5
+      rect:
+        serializedVersion: 2
+        x: 5139
+        y: 5136
+        width: 727
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f82f464fab65120800000000000000
+      internalID: 2402313010077142922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_6
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 4136
+        width: 727
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fef892cde53a6a20800000000000000
+      internalID: 3056314592412630776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 4135
+        width: 731
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40d0682a8c469d70800000000000000
+      internalID: 9049504657514221644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 4135
+        width: 731
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e357921ee0c6130800000000000000
+      internalID: 3561237765569199709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3148
+        y: 4135
+        width: 731
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d876aac1e5f8e2d0800000000000000
+      internalID: -3249076781031458601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_10
+      rect:
+        serializedVersion: 2
+        x: 4148
+        y: 4135
+        width: 731
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fabb313a0bcf7d0800000000000000
+      internalID: -2883235446966734959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_11
+      rect:
+        serializedVersion: 2
+        x: 5167
+        y: 4204
+        width: 739
+        height: 736
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef9d7d2f55748330800000000000000
+      internalID: 3712221044505681894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_12
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 3204
+        width: 739
+        height: 736
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1dbfaf784c1b25b0800000000000000
+      internalID: -5392185031140590308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 3280
+        width: 735
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65a225acdaab1ed0800000000000000
+      internalID: -2442170508278323862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 3280
+        width: 735
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: facd30e7d24a977d0800000000000000
+      internalID: -2920122368078390097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3137
+        y: 3309
+        width: 727
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1162cbc49d75b40800000000000000
+      internalID: 5429046799415775683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_16
+      rect:
+        serializedVersion: 2
+        x: 4137
+        y: 3309
+        width: 727
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf5c69b652808300800000000000000
+      internalID: 252344888122433473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_17
+      rect:
+        serializedVersion: 2
+        x: 5132
+        y: 3341
+        width: 724
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decb86b4e8d642340800000000000000
+      internalID: 4838112357620694253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_18
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 2341
+        width: 724
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5bb60ab5fc18080800000000000000
+      internalID: -9186833772418714160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 2150
+        width: 727
+        height: 845
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886da860c5e7101d0800000000000000
+      internalID: -3386286511094049144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 2136
+        width: 727
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291b95f7b682c7fd0800000000000000
+      internalID: -2342953263976304238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_21
+      rect:
+        serializedVersion: 2
+        x: 3139
+        y: 2136
+        width: 727
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d12bee65b7c9b7d0800000000000000
+      internalID: -2902068902799662632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_22
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 2136
+        width: 727
+        height: 697
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a7a192da231df10800000000000000
+      internalID: 2292669404608625224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_23
+      rect:
+        serializedVersion: 2
+        x: 5139
+        y: 2136
+        width: 727
+        height: 697
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f978cde57d391640800000000000000
+      internalID: 5051136033782528501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_24
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1136
+        width: 727
+        height: 568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dda56fb4672ba00800000000000000
+      internalID: 770808554861550962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1136
+        width: 727
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897fe085bfff78aa0800000000000000
+      internalID: -6158672510426613864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 1136
+        width: 727
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db56d8f31daa4410800000000000000
+      internalID: 1462171330325928916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_27
+      rect:
+        serializedVersion: 2
+        x: 3139
+        y: 1136
+        width: 727
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354e9844001f88f10800000000000000
+      internalID: 2272330995460596819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_28
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 1136
+        width: 727
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0cb411ab0fd33890800000000000000
+      internalID: -7479389315092136945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_29
+      rect:
+        serializedVersion: 2
+        x: 5139
+        y: 1136
+        width: 727
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c832f6bc3f64ec40800000000000000
+      internalID: 5540675748130601152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. sheet_30
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 136
+        width: 727
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479a73604423308e0800000000000000
+      internalID: -1728482564236662412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      S.A.R.M. sheet_0: -3983294705011323048
+      S.A.R.M. sheet_1: 8600977583739604333
+      S.A.R.M. sheet_10: -2883235446966734959
+      S.A.R.M. sheet_11: 3712221044505681894
+      S.A.R.M. sheet_12: -5392185031140590308
+      S.A.R.M. sheet_13: -2442170508278323862
+      S.A.R.M. sheet_14: -2920122368078390097
+      S.A.R.M. sheet_15: 5429046799415775683
+      S.A.R.M. sheet_16: 252344888122433473
+      S.A.R.M. sheet_17: 4838112357620694253
+      S.A.R.M. sheet_18: -9186833772418714160
+      S.A.R.M. sheet_19: -3386286511094049144
+      S.A.R.M. sheet_2: -6605696868431729749
+      S.A.R.M. sheet_20: -2342953263976304238
+      S.A.R.M. sheet_21: -2902068902799662632
+      S.A.R.M. sheet_22: 2292669404608625224
+      S.A.R.M. sheet_23: 5051136033782528501
+      S.A.R.M. sheet_24: 770808554861550962
+      S.A.R.M. sheet_25: -6158672510426613864
+      S.A.R.M. sheet_26: 1462171330325928916
+      S.A.R.M. sheet_27: 2272330995460596819
+      S.A.R.M. sheet_28: -7479389315092136945
+      S.A.R.M. sheet_29: 5540675748130601152
+      S.A.R.M. sheet_3: -5389388872043950873
+      S.A.R.M. sheet_30: -1728482564236662412
+      S.A.R.M. sheet_4: 102914208152618739
+      S.A.R.M. sheet_5: 2402313010077142922
+      S.A.R.M. sheet_6: 3056314592412630776
+      S.A.R.M. sheet_7: 9049504657514221644
+      S.A.R.M. sheet_8: 3561237765569199709
+      S.A.R.M. sheet_9: -3249076781031458601
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

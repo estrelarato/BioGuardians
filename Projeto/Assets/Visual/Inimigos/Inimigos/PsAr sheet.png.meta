@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 93e5109af19e03745a136769a174c220
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1675171864662081879
+    second: PsAr sheet_0
+  - first:
+      213: -3536153224896604594
+    second: PsAr sheet_1
+  - first:
+      213: -8904495894459542669
+    second: PsAr sheet_2
+  - first:
+      213: 2151037602455914044
+    second: PsAr sheet_3
+  - first:
+      213: 3967095275951686755
+    second: PsAr sheet_4
+  - first:
+      213: 6378760151752011677
+    second: PsAr sheet_5
+  - first:
+      213: -978909088438503155
+    second: PsAr sheet_6
+  - first:
+      213: 1955198430232615970
+    second: PsAr sheet_7
+  - first:
+      213: 6482743605347733344
+    second: PsAr sheet_8
+  - first:
+      213: -5371140396023557071
+    second: PsAr sheet_9
+  - first:
+      213: -3259025881041465517
+    second: PsAr sheet_10
+  - first:
+      213: -4528380951392545504
+    second: PsAr sheet_11
+  - first:
+      213: -4662437336997896511
+    second: PsAr sheet_12
+  - first:
+      213: 5469349220481550695
+    second: PsAr sheet_13
+  - first:
+      213: 2694972502908548769
+    second: PsAr sheet_14
+  - first:
+      213: 530245391981222259
+    second: PsAr sheet_15
+  - first:
+      213: 585367403150538804
+    second: PsAr sheet_16
+  - first:
+      213: -8727566401925049922
+    second: PsAr sheet_17
+  - first:
+      213: -7596889480542697776
+    second: PsAr sheet_18
+  - first:
+      213: -5211852850004980331
+    second: PsAr sheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PsAr sheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1649
+        width: 438
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75189ea7fe76f3710800000000000000
+      internalID: 1675171864662081879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_1
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1649
+        width: 442
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e469fa6906f0deec0800000000000000
+      internalID: -3536153224896604594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1649
+        width: 457
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37390da7920ec6480800000000000000
+      internalID: -8904495894459542669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 1630
+        width: 438
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3684e08d450add10800000000000000
+      internalID: 2151037602455914044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 1632
+        width: 438
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3640b398224fd0730800000000000000
+      internalID: 3967095275951686755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1124
+        width: 438
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f6898df88e58850800000000000000
+      internalID: 6378760151752011677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_6
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1124
+        width: 448
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09b83cde573a62f0800000000000000
+      internalID: -978909088438503155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1124
+        width: 458
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c9a6bfc92422b10800000000000000
+      internalID: 1955198430232615970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 1108
+        width: 437
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06fcfa646f457f950800000000000000
+      internalID: 6482743605347733344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1108
+        width: 435
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 134d3407440e575b0800000000000000
+      internalID: -5371140396023557071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 590
+        width: 426
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f08be6a3d95c2d0800000000000000
+      internalID: -3259025881041465517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_11
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 590
+        width: 436
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0251a906485f721c0800000000000000
+      internalID: -4528380951392545504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 590
+        width: 441
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ced8b4d1f1bb4fb0800000000000000
+      internalID: -4662437336997896511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 590
+        width: 432
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769cc5f532807eb40800000000000000
+      internalID: 5469349220481550695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 602
+        width: 436
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a63f4b7637766520800000000000000
+      internalID: 2694972502908548769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 124
+        width: 444
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37914d8ef5fcb5700800000000000000
+      internalID: 530245391981222259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_16
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 124
+        width: 444
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43871ef3d84af1800800000000000000
+      internalID: 585367403150538804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 124
+        width: 443
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb19f9b199471e680800000000000000
+      internalID: -8727566401925049922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 124
+        width: 443
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6c95a744d629690800000000000000
+      internalID: -7596889480542697776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 138
+        width: 437
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d88dd4277cba7b0800000000000000
+      internalID: -5211852850004980331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PsAr sheet_0: 1675171864662081879
+      PsAr sheet_1: -3536153224896604594
+      PsAr sheet_10: -3259025881041465517
+      PsAr sheet_11: -4528380951392545504
+      PsAr sheet_12: -4662437336997896511
+      PsAr sheet_13: 5469349220481550695
+      PsAr sheet_14: 2694972502908548769
+      PsAr sheet_15: 530245391981222259
+      PsAr sheet_16: 585367403150538804
+      PsAr sheet_17: -8727566401925049922
+      PsAr sheet_18: -7596889480542697776
+      PsAr sheet_19: -5211852850004980331
+      PsAr sheet_2: -8904495894459542669
+      PsAr sheet_3: 2151037602455914044
+      PsAr sheet_4: 3967095275951686755
+      PsAr sheet_5: 6378760151752011677
+      PsAr sheet_6: -978909088438503155
+      PsAr sheet_7: 1955198430232615970
+      PsAr sheet_8: 6482743605347733344
+      PsAr sheet_9: -5371140396023557071
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
