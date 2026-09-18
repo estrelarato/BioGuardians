@@ -3,7 +3,6 @@ using UnityEngine.InputSystem;
 
 public class Gerador : MonoBehaviour
 {
-    // Este pode continuar aqui como um padrão, mas não ficaremos presos a ele
     public GameObject prefabPadrao; 
     private GameObject objetoAtual;
 
@@ -25,17 +24,24 @@ public class Gerador : MonoBehaviour
             {
                 objetoAtual.transform.position = local.transform.position;
 
-                Torre torre = objetoAtual.GetComponent<Torre>();
-
-                if (torre != null)
+                // --- FINALIZA A CONSTRUÇÃO (Suporta Torre e TorreN) ---
+                Torre torreNormal = objetoAtual.GetComponent<Torre>();
+                if (torreNormal != null)
                 {
-                    torre.emConstrucao = false;
-                    
-                    Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
-                    if (colisorTorre != null)
-                    {
-                        colisorTorre.enabled = true;
-                    }
+                    torreNormal.emConstrucao = false;
+                }
+
+                TorreN torreNova = objetoAtual.GetComponent<TorreN>();
+                if (torreNova != null)
+                {
+                    torreNova.emConstrucao = false;
+                }
+
+                // Ativa o colisor da torre posicionada
+                Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
+                if (colisorTorre != null)
+                {
+                    colisorTorre.enabled = true;
                 }
 
                 objetoAtual = null;
@@ -43,14 +49,11 @@ public class Gerador : MonoBehaviour
         }
     }
 
-    // Mantive a sua função original caso você já a use em algum lugar
     public void CriarObjeto()
     {
         CriarTorreEspecifica(prefabPadrao);
     }
 
-    // --- NOVA FUNÇÃO INTELIGENTE PARA OS BOTÕES ---
-    // Esta função recebe o Prefab direto do botão que foi clicado!
     public void CriarTorreEspecifica(GameObject prefabEscolhido)
     {
         if (prefabEscolhido == null) return;
@@ -58,29 +61,49 @@ public class Gerador : MonoBehaviour
         if (objetoAtual == null)
         {
             GameManager gameManager = FindFirstObjectByType<GameManager>();
-            Torre componenteTorre = prefabEscolhido.GetComponent<Torre>();
+            
+            // Pega o custo de qualquer um dos dois tipos de torre
+            int custoTorre = ObterCustoDaTorre(prefabEscolhido);
 
-            if (gameManager != null && componenteTorre != null)
+            if (gameManager != null && custoTorre > 0)
             {
-                // Tenta gastar o dinheiro baseado no custo da torre escolhida
-                if (gameManager.TentarGastarDinheiro(componenteTorre.custo))
+                if (gameManager.TentarGastarDinheiro(custoTorre))
                 {
                     objetoAtual = Instantiate(prefabEscolhido);
 
-                    Torre torre = objetoAtual.GetComponent<Torre>();
-
-                    if (torre != null)
+                    // --- INICIA A CONSTRUÇÃO (Suporta Torre e TorreN) ---
+                    Torre torreNormal = objetoAtual.GetComponent<Torre>();
+                    if (torreNormal != null)
                     {
-                        torre.emConstrucao = true;
+                        torreNormal.emConstrucao = true;
+                    }
 
-                        Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
-                        if (colisorTorre != null)
-                        {
-                            colisorTorre.enabled = false;
-                        }
+                    TorreN torreNova = objetoAtual.GetComponent<TorreN>();
+                    if (torreNova != null)
+                    {
+                        torreNova.emConstrucao = true;
+                    }
+
+                    // Desativa o colisor durante o posicionamento
+                    Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
+                    if (colisorTorre != null)
+                    {
+                        colisorTorre.enabled = false;
                     }
                 }
             }
         }
+    }
+
+    // Função auxiliar para verificar o custo independente do script da torre
+    private int ObterCustoDaTorre(GameObject prefab)
+    {
+        Torre torreNormal = prefab.GetComponent<Torre>();
+        if (torreNormal != null) return torreNormal.custo;
+
+        TorreN torreNova = prefab.GetComponent<TorreN>();
+        if (torreNova != null) return torreNova.custo;
+
+        return 0; // Caso o prefab não tenha script de torre reconhecido
     }
 }

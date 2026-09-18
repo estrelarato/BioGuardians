@@ -197,7 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Torre
   alcance: 3
   taxaAtaque: 1
-  dano: 1
+  dano: 5
   custo: 10
   emConstrucao: 1
   animadorTorre: {fileID: 5351430111261900132}

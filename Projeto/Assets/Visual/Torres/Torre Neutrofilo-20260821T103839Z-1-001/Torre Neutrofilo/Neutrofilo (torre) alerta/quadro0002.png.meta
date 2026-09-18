@@ -184,12 +184,12 @@ TextureImporter:
       name: quadro0002_0
       rect:
         serializedVersion: 2
-        x: 188
-        y: 5
-        width: 1112
-        height: 1417
+        x: 0
+        y: 0
+        width: 1500
+        height: 1500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -211,7 +211,7 @@ TextureImporter:
         width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,7 +228,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1abf2b3c399caae42950c7906c2a9b28
     internalID: 0
     vertices: []
     indices: 
