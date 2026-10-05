@@ -94,13 +94,6 @@ public class Torre : MonoBehaviour
             projetilNormal.DefinirAlvo(alvoAtual);
             return;
         }
-
-        ProjetilExplosivo projetilArea = projetilObj.GetComponent<ProjetilExplosivo>();
-        if (projetilArea != null)
-        {
-            projetilArea.dano = this.dano;
-            projetilArea.DefinirAlvo(alvoAtual);
-        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
