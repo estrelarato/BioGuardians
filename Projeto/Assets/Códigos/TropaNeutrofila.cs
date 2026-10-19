@@ -14,10 +14,6 @@ public class TropaNeutrofila : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public GameObject efeitoExplosaoPrefab;
 
-    [Header("Tempo da Animação")]
-    [Tooltip("Duração em segundos da animação de explosão")]
-    public float tempoAnimacaoExplosao = 0.5f;
-
     private Transform alvoAtual;
     private bool estaExplodindo = false;
 
@@ -124,9 +120,13 @@ public class TropaNeutrofila : MonoBehaviour
                 inimigo.SendMessage("ReceberDano", dano, SendMessageOptions.DontRequireReceiver);
             }
         }
+        
+    }
 
-        // Aguarda a animação terminar antes de destruir o minion
-        Destroy(gameObject, tempoAnimacaoExplosao);
+    // Método chamado diretamente pelo Animation Event no último frame de 'N-explode'
+    public void DestruirAposAnimacao()
+    {
+        Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()
