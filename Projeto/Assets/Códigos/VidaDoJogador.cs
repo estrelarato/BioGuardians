@@ -1,6 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+using TMPro; // Gerencia os textos do TextMeshPro
 
 public class VidaDoJogador : MonoBehaviour
 {
@@ -8,9 +7,8 @@ public class VidaDoJogador : MonoBehaviour
     public int vidaMaxima = 20;
     private int vidaAtual;
 
-    [Header("Interface de Usuário (Opcional)")]
+    [Header("Interface de Usuário (Apenas Texto)")]
     public TextMeshProUGUI textoVida;
-    public Image barraDeVida;
 
     void Start()
     {
@@ -42,14 +40,18 @@ public class VidaDoJogador : MonoBehaviour
 
     void AtualizarUI()
     {
+        // Atualiza apenas o componente de Texto do TextMeshPro
         if (textoVida != null)
         {
-            textoVida.text = vidaAtual + " / " + vidaMaxima;
-        }
-
-        if (barraDeVida != null)
-        {
-            barraDeVida.fillAmount = (float)vidaAtual / vidaMaxima;
+            // Exibe o número da vida atual na tela (ex: 20, 15, 5, 0)
+            textoVida.text = vidaAtual.ToString();
+            
+            // Caso prefira ver no formato "20 / 20", você pode trocar a linha acima por:
+            // textoVida.text = vidaAtual + " / " + vidaMaxima;
         }
     }
+
+    // Métodos para consultar a vida se precisar em outro código
+    public int GetVidaAtual() => vidaAtual;
+    public int GetVidaMaxima() => vidaMaxima;
 }
