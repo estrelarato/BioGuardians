@@ -117,10 +117,10 @@ public class TropaNeutrofila : MonoBehaviour
             Inimigo inimigo = colisor.GetComponent<Inimigo>();
             if (inimigo != null)
             {
-                inimigo.SendMessage("ReceberDano", dano, SendMessageOptions.DontRequireReceiver);
+                // Aplica o dano diretamente no inimigo atingido
+                inimigo.ReceberDano(dano);
             }
         }
-        
     }
 
     // Método chamado diretamente pelo Animation Event no último frame de 'N-explode'

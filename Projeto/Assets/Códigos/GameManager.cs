@@ -3,9 +3,11 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance { get; private set; }
+
     [Header("Interfaces de Fim de Jogo")]
     public GameObject painelVitoria;
-    public GameObject painelGameOver; // --- NOVO: Centralizado aqui agora ---
+    public GameObject painelGameOver;
 
     [Header("Sistema de Economia")]
     public int dinheiroInicial = 150;
@@ -15,7 +17,19 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textoDinheiro;
 
     private bool checarVitoria = false;
-    private bool jogoFinalizado = false; // Evita que vitória e derrota aconteçam juntas
+    private bool jogoFinalizado = false;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
@@ -25,7 +39,7 @@ public class GameManager : MonoBehaviour
         AtualizarTextoInterface();
 
         if (painelVitoria != null) painelVitoria.SetActive(false);
-        if (painelGameOver != null) painelGameOver.SetActive(false); // --- NOVO ---
+        if (painelGameOver != null) painelGameOver.SetActive(false);
     }
 
     void Update()
@@ -66,7 +80,7 @@ public class GameManager : MonoBehaviour
     {
         if (textoDinheiro != null)
         {
-            textoDinheiro.text = "" + dinheiroAtual.ToString();
+            textoDinheiro.text = dinheiroAtual.ToString();
         }
     }
 
@@ -89,7 +103,7 @@ public class GameManager : MonoBehaviour
     void GanharJogo()
     {
         jogoFinalizado = true;
-        Debug.Log("Parabéns! Você defendeu a base de todas as ondas!");
+        Debug.Log("Parabéns! Defendeu o organismo de todas as ameaças!");
         
         if (painelVitoria != null)
         {
@@ -99,19 +113,18 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f; 
     }
 
-    // --- NOVO: Função de Game Over centralizada no GameManager ---
     public void PerderJogo()
     {
         if (jogoFinalizado) return;
         jogoFinalizado = true;
         
-        Debug.Log("Game Over! A base foi destruída.");
+        Debug.Log("Game Over! O organismo foi infectado.");
 
         if (painelGameOver != null)
         {
             painelGameOver.SetActive(true);
         }
 
-        Time.timeScale = 0f; // Pausa o jogo na derrota
+        Time.timeScale = 0f;
     }
 }

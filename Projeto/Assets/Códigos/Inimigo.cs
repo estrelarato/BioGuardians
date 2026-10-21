@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Inimigo : MonoBehaviour
 {
@@ -14,8 +13,8 @@ public class Inimigo : MonoBehaviour
     [Header("Economia")]
     public int recompensaMoedas = 20;
 
-    [Header("Interface (Barra de Vida)")]
-    public Image barraDeVidaPreenchimento;
+    [Header("Gerenciador de Barra de Vida")]
+    public BarraDeVidaInimigo barraDeVida;
 
     [Header("Visual")]
     public SpriteRenderer spriteRenderer;
@@ -25,18 +24,31 @@ public class Inimigo : MonoBehaviour
     private int indiceCaminhoAtual = 0;
     private float posicaoAnteriorX;
 
-    void Start()
+    void Awake()
     {
         vidaAtual = vidaMaxima;
-        AtualizarBarraDeVida();
+    }
 
-        // Tenta obter o SpriteRenderer automaticamente caso não esteja atribuído no Inspector
+    void Start()
+    {
         if (spriteRenderer == null)
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
+        // Tenta encontrar o script da barra de vida nos filhos caso não esteja arrastado no Inspector
+        if (barraDeVida == null)
+        {
+            barraDeVida = GetComponentInChildren<BarraDeVidaInimigo>();
+        }
+
         posicaoAnteriorX = transform.position.x;
+        
+        // Atualiza a barra assim que nasce
+        if (barraDeVida != null)
+        {
+            barraDeVida.AtualizarBarra();
+        }
     }
 
     void Update()
@@ -48,7 +60,6 @@ public class Inimigo : MonoBehaviour
             Transform alvoAtual = caminhos[indiceCaminhoAtual];
             transform.position = Vector2.MoveTowards(transform.position, alvoAtual.position, velocidade * Time.deltaTime);
 
-            // --- Lógica de Flip do Sprite ---
             AtualizarFlipSprite();
 
             if (Vector2.Distance(transform.position, alvoAtual.position) < 0.1f)
@@ -62,20 +73,11 @@ public class Inimigo : MonoBehaviour
     {
         float deslocamentoX = transform.position.x - posicaoAnteriorX;
 
-        // Margem de segurança para evitar flicker se estiver parado/alinhado no eixo X
         if (Mathf.Abs(deslocamentoX) > 0.001f)
         {
             if (spriteRenderer != null)
             {
-                // Inverte se estiver indo para a esquerda (assumindo sprite original virado para a direita)
                 spriteRenderer.flipX = (deslocamentoX < 0);
-            }
-            else
-            {
-                // Alternativa invertendo a escala no eixo X
-                Vector3 escala = transform.localScale;
-                escala.x = deslocamentoX < 0 ? -Mathf.Abs(escala.x) : Mathf.Abs(escala.x);
-                transform.localScale = escala;
             }
         }
 
@@ -95,7 +97,11 @@ public class Inimigo : MonoBehaviour
         float danoFinal = Mathf.Max(quantidade - defesa, 0);
         vidaAtual -= danoFinal;
 
-        AtualizarBarraDeVida();
+        // Avisa o script da barra para recalcular o preenchimento visual
+        if (barraDeVida != null)
+        {
+            barraDeVida.AtualizarBarra();
+        }
 
         if (vidaAtual <= 0)
         {
@@ -108,14 +114,6 @@ public class Inimigo : MonoBehaviour
             }
 
             Morrer();
-        }
-    }
-
-    void AtualizarBarraDeVida()
-    {
-        if (barraDeVidaPreenchimento != null)
-        {
-            barraDeVidaPreenchimento.fillAmount = vidaAtual / vidaMaxima;
         }
     }
 
@@ -132,7 +130,7 @@ public class Inimigo : MonoBehaviour
 
             if (sistemaVida != null)
             {
-                sistemaVida.TomarDano((int)dano); 
+                sistemaVida.TomarDano((int)dano);
             }
 
             Destroy(gameObject);

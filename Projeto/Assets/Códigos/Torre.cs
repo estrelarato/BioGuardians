@@ -16,7 +16,7 @@ public class Torre : MonoBehaviour
     public Animator animadorAtirador; // Personagem, canhão ou topo
 
     [Header("Configurações de Animação")]
-    public float duracaoAnimacaoAtaque = 0.3f; // Tempo que a bool "EstaAtirando" fica true
+    public float duracaoAnimacaoAtaque = 0.3f;
 
     [Header("Projétil")]
     public GameObject prefabProjetil;
@@ -43,7 +43,6 @@ public class Torre : MonoBehaviour
         }
     }
 
-    // Controla o estado continuo (Idle / Alerta) em AMBOS os animadores
     void AtualizarAnimacoesEstado(bool emAlerta)
     {
         if (animadorTorre != null)
@@ -55,7 +54,6 @@ public class Torre : MonoBehaviour
 
     void Atacar()
     {
-        // Se disparar novamente antes do tempo acabar, reinicia a corrotina
         if (corrotinaAtaque != null)
         {
             StopCoroutine(corrotinaAtaque);
@@ -67,16 +65,13 @@ public class Torre : MonoBehaviour
         tempoProximoAtaque = Time.time + 1f / taxaAtaque;
     }
 
-    // Liga a bool "EstaAtirando" em ambos as partes e desliga apos o tempo definido
     private IEnumerator ControladorBoolAtaque()
     {
-        // 1. Ativa a animação de tiro nas duas partes
         if (animadorTorre != null) animadorTorre.SetBool("EstaAtirando", true);
         if (animadorAtirador != null) animadorAtirador.SetBool("EstaAtirando", true);
 
         yield return new WaitForSeconds(duracaoAnimacaoAtaque);
 
-        // 2. Retorna para a animação normal/alerta nas duas partes
         if (animadorTorre != null) animadorTorre.SetBool("EstaAtirando", false);
         if (animadorAtirador != null) animadorAtirador.SetBool("EstaAtirando", false);
     }
