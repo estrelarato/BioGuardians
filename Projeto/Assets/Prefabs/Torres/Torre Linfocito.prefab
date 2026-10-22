@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 3025112442214336137}
   - component: {fileID: 8221823506810447784}
   - component: {fileID: 7687980509940701915}
+  - component: {fileID: 4499015786424242000}
   m_Layer: 0
   m_Name: Torre Linfocito
   m_TagString: Untagged
@@ -268,6 +269,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4499015786424242000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036786002787417478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2478b51f39bf3f1408469ee63d9347c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TorreControleVenda
+  valorVenda: 5
 --- !u!1 &8658346951230163916
 GameObject:
   m_ObjectHideFlags: 0

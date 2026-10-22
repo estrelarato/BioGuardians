@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 6787265587898890083}
   - component: {fileID: -5502302038275368637}
   - component: {fileID: -2442678665067667283}
+  - component: {fileID: 1658390125295204276}
   m_Layer: 0
   m_Name: Torre Neutrofila
   m_TagString: Untagged
@@ -173,6 +174,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1658390125295204276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618032488153614269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2478b51f39bf3f1408469ee63d9347c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TorreControleVenda
+  valorVenda: 10
 --- !u!1 &4699369152237885776
 GameObject:
   m_ObjectHideFlags: 0
