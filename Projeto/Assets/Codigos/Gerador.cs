@@ -3,7 +3,11 @@ using UnityEngine.InputSystem;
 
 public class Gerador : MonoBehaviour
 {
-    public GameObject prefabPadrao; 
+    [Header("Prefabs das Torres")]
+    public GameObject prefabPadrao;
+    public GameObject prefabTorreATP;
+    public GameObject prefabTorreLento;
+
     private GameObject objetoAtual;
 
     void Update()
@@ -11,11 +15,13 @@ public class Gerador : MonoBehaviour
         if (objetoAtual == null)
             return;
 
+        // Converte a posição do cursor/mouse para o mundo 2D
         Vector3 mundo = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         mundo.z = 0;
 
         objetoAtual.transform.position = mundo;
 
+        // Ao clicar com o botão esquerdo para posicionar a torre
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Collider2D local = Physics2D.OverlapPoint(mundo);
@@ -25,20 +31,13 @@ public class Gerador : MonoBehaviour
                 objetoAtual.transform.position = local.transform.position;
 
                 // --- FINALIZA A CONSTRUÇÃO ---
-                Torre torreNormal = objetoAtual.GetComponent<Torre>();
-                if (torreNormal != null) torreNormal.emConstrucao = false;
+                DefinirEstadoConstrucao(objetoAtual, false);
 
-                TorreN torreNova = objetoAtual.GetComponent<TorreN>();
-                if (torreNova != null) torreNova.emConstrucao = false;
-
-                TorreMacrofaga torreMacrofaga = objetoAtual.GetComponent<TorreMacrofaga>();
-                if (torreMacrofaga != null) torreMacrofaga.emConstrucao = false;
-
-                // Ativa o colisor da torre posicionada
-                Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
-                if (colisorTorre != null)
+                // Reativa TODOS os colisores da torre assim que é posicionada
+                Collider2D[] colisores = objetoAtual.GetComponents<Collider2D>();
+                foreach (Collider2D col in colisores)
                 {
-                    colisorTorre.enabled = true;
+                    col.enabled = true;
                 }
 
                 objetoAtual = null;
@@ -46,10 +45,24 @@ public class Gerador : MonoBehaviour
         }
     }
 
+    #region Métodos de Chamada para Botões da UI
+
     public void CriarObjeto()
     {
         CriarTorreEspecifica(prefabPadrao);
     }
+
+    public void CriarTorreATP()
+    {
+        CriarTorreEspecifica(prefabTorreATP);
+    }
+
+    public void CriarTorreLento()
+    {
+        CriarTorreEspecifica(prefabTorreLento);
+    }
+
+    #endregion
 
     public void CriarTorreEspecifica(GameObject prefabEscolhido)
     {
@@ -58,7 +71,6 @@ public class Gerador : MonoBehaviour
         if (objetoAtual == null)
         {
             GameManager gameManager = FindFirstObjectByType<GameManager>();
-            
             int custoTorre = ObterCustoDaTorre(prefabEscolhido);
 
             if (gameManager != null && custoTorre > 0)
@@ -68,26 +80,43 @@ public class Gerador : MonoBehaviour
                     objetoAtual = Instantiate(prefabEscolhido);
 
                     // --- INICIA A CONSTRUÇÃO ---
-                    Torre torreNormal = objetoAtual.GetComponent<Torre>();
-                    if (torreNormal != null) torreNormal.emConstrucao = true;
+                    DefinirEstadoConstrucao(objetoAtual, true);
 
-                    TorreN torreNova = objetoAtual.GetComponent<TorreN>();
-                    if (torreNova != null) torreNova.emConstrucao = true;
-
-                    TorreMacrofaga torreMacrofaga = objetoAtual.GetComponent<TorreMacrofaga>();
-                    if (torreMacrofaga != null) torreMacrofaga.emConstrucao = true;
-
-                    // Desativa o colisor durante o posicionamento
-                    Collider2D colisorTorre = objetoAtual.GetComponent<Collider2D>();
-                    if (colisorTorre != null)
+                    // Desativa TODOS os colisores para impedir que a torre interaja/abra menu enquanto é arrastada
+                    Collider2D[] colisores = objetoAtual.GetComponents<Collider2D>();
+                    foreach (Collider2D col in colisores)
                     {
-                        colisorTorre.enabled = false;
+                        col.enabled = false;
                     }
                 }
             }
         }
     }
 
+    /// <summary>
+    /// Altera o estado 'emConstrucao' do script presente no prefab da torre
+    /// </summary>
+    private void DefinirEstadoConstrucao(GameObject torreObj, bool estado)
+    {
+        Torre torreNormal = torreObj.GetComponent<Torre>();
+        if (torreNormal != null) torreNormal.emConstrucao = estado;
+
+        TorreN torreNova = torreObj.GetComponent<TorreN>();
+        if (torreNova != null) torreNova.emConstrucao = estado;
+
+        TorreMacrofaga torreMacrofaga = torreObj.GetComponent<TorreMacrofaga>();
+        if (torreMacrofaga != null) torreMacrofaga.emConstrucao = estado;
+
+        TorreGeradoraATP torreATP = torreObj.GetComponent<TorreGeradoraATP>();
+        if (torreATP != null) torreATP.emConstrucao = estado;
+
+        TorreDesaceleradora torreLento = torreObj.GetComponent<TorreDesaceleradora>();
+        if (torreLento != null) torreLento.emConstrucao = estado;
+    }
+
+    /// <summary>
+    /// Procura o custo configurado na torre correspondente
+    /// </summary>
     private int ObterCustoDaTorre(GameObject prefab)
     {
         Torre torreNormal = prefab.GetComponent<Torre>();
@@ -98,6 +127,12 @@ public class Gerador : MonoBehaviour
 
         TorreMacrofaga torreMacrofaga = prefab.GetComponent<TorreMacrofaga>();
         if (torreMacrofaga != null) return torreMacrofaga.custo;
+
+        TorreGeradoraATP torreATP = prefab.GetComponent<TorreGeradoraATP>();
+        if (torreATP != null) return torreATP.custo;
+
+        TorreDesaceleradora torreLento = prefab.GetComponent<TorreDesaceleradora>();
+        if (torreLento != null) return torreLento.custo;
 
         return 0;
     }

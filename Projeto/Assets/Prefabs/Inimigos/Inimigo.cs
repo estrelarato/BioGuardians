@@ -58,6 +58,9 @@ public class Inimigo : MonoBehaviour
         if (caminhos != null && indiceCaminhoAtual < caminhos.Length)
         {
             Transform alvoAtual = caminhos[indiceCaminhoAtual];
+            
+            // A movimentação usa diretamente a variável 'velocidade', 
+            // portanto responderá instantaneamente quando o 'EfeitoLento' alterar o valor!
             transform.position = Vector2.MoveTowards(transform.position, alvoAtual.position, velocidade * Time.deltaTime);
 
             AtualizarFlipSprite();
@@ -94,6 +97,7 @@ public class Inimigo : MonoBehaviour
     {
         if (!estaVivo) return;
 
+        // Correção do cálculo de dano (subtraindo a defesa)
         float danoFinal = Mathf.Max(quantidade - defesa, 0);
         vidaAtual -= danoFinal;
 

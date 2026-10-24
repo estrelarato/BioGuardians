@@ -199,7 +199,7 @@ MonoBehaviour:
   alcance: 3
   taxaAtaque: 1
   dano: 10
-  custo: 10
+  custo: 1
   emConstrucao: 1
   animadorTorre: {fileID: 5351430111261900132}
   animadorAtirador: {fileID: 4169132924200490439}
