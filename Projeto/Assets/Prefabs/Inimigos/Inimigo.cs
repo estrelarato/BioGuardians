@@ -19,10 +19,10 @@ public class Inimigo : MonoBehaviour
     [Header("Visual")]
     public SpriteRenderer spriteRenderer;
 
-    private bool estaVivo = true;
-    private Transform[] caminhos;
-    private int indiceCaminhoAtual = 0;
-    private float posicaoAnteriorX;
+    protected bool estaVivo = true;
+    protected Transform[] caminhos;
+    protected int indiceCaminhoAtual = 0;
+    protected float posicaoAnteriorX;
 
     void Awake()
     {
@@ -51,7 +51,7 @@ public class Inimigo : MonoBehaviour
         }
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (!estaVivo) return;
 
