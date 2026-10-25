@@ -4,40 +4,179 @@ using UnityEngine;
 
 public class BossStaphylococcus : Inimigo
 {
-    [Header("Configurações do Escudo (Aura)")]
+    public enum TipoDano { Tipo1, Tipo2, Verdadeiro }
+
+    [Header("Mecânica: Resistências")]
+    [Range(0f, 1f)] public float resistenciaTipo1 = 0.70f;
+    [Range(0f, 1f)] public float resistenciaTipo2 = 0.35f;
+
+    [Header("Mecânica: Barreira de Sangue Coagulado")]
+    public float vidaBarreiraMaxima = 150f;
+    public float vidaBarreiraAtual;
+    public float intervaloCriarBarreira = 12f;
+    public GameObject objetoVisualBarreira;
+    private bool barreiraAtiva = false;
+    private float tempoProximaBarreira;
+
+    [Header("Mecânica: Divisão ao Morrer")]
+    public GameObject prefabSAureusComum;
+    public int quantidadeMinionsAoMorrer = 5;
+
+    [Header("Configurações da Aura de Desaceleração")]
     public float raioEscudo = 4f;
     public float FatorDesaceleracaoTorre = 0.5f;
     public GameObject objetoVisualEscudo;
     public LayerMask layerTorres;
 
-    [Header("Configurações de Invocação (Minions)")]
+    [Header("Configurações de Invocação Passiva (Minions)")]
     public GameObject prefabMinion;
     public int quantidadeMinionsPorInvocacao = 3;
 
-    private bool escudoAtivo = false;
+    private bool auraAtiva = false;
     private float proximaPorcentagemInvocacao = 0.75f;
     private Dictionary<MonoBehaviour, float> taxasAtaqueOriginais = new Dictionary<MonoBehaviour, float>();
     private Dictionary<TorreN, float> temposSpawnOriginais = new Dictionary<TorreN, float>();
+
+    void Awake()
+    {
+        vidaAtual = vidaMaxima;
+        vidaBarreiraAtual = 0f;
+    }
+
+    void Start()
+    {
+        if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
+        if (barraDeVida == null) barraDeVida = GetComponentInChildren<BarraDeVidaInimigo>();
+
+        posicaoAnteriorX = transform.position.x;
+
+        if (barraDeVida != null) barraDeVida.AtualizarBarra();
+
+        tempoProximaBarreira = Time.time + intervaloCriarBarreira;
+    }
 
     protected override void Update()
     {
         base.Update();
 
-        ChecarHabilidadesPorVida();
+        if (!estaVivo) return;
 
-        if (escudoAtivo)
+        ChecarHabilidadesPorVida();
+        GerenciarBarreiraCoagulo();
+
+        if (auraAtiva)
         {
             AplicarEfeitoDesaceleracaoTorres();
         }
     }
 
+    #region Mecânica: Barreira e Dano
+
+    void GerenciarBarreiraCoagulo()
+    {
+        if (!barreiraAtiva && Time.time >= tempoProximaBarreira)
+        {
+            AtivarBarreiraCoagulo();
+        }
+    }
+
+    void AtivarBarreiraCoagulo()
+    {
+        barreiraAtiva = true;
+        vidaBarreiraAtual = vidaBarreiraMaxima;
+
+        if (objetoVisualBarreira != null)
+        {
+            objetoVisualBarreira.SetActive(true);
+        }
+    }
+
+    public void ReceberDanoComTipo(float quantidade, TipoDano tipo)
+    {
+        if (!estaVivo) return;
+
+        float danoCalculado = quantidade;
+        if (tipo == TipoDano.Tipo1) danoCalculado *= (1f - resistenciaTipo1);
+        else if (tipo == TipoDano.Tipo2) danoCalculado *= (1f - resistenciaTipo2);
+
+        float danoFinal = Mathf.Max(danoCalculado - defesa, 0);
+
+        if (barreiraAtiva)
+        {
+            if (danoFinal >= vidaBarreiraAtual)
+            {
+                danoFinal -= vidaBarreiraAtual;
+                vidaBarreiraAtual = 0;
+                barreiraAtiva = false;
+
+                if (objetoVisualBarreira != null) objetoVisualBarreira.SetActive(false);
+                tempoProximaBarreira = Time.time + intervaloCriarBarreira;
+            }
+            else
+            {
+                vidaBarreiraAtual -= danoFinal;
+                danoFinal = 0;
+            }
+        }
+
+        if (danoFinal > 0)
+        {
+            vidaAtual -= danoFinal;
+
+            if (barraDeVida != null) barraDeVida.AtualizarBarra();
+
+            if (vidaAtual <= 0)
+            {
+                estaVivo = false;
+
+                GameManager gameManager = FindFirstObjectByType<GameManager>();
+                if (gameManager != null) gameManager.GanharDinheiro(recompensaMoedas);
+
+                DividirEMorrer();
+            }
+        }
+    }
+
+    #endregion
+
+    #region Mecânica: Divisão ao Morrer (Corrigido Ponto de Caminho)
+
+    void DividirEMorrer()
+    {
+        RestaurarTorresForaDoAlcance(new HashSet<MonoBehaviour>());
+
+        if (prefabSAureusComum != null)
+        {
+            Transform[] pontosCaminho = ObterPontosCaminho();
+
+            for (int i = 0; i < quantidadeMinionsAoMorrer; i++)
+            {
+                Vector3 posicaoSpawn = transform.position + new Vector3(Random.Range(-0.4f, 0.4f), Random.Range(-0.4f, 0.4f), 0);
+                GameObject minionObj = Instantiate(prefabSAureusComum, posicaoSpawn, Quaternion.identity);
+
+                Inimigo minionScript = minionObj.GetComponent<Inimigo>();
+                if (minionScript != null)
+                {
+                    // Passa o caminho e o índice do ponto atual em que o Boss morreu!
+                    minionScript.DefinirCaminho(pontosCaminho, indiceCaminhoAtual);
+                }
+            }
+        }
+
+        Destroy(gameObject);
+    }
+
+    #endregion
+
+    #region Invocação e Aura (Corrigido Ponto de Caminho)
+
     void ChecarHabilidadesPorVida()
     {
         float porcentagemVidaAtual = vidaAtual / vidaMaxima;
 
-        if (!escudoAtivo && porcentagemVidaAtual <= 0.50f)
+        if (!auraAtiva && porcentagemVidaAtual <= 0.50f)
         {
-            AtivarEscudo();
+            AtivarAura();
         }
 
         if (porcentagemVidaAtual <= proximaPorcentagemInvocacao && proximaPorcentagemInvocacao > 0f)
@@ -47,13 +186,10 @@ public class BossStaphylococcus : Inimigo
         }
     }
 
-    void AtivarEscudo()
+    void AtivarAura()
     {
-        escudoAtivo = true;
-        if (objetoVisualEscudo != null)
-        {
-            objetoVisualEscudo.SetActive(true);
-        }
+        auraAtiva = true;
+        if (objetoVisualEscudo != null) objetoVisualEscudo.SetActive(true);
     }
 
     void InvocarmInions()
@@ -68,7 +204,8 @@ public class BossStaphylococcus : Inimigo
             Inimigo minionScript = minionObj.GetComponent<Inimigo>();
             if (minionScript != null)
             {
-                minionScript.DefinirCaminho(ObterPontosCaminho());
+                // Passa o caminho e o índice do ponto atual
+                minionScript.DefinirCaminho(ObterPontosCaminho(), indiceCaminhoAtual);
             }
         }
     }
@@ -80,7 +217,7 @@ public class BossStaphylococcus : Inimigo
         {
             return gerenciador.PontosDeCaminho;
         }
-        return null;
+        return caminhos;
     }
 
     void AplicarEfeitoDesaceleracaoTorres()
@@ -141,10 +278,7 @@ public class BossStaphylococcus : Inimigo
             }
         }
 
-        foreach (var t in torresParaRemover)
-        {
-            taxasAtaqueOriginais.Remove(t);
-        }
+        foreach (var t in torresParaRemover) taxasAtaqueOriginais.Remove(t);
 
         List<TorreN> torresNParaRemover = new List<TorreN>();
         foreach (var par in temposSpawnOriginais)
@@ -156,11 +290,10 @@ public class BossStaphylococcus : Inimigo
             }
         }
 
-        foreach (var tn in torresNParaRemover)
-        {
-            temposSpawnOriginais.Remove(tn);
-        }
+        foreach (var tn in torresNParaRemover) temposSpawnOriginais.Remove(tn);
     }
+
+    #endregion
 
     private void OnDestroy()
     {

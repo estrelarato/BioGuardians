@@ -59,8 +59,7 @@ public class Inimigo : MonoBehaviour
         {
             Transform alvoAtual = caminhos[indiceCaminhoAtual];
             
-            // A movimentação usa diretamente a variável 'velocidade', 
-            // portanto responderá instantaneamente quando o 'EfeitoLento' alterar o valor!
+            // A movimentação usa diretamente a variável 'velocidade'
             transform.position = Vector2.MoveTowards(transform.position, alvoAtual.position, velocidade * Time.deltaTime);
 
             AtualizarFlipSprite();
@@ -87,17 +86,29 @@ public class Inimigo : MonoBehaviour
         posicaoAnteriorX = transform.position.x;
     }
 
+    /// <summary>
+    /// Define o caminho começando do primeiro ponto (0)
+    /// </summary>
     public void DefinirCaminho(Transform[] pontosDeCaminho)
     {
         caminhos = pontosDeCaminho;
         indiceCaminhoAtual = 0;
     }
 
+    /// <summary>
+    /// Sobrecarga: Define o caminho a partir de um ponto específico da rota (para minions de Boss)
+    /// </summary>
+    public void DefinirCaminho(Transform[] pontosDeCaminho, int pontoInicial)
+    {
+        caminhos = pontosDeCaminho;
+        indiceCaminhoAtual = pontoInicial;
+    }
+
     public void ReceberDano(float quantidade)
     {
         if (!estaVivo) return;
 
-        // Correção do cálculo de dano (subtraindo a defesa)
+        // Cálculo de dano subtraindo a defesa
         float danoFinal = Mathf.Max(quantidade - defesa, 0);
         vidaAtual -= danoFinal;
 

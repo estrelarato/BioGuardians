@@ -115,7 +115,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 51
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -149,7 +149,7 @@ MonoBehaviour:
   animadorTorre: {fileID: 0}
   animadorAtirador: {fileID: 0}
   duracaoAnimacaoAtaque: 0.3
-  prefabProjetil: {fileID: 4732030833341360399, guid: d49cd0b1a76e17d42902eb67c163d05a, type: 3}
+  prefabProjetil: {fileID: 4732030833341360399, guid: 6083a8c68f956b4449e362fb9d229f17, type: 3}
   pontoDisparo: {fileID: 6593057690467662429}
 --- !u!114 &8975743267190801025
 MonoBehaviour:
