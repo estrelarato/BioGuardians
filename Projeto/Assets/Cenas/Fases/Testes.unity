@@ -2859,7 +2859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -255, y: 238.39}
+  m_AnchoredPosition: {x: 523.5415, y: -224.52657}
   m_SizeDelta: {x: 121.03, y: 28.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &891380930
@@ -3606,8 +3606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GerenciadorOndas
   ondas:
-  - prefabsInimigos:
-    - {fileID: 6960274273149767985, guid: 459d8a025c47cbb4eabe2faa0025d93d, type: 3}
+  - prefabsInimigos: []
     quantidade: 1
     intervalo: 2
   - prefabsInimigos: []
@@ -4585,7 +4584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -304, y: 238.39}
+  m_AnchoredPosition: {x: 474.54156, y: -224.52663}
   m_SizeDelta: {x: 121.03, y: 28.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1596667401
@@ -4857,6 +4856,7 @@ MonoBehaviour:
   - prefabsInimigos:
     - {fileID: 4031656386603330090, guid: e7076698ed6674f45b6cdbbefa3b7ed2, type: 3}
     - {fileID: 1341494652975857643, guid: c1424548a9522e649afd2472bc49d534, type: 3}
+    - {fileID: 480608993905014199, guid: 98311370ca446024bb8a22e2db7264b6, type: 3}
     - {fileID: 480608993905014199, guid: 98311370ca446024bb8a22e2db7264b6, type: 3}
     quantidade: 1
     intervalo: 2

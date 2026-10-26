@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 8975743267190801025}
   - component: {fileID: 2099661170055387049}
   - component: {fileID: 6298973232372559356}
+  - component: {fileID: -7073109569322639766}
   m_Layer: 0
   m_Name: "TorreLentid\xE3o"
   m_TagString: Untagged
@@ -246,3 +247,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-7073109569322639766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3633589927422000194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2478b51f39bf3f1408469ee63d9347c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TorreControleVenda
+  valorVenda: 50
