@@ -5,6 +5,7 @@ public class TropaNeutrofila : MonoBehaviour
     [Header("Configurações do Minion")]
     public float velocidade = 4f;
     public float dano = 25f;
+    public TipoDano tipoDano = TipoDano.Enzimatico; // Neutrófilos explodem liberando enzimas
     public float raioExplosao = 1.5f;
     public float raioDeteccao = 5f;
     public float distanciaParaExplodir = 0.5f;
@@ -35,14 +36,12 @@ public class TropaNeutrofila : MonoBehaviour
         {
             AtualizarAnimacao(true);
 
-            // Move-se diretamente para o alvo
             transform.position = Vector2.MoveTowards(
                 transform.position, 
                 alvoAtual.position, 
                 velocidade * Time.deltaTime
             );
 
-            // Flip do sprite baseado no movimento horizontal
             float direcaoX = alvoAtual.position.x - transform.position.x;
             AtualizarFlipSprite(direcaoX);
 
@@ -97,7 +96,6 @@ public class TropaNeutrofila : MonoBehaviour
     {
         estaExplodindo = true;
 
-        // Desativa colisor para não causar múltiplos impactos
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
 
@@ -117,13 +115,11 @@ public class TropaNeutrofila : MonoBehaviour
             Inimigo inimigo = colisor.GetComponent<Inimigo>();
             if (inimigo != null)
             {
-                // Aplica o dano diretamente no inimigo atingido
-                inimigo.ReceberDano(dano);
+                inimigo.ReceberDano(dano, tipoDano);
             }
         }
     }
 
-    // Método chamado diretamente pelo Animation Event no último frame de 'N-explode'
     public void DestruirAposAnimacao()
     {
         Destroy(gameObject);

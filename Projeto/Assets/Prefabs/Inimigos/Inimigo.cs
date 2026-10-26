@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-    [Header("Atributos")]
+    [Header("Atributos Básicos")]
     public float vidaMaxima = 100f;
     public float vidaAtual;
-
     public float velocidade = 2f;
     public float dano = 10f;
-    public float defesa = 0f;
+
+    [Header("Resistências Biológicas (0.0 = 0% a 1.0 = 100%)")]
+    [Range(0f, 1f)] public float resistenciaFagocito = 0f;  // Reduz dano de Fagócito (ex: Cápsula espessa)
+    [Range(0f, 1f)] public float resistenciaEnzimatica = 0f; // Reduz dano Enzimático (ex: Inativação de enzimas)
 
     [Header("Economia")]
     public int recompensaMoedas = 20;
@@ -32,23 +34,15 @@ public class Inimigo : MonoBehaviour
     void Start()
     {
         if (spriteRenderer == null)
-        {
             spriteRenderer = GetComponent<SpriteRenderer>();
-        }
 
-        // Tenta encontrar o script da barra de vida nos filhos caso não esteja arrastado no Inspector
         if (barraDeVida == null)
-        {
             barraDeVida = GetComponentInChildren<BarraDeVidaInimigo>();
-        }
 
         posicaoAnteriorX = transform.position.x;
         
-        // Atualiza a barra assim que nasce
         if (barraDeVida != null)
-        {
             barraDeVida.AtualizarBarra();
-        }
     }
 
     protected virtual void Update()
@@ -58,8 +52,6 @@ public class Inimigo : MonoBehaviour
         if (caminhos != null && indiceCaminhoAtual < caminhos.Length)
         {
             Transform alvoAtual = caminhos[indiceCaminhoAtual];
-            
-            // A movimentação usa diretamente a variável 'velocidade'
             transform.position = Vector2.MoveTowards(transform.position, alvoAtual.position, velocidade * Time.deltaTime);
 
             AtualizarFlipSprite();
@@ -74,60 +66,61 @@ public class Inimigo : MonoBehaviour
     void AtualizarFlipSprite()
     {
         float deslocamentoX = transform.position.x - posicaoAnteriorX;
-
-        if (Mathf.Abs(deslocamentoX) > 0.001f)
+        if (Mathf.Abs(deslocamentoX) > 0.001f && spriteRenderer != null)
         {
-            if (spriteRenderer != null)
-            {
-                spriteRenderer.flipX = (deslocamentoX < 0);
-            }
+            spriteRenderer.flipX = (deslocamentoX < 0);
         }
-
         posicaoAnteriorX = transform.position.x;
     }
 
-    /// <summary>
-    /// Define o caminho começando do primeiro ponto (0)
-    /// </summary>
     public void DefinirCaminho(Transform[] pontosDeCaminho)
     {
         caminhos = pontosDeCaminho;
         indiceCaminhoAtual = 0;
     }
 
-    /// <summary>
-    /// Sobrecarga: Define o caminho a partir de um ponto específico da rota (para minions de Boss)
-    /// </summary>
     public void DefinirCaminho(Transform[] pontosDeCaminho, int pontoInicial)
     {
         caminhos = pontosDeCaminho;
         indiceCaminhoAtual = pontoInicial;
     }
 
-    public void ReceberDano(float quantidade)
+    /// <summary>
+    /// Recebe o dano calculando a resistência correspondente (Fagócito ou Enzimático)
+    /// </summary>
+    public void ReceberDano(float quantidade, TipoDano tipoDano = TipoDano.Fagocito)
     {
         if (!estaVivo) return;
 
-        // Cálculo de dano subtraindo a defesa
-        float danoFinal = Mathf.Max(quantidade - defesa, 0);
-        vidaAtual -= danoFinal;
+        float danoCalculado = quantidade;
 
-        // Avisa o script da barra para recalcular o preenchimento visual
-        if (barraDeVida != null)
+        switch (tipoDano)
         {
-            barraDeVida.AtualizarBarra();
+            case TipoDano.Fagocito:
+                danoCalculado = quantidade * (1f - resistenciaFagocito);
+                break;
+            case TipoDano.Enzimatico:
+                danoCalculado = quantidade * (1f - resistenciaEnzimatica);
+                break;
+            case TipoDano.Verdadeiro:
+                danoCalculado = quantidade;
+                break;
         }
+
+        danoCalculado = Mathf.Max(danoCalculado, 0);
+        vidaAtual -= danoCalculado;
+
+        if (barraDeVida != null)
+            barraDeVida.AtualizarBarra();
 
         if (vidaAtual <= 0)
         {
             estaVivo = false;
-
             GameManager gameManager = FindFirstObjectByType<GameManager>();
             if (gameManager != null)
             {
                 gameManager.GanharDinheiro(recompensaMoedas);
             }
-
             Morrer();
         }
     }
@@ -142,12 +135,10 @@ public class Inimigo : MonoBehaviour
         if (other.CompareTag("FimDoCaminho"))
         {
             VidaDoJogador sistemaVida = FindFirstObjectByType<VidaDoJogador>();
-
             if (sistemaVida != null)
             {
                 sistemaVida.TomarDano((int)dano);
             }
-
             Destroy(gameObject);
         }
     }

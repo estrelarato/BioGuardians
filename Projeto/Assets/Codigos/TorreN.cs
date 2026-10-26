@@ -23,14 +23,14 @@ public class TorreN : MonoBehaviour
     private float tempoProximoSpawn = 0f;
     private Coroutine corrotinaSpawn;
 
-    // Lista individual para esta torre controlar suas próprias tropas
+    // Lista individual para esta torre controlar as suas próprias tropas
     private List<GameObject> minhasTropas = new List<GameObject>();
 
     void Update()
     {
         if (emConstrucao) return;
 
-        // Limpa referências de tropas que foram destruídas (explodiram/morreram)
+        // Limpa referências de tropas destruídas (que explodiram ou morreram)
         LimparListaTropas();
 
         if (Time.time >= tempoProximoSpawn)
@@ -44,13 +44,13 @@ public class TorreN : MonoBehaviour
 
     void LimparListaTropas()
     {
-        // Remove da lista os objetos que já foram destruídos da cena
+        // Remove da lista os objetos destruídos na cena
         minhasTropas.RemoveAll(tropa => tropa == null);
     }
 
     bool PodeSpawnar()
     {
-        // Verifica apenas a quantidade de tropas pertencentes a ESTA torre
+        // Verifica a quantidade de tropas ativas pertencentes a ESTA torre
         return minhasTropas.Count < limiteTropasVivas;
     }
 

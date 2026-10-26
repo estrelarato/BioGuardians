@@ -125,7 +125,8 @@ MonoBehaviour:
   vidaAtual: 30
   velocidade: 1
   dano: 10
-  defesa: 5
+  resistenciaFagocito: 0
+  resistenciaEnzimatica: 0
   recompensaMoedas: 20
   barraDeVida: {fileID: 0}
   spriteRenderer: {fileID: 790880680866372598}

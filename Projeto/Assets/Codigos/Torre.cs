@@ -8,12 +8,13 @@ public class Torre : MonoBehaviour
     public float alcance = 3f;
     public float taxaAtaque = 1f;
     public float dano = 10f;
+    public TipoDano tipoDano = TipoDano.Fagocito;
     public int custo = 50;
     public bool emConstrucao = true;
 
     [Header("Animadores Independentes")]
-    public Animator animadorTorre;    // Base ou estrutura da torre
-    public Animator animadorAtirador; // Personagem, canhão ou topo
+    public Animator animadorTorre;    
+    public Animator animadorAtirador; 
 
     [Header("Configurações de Animação")]
     public float duracaoAnimacaoAtaque = 0.3f;
@@ -86,8 +87,8 @@ public class Torre : MonoBehaviour
         if (projetilNormal != null)
         {
             projetilNormal.dano = this.dano;
+            projetilNormal.tipoDano = this.tipoDano;
             projetilNormal.DefinirAlvo(alvoAtual);
-            return;
         }
     }
 
