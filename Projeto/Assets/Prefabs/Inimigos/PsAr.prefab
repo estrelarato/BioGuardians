@@ -121,12 +121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10eb6c8d24c2ba48a1ee574028afccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo
-  vidaMaxima: 100
-  vidaAtual: 30
-  velocidade: 1
+  vidaMaxima: 15
+  vidaAtual: 15
+  velocidade: 2
   dano: 10
-  resistenciaFagocito: 0
-  resistenciaEnzimatica: 0
+  resistenciaFagocitica: 0
+  resistenciaEnzimatica: 0.5
   recompensaMoedas: 20
   barraDeVida: {fileID: 0}
   spriteRenderer: {fileID: 790880680866372598}

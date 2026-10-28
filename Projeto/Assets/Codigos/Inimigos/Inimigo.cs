@@ -8,9 +8,14 @@ public class Inimigo : MonoBehaviour
     public float velocidade = 2f;
     public float dano = 10f;
 
-    [Header("Resistências Biológicas (0.0 = 0% a 1.0 = 100%)")]
-    [Range(0f, 1f)] public float resistenciaFagocito = 0f;  // Reduz dano de Fagócito (ex: Cápsula espessa)
-    [Range(0f, 1f)] public float resistenciaEnzimatica = 0f; // Reduz dano Enzimático (ex: Inativação de enzimas)
+    [Header("Resistências Biológicas (0 = 0% | 1 = 100%)")]
+    [Range(0f, 1f)] 
+    [Tooltip("Reduz o dano de ataques Fagocíticos/Mecânicos")]
+    public float resistenciaFagocitica = 0f;
+
+    [Range(0f, 1f)] 
+    [Tooltip("Reduz o dano de ataques Enzimáticos/Químicos")]
+    public float resistenciaEnzimatica = 0f;
 
     [Header("Economia")]
     public int recompensaMoedas = 20;
@@ -86,7 +91,7 @@ public class Inimigo : MonoBehaviour
     }
 
     /// <summary>
-    /// Recebe o dano calculando a resistência correspondente (Fagócito ou Enzimático)
+    /// Processa o dano baseado no tipo (Fagocítico, Enzimático ou Verdadeiro)
     /// </summary>
     public void ReceberDano(float quantidade, TipoDano tipoDano = TipoDano.Fagocito)
     {
@@ -97,13 +102,15 @@ public class Inimigo : MonoBehaviour
         switch (tipoDano)
         {
             case TipoDano.Fagocito:
-                danoCalculado = quantidade * (1f - resistenciaFagocito);
+                danoCalculado = quantidade * (1f - resistenciaFagocitica);
                 break;
+
             case TipoDano.Enzimatico:
                 danoCalculado = quantidade * (1f - resistenciaEnzimatica);
                 break;
+
             case TipoDano.Verdadeiro:
-                danoCalculado = quantidade;
+                danoCalculado = quantidade; // Ignora qualquer tipo de resistência
                 break;
         }
 

@@ -106,4 +106,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projetil
   velocidade: 10
-  dano: 2
+  dano: 10
+  tipoDano: 1

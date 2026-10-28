@@ -5,7 +5,9 @@ public class Projetil : MonoBehaviour
     [Header("Atributos do Projétil")]
     public float velocidade = 12f;
     public float dano = 15f;
-    public TipoDano tipoDano = TipoDano.Fagocito;
+
+    [Tooltip("Escolha o tipo de dano deste projétil no Inspector")]
+    public TipoDano tipoDano = TipoDano.Fagocito; 
 
     private Inimigo alvo;
 

@@ -8,9 +8,12 @@ public class TorreMacrofaga : MonoBehaviour
     public float alcance = 2.5f;
     public float taxaAtaque = 0.8f;
     public float dano = 30f;
-    public TipoDano tipoDano = TipoDano.Fagocito;
     public int custo = 75;
     public bool emConstrucao = true;
+
+    [Header("Tipo de Dano (Biológico)")]
+    [Tooltip("Escolha o tipo de dano em área do Macrófago")]
+    public TipoDano tipoDano = TipoDano.Fagocito;
 
     [Header("Configurações do Ataque no Chão")]
     public float raioDanoChao = 2f;
@@ -48,6 +51,7 @@ public class TorreMacrofaga : MonoBehaviour
             Inimigo inimigo = col.GetComponent<Inimigo>();
             if (inimigo != null)
             {
+                // Envia o dano junto com o TipoDano selecionado no Inspector
                 inimigo.ReceberDano(dano, tipoDano);
             }
         }

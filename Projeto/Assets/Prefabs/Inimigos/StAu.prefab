@@ -333,7 +333,8 @@ MonoBehaviour:
   vidaAtual: 15
   velocidade: 2
   dano: 10
-  defesa: 5
+  resistenciaFagocitica: 0.5
+  resistenciaEnzimatica: 0
   recompensaMoedas: 5
   barraDeVida: {fileID: 0}
   spriteRenderer: {fileID: 0}
