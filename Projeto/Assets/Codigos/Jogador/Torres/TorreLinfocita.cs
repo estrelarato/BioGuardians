@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Torre : MonoBehaviour
+public class TorreLinfocita : TorreBase
 {
-    [Header("Configurações Gerais")]
+    [Header("Configurações do Linfócito")]
     public float alcance = 3f;
     public float taxaAtaque = 1f;
     public float dano = 10f;
-    public int custo = 50;
-    public bool emConstrucao = true;
 
     [Header("Tipo de Dano (Biológico)")]
     [Tooltip("Escolha o tipo de dano que esta torre causa aos inimigos")]
@@ -17,7 +15,7 @@ public class Torre : MonoBehaviour
 
     [Header("Animadores Independentes")]
     public Animator animadorTorre;    // Base ou estrutura da torre
-    public Animator animadorAtirador; // Personagem, canhão ou topo
+    public Animator animadorAtirador; // Personagem ou núcleo do Linfócito
 
     [Header("Configurações de Animação")]
     public float duracaoAnimacaoAtaque = 0.3f;
@@ -90,15 +88,14 @@ public class Torre : MonoBehaviour
         if (projetilNormal != null)
         {
             projetilNormal.dano = this.dano;
-            projetilNormal.tipoDano = this.tipoDano; // Passa o TipoDano selecionado para o projétil
+            projetilNormal.tipoDano = this.tipoDano;
             projetilNormal.DefinirAlvo(alvoAtual);
-            return;
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Inimigo inimigo = other.GetComponent<Inimigo>();
+        Inimigo inimigo = other.GetComponentInParent<Inimigo>();
         if (inimigo != null && !inimigosNoAlcance.Contains(inimigo))
         {
             inimigosNoAlcance.Add(inimigo);
@@ -107,7 +104,7 @@ public class Torre : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Inimigo inimigo = other.GetComponent<Inimigo>();
+        Inimigo inimigo = other.GetComponentInParent<Inimigo>();
         if (inimigo != null)
         {
             inimigosNoAlcance.Remove(inimigo);

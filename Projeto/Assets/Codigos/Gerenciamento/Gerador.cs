@@ -9,20 +9,19 @@ public class Gerador : MonoBehaviour
     public GameObject prefabTorreLento;
 
     private GameObject objetoAtual;
-    private int custoObjetoAtual; // Armazena o custo da torre que está sendo arrastada
+    private int custoObjetoAtual;
 
     void Update()
     {
         if (objetoAtual == null)
             return;
 
-        // Converte a posição do cursor/mouse para o mundo 2D
         Vector3 mundo = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         mundo.z = 0;
 
         objetoAtual.transform.position = mundo;
 
-        // --- CANCELAR COMPRA (Botão Direito do Mouse ou Tecla ESC) ---
+        // --- CANCELAR COMPRA (Botão Direito do Mouse ou ESC) ---
         if (Mouse.current.rightButton.wasPressedThisFrame || Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             CancelarConstrucao();
@@ -38,11 +37,11 @@ public class Gerador : MonoBehaviour
             {
                 objetoAtual.transform.position = local.transform.position;
 
-                // Finaliza a construção
+                // Finaliza a construção usando a classe base
                 DefinirEstadoConstrucao(objetoAtual, false);
 
-                // Reativa TODOS os colisores da torre
-                Collider2D[] colisores = objetoAtual.GetComponents<Collider2D>();
+                // Reativa todos os colisores no objeto e nos seus filhos
+                Collider2D[] colisores = objetoAtual.GetComponentsInChildren<Collider2D>();
                 foreach (Collider2D col in colisores)
                 {
                     col.enabled = true;
@@ -54,9 +53,6 @@ public class Gerador : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Cancela a construção atual, devolve o ATP e destrói o objeto fantasma
-    /// </summary>
     public void CancelarConstrucao()
     {
         if (objetoAtual != null)
@@ -64,7 +60,6 @@ public class Gerador : MonoBehaviour
             GameManager gameManager = FindFirstObjectByType<GameManager>();
             if (gameManager != null && custoObjetoAtual > 0)
             {
-                // Devolve o dinheiro gasto ao jogador
                 gameManager.GanharDinheiro(custoObjetoAtual);
             }
 
@@ -88,7 +83,6 @@ public class Gerador : MonoBehaviour
     {
         if (prefabEscolhido == null) return;
 
-        // Se já tiver uma torre no cursor, cancela a anterior antes de criar a nova
         if (objetoAtual != null)
         {
             CancelarConstrucao();
@@ -102,12 +96,12 @@ public class Gerador : MonoBehaviour
             if (gameManager.TentarGastarDinheiro(custoTorre))
             {
                 objetoAtual = Instantiate(prefabEscolhido);
-                custoObjetoAtual = custoTorre; // Guarda quanto custou para eventual reembolso
+                custoObjetoAtual = custoTorre;
 
                 DefinirEstadoConstrucao(objetoAtual, true);
 
                 // Desativa todos os colisores durante o arraste
-                Collider2D[] colisores = objetoAtual.GetComponents<Collider2D>();
+                Collider2D[] colisores = objetoAtual.GetComponentsInChildren<Collider2D>();
                 foreach (Collider2D col in colisores)
                 {
                     col.enabled = false;
@@ -118,39 +112,16 @@ public class Gerador : MonoBehaviour
 
     private void DefinirEstadoConstrucao(GameObject torreObj, bool estado)
     {
-        Torre torreNormal = torreObj.GetComponent<Torre>();
-        if (torreNormal != null) torreNormal.emConstrucao = estado;
-
-        TorreN torreNova = torreObj.GetComponent<TorreN>();
-        if (torreNova != null) torreNova.emConstrucao = estado;
-
-        TorreMacrofaga torreMacrofaga = torreObj.GetComponent<TorreMacrofaga>();
-        if (torreMacrofaga != null) torreMacrofaga.emConstrucao = estado;
-
-        TorreGeradoraATP torreATP = torreObj.GetComponent<TorreGeradoraATP>();
-        if (torreATP != null) torreATP.emConstrucao = estado;
-
-        TorreDesaceleradora torreLento = torreObj.GetComponent<TorreDesaceleradora>();
-        if (torreLento != null) torreLento.emConstrucao = estado;
+        TorreBase torre = torreObj.GetComponent<TorreBase>();
+        if (torre != null)
+        {
+            torre.emConstrucao = estado;
+        }
     }
 
     private int ObterCustoDaTorre(GameObject prefab)
     {
-        Torre torreNormal = prefab.GetComponent<Torre>();
-        if (torreNormal != null) return torreNormal.custo;
-
-        TorreN torreNova = prefab.GetComponent<TorreN>();
-        if (torreNova != null) return torreNova.custo;
-
-        TorreMacrofaga torreMacrofaga = prefab.GetComponent<TorreMacrofaga>();
-        if (torreMacrofaga != null) return torreMacrofaga.custo;
-
-        TorreGeradoraATP torreATP = prefab.GetComponent<TorreGeradoraATP>();
-        if (torreATP != null) return torreATP.custo;
-
-        TorreDesaceleradora torreLento = prefab.GetComponent<TorreDesaceleradora>();
-        if (torreLento != null) return torreLento.custo;
-
-        return 0;
+        TorreBase torre = prefab.GetComponent<TorreBase>();
+        return torre != null ? torre.custo : 0;
     }
 }

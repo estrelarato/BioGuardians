@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8613942229099233349}
   - component: {fileID: 316329322372828101}
-  - component: {fileID: 2112107688534277444}
+  - component: {fileID: 4604088874936864460}
   m_Layer: 0
   m_Name: tiro torre lentidao
   m_TagString: Untagged
@@ -93,7 +93,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &2112107688534277444
+--- !u!114 &4604088874936864460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,9 +102,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4732030833341360399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5f1713eb24c8cd42ba0ffa771b72788, type: 3}
+  m_Script: {fileID: 11500000, guid: 83e83b9fb2031b24984482f6a32b69af, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Projetil
-  velocidade: 10
-  dano: 10
+  m_EditorClassIdentifier: Assembly-CSharp::Magia
+  velocidade: 12
+  dano: 15
   tipoDano: 1

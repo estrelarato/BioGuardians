@@ -1,83 +1,157 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class EfeitoFeiticoArea : MonoBehaviour
+public class TorreGeradoraATP : MonoBehaviour
 {
-    [Header("Tipo de Efeito")]
-    public bool ehDanoInstantaneo = true;
-    public bool ehAreaContinuada = false; // Corrigido: removidos os parênteses do nome
+    [Header("Configurações Gerais")]
+    public int custo = 50;
+    public bool emConstrucao = true;
+    public float tempoConstrucao = 3f;
 
-    [Header("Atributos de Dano")]
-    public float danoOuDanoPorSegundo = 80f;
-    public TipoDano tipoDano = TipoDano.Enzimatico;
-    public float raioDeAlcance = 2.5f;
-    public LayerMask layerInimigos;
+    [Header("Geração de ATP")]
+    public int quantidadeATP = 10;
+    public float tempoEntreGeracoes = 5f;
 
-    [Header("Duração (Apenas para Área Continuada)")]
-    public float duracaoDoEfeito = 5f;
-    public float intervaloTickDano = 0.5f; // Aplica dano a cada 0.5s
+    [Header("Animadores Independentes")]
+    public Animator animadorTorre;    // Base ou estrutura da torre
+    public Animator animadorGerador;  // Topo, núcleo ou detalhes visuais
 
-    [Header("Efeito Visual")]
-    public GameObject efeitoVisualPrefab;
+    [Header("Configurações de Animação")]
+    public float duracaoAnimacaoGeracao = 0.5f;
+
+    [Header("Efeito Visual de Piscada (Flash)")]
+    public SpriteRenderer spriteRenderer; // Arraste o SpriteRenderer aqui pelo Inspector
+    public Color corPiscada = Color.white;  // Cor que ele vai piscar (ex: Color.white ou com Alfa transparente)
+    public float duracaoPiscada = 0.1f;    // Duração rápida do piscar (ex: 100ms)
+
+    private float timerConstrucao;
+    private float timerGeracao;
+    private GameManager gameManager;
+    private Coroutine corrotinaGeracao;
+    private Color corOriginalSprite;
 
     void Start()
     {
-        if (efeitoVisualPrefab != null)
+        gameManager = FindFirstObjectByType<GameManager>();
+
+        if (gameManager == null)
         {
-            Instantiate(efeitoVisualPrefab, transform.position, Quaternion.identity);
+            Debug.LogError("[ERRO] GameManager não foi encontrado na cena!");
         }
 
-        if (ehDanoInstantaneo)
+        // Caso não tenha atribuído o SpriteRenderer no Inspector, tenta pegar no próprio GameObject
+        if (spriteRenderer == null)
         {
-            AplicarDanoInstantaneo();
-            Destroy(gameObject, 1f);
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         }
-        else if (ehAreaContinuada)
+
+        if (spriteRenderer != null)
         {
-            StartCoroutine(RotinaDanoContinuo());
+            corOriginalSprite = spriteRenderer.color;
+        }
+
+        timerConstrucao = tempoConstrucao;
+        timerGeracao = tempoEntreGeracoes;
+    }
+
+    void Update()
+    {
+        if (gameManager == null) return;
+
+        // FASE 1: Aguarda o término da construção
+        if (emConstrucao)
+        {
+            ProcessarConstrucao();
+            AtualizarAnimacoesEstado(emConstrucao: true);
+            return;
+        }
+
+        AtualizarAnimacoesEstado(emConstrucao: false);
+
+        // FASE 2: Processa o ciclo de produção de ATP
+        ProcessarGeracaoATP();
+    }
+
+    void ProcessarConstrucao()
+    {
+        timerConstrucao -= Time.deltaTime;
+
+        if (timerConstrucao <= 0f)
+        {
+            emConstrucao = false;
         }
     }
 
-    void AplicarDanoInstantaneo()
+    void ProcessarGeracaoATP()
     {
-        Collider2D[] atingidos = Physics2D.OverlapCircleAll(transform.position, raioDeAlcance, layerInimigos);
-        foreach (Collider2D col in atingidos)
+        timerGeracao -= Time.deltaTime;
+
+        if (timerGeracao <= 0f)
         {
-            Inimigo inimigo = col.GetComponent<Inimigo>();
-            if (inimigo != null)
-            {
-                inimigo.ReceberDano(danoOuDanoPorSegundo, tipoDano);
-            }
+            GerarATP();
+            timerGeracao = tempoEntreGeracoes; // Reseta o ciclo
         }
     }
 
-    IEnumerator RotinaDanoContinuo()
+    void GerarATP()
     {
-        float tempoDecorrito = 0f;
+        // Adiciona ATP ao GameManager
+        gameManager.GanharDinheiro(quantidadeATP);
 
-        while (tempoDecorrito < duracaoDoEfeito)
+        // Dispara o pulso visual nos animadores e o piscar do sprite
+        if (corrotinaGeracao != null)
         {
-            Collider2D[] atingidos = Physics2D.OverlapCircleAll(transform.position, raioDeAlcance, layerInimigos);
-            foreach (Collider2D col in atingidos)
-            {
-                Inimigo inimigo = col.GetComponent<Inimigo>();
-                if (inimigo != null)
-                {
-                    float danoDoTick = danoOuDanoPorSegundo * intervaloTickDano;
-                    inimigo.ReceberDano(danoDoTick, tipoDano);
-                }
-            }
-
-            yield return new WaitForSeconds(intervaloTickDano);
-            tempoDecorrito += intervaloTickDano;
+            StopCoroutine(corrotinaGeracao);
         }
-
-        Destroy(gameObject);
+        corrotinaGeracao = StartCoroutine(ControladorBoolGeracao());
     }
 
-    private void OnDrawGizmosSelected()
+    private IEnumerator ControladorBoolGeracao()
     {
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(transform.position, raioDeAlcance);
+        // Ativa os parâmetros do Animator
+        if (animadorTorre != null) animadorTorre.SetBool("Gerando", true);
+        if (animadorGerador != null) animadorGerador.SetBool("Gerando", true);
+
+        // Efeito de Piscada Rápida
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = corPiscada;
+        }
+
+        yield return new WaitForSeconds(duracaoPiscada);
+
+        // Volta a cor original do sprite
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = corOriginalSprite;
+        }
+
+        // Aguarda o restante do tempo da animação padrão (se a duração da animação for maior)
+        float tempoRestante = duracaoAnimacaoGeracao - duracaoPiscada;
+        if (tempoRestante > 0f)
+        {
+            yield return new WaitForSeconds(tempoRestante);
+        }
+
+        // Desativa os parâmetros do Animator
+        if (animadorTorre != null) animadorTorre.SetBool("Gerando", false);
+        if (animadorGerador != null) animadorGerador.SetBool("Gerando", false);
+    }
+
+    void AtualizarAnimacoesEstado(bool emConstrucao)
+    {
+        if (animadorTorre != null)
+            animadorTorre.SetBool("EmConstrucao", emConstrucao);
+
+        if (animadorGerador != null)
+            animadorGerador.SetBool("EmConstrucao", emConstrucao);
+    }
+
+    // Utilitários de consulta para UI ou feedbacks visuais
+    public float GetProgressoConstrucao()
+    {
+        if (!emConstrucao) return 1f;
+        return Mathf.Clamp01(1f - (timerConstrucao / tempoConstrucao));
     }
 }

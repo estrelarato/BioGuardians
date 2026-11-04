@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TorreGeradoraATP : MonoBehaviour
+public class TorreAdipocita : TorreBase
 {
     [Header("Configurações Gerais")]
     public int custo = 50;
@@ -12,6 +12,11 @@ public class TorreGeradoraATP : MonoBehaviour
     [Header("Geração de ATP")]
     public int quantidadeATP = 10;
     public float tempoEntreGeracoes = 5f;
+
+    [Header("Feedback Visual")]
+    public SpriteRenderer spriteRenderer; // Arraste o SpriteRenderer aqui pelo Inspector
+    public Color corPiscada = Color.white;
+    public float duracaoPiscada = 0.15f;
 
     [Header("Animadores Independentes")]
     public Animator animadorTorre;    // Base ou estrutura da torre
@@ -24,6 +29,14 @@ public class TorreGeradoraATP : MonoBehaviour
     private float timerGeracao;
     private GameManager gameManager;
     private Coroutine corrotinaGeracao;
+    private Coroutine corrotinaPiscada;
+    private Color corOriginalSprite;
+
+    void Awake()
+    {
+        // Debug para confirmar se a torre está a ser instanciada na cena ao clicar no botão
+        Debug.Log("[TorreAdipocita] Objeto criado com sucesso na cena!");
+    }
 
     void Start()
     {
@@ -32,6 +45,21 @@ public class TorreGeradoraATP : MonoBehaviour
         if (gameManager == null)
         {
             Debug.LogError("[ERRO] GameManager não foi encontrado na cena!");
+        }
+
+        // Tenta obter automaticamente o SpriteRenderer se não tiver sido atribuído no Inspector
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        }
+
+        if (spriteRenderer != null)
+        {
+            corOriginalSprite = spriteRenderer.color;
+        }
+        else
+        {
+            Debug.LogWarning("[AVISO] Nenhum SpriteRenderer foi encontrado na TorreAdipocita!");
         }
 
         timerConstrucao = tempoConstrucao;
@@ -88,6 +116,13 @@ public class TorreGeradoraATP : MonoBehaviour
             StopCoroutine(corrotinaGeracao);
         }
         corrotinaGeracao = StartCoroutine(ControladorBoolGeracao());
+
+        // Dispara a piscadinha rápida no sprite
+        if (corrotinaPiscada != null)
+        {
+            StopCoroutine(corrotinaPiscada);
+        }
+        corrotinaPiscada = StartCoroutine(EfeitoPiscada());
     }
 
     private IEnumerator ControladorBoolGeracao()
@@ -99,6 +134,16 @@ public class TorreGeradoraATP : MonoBehaviour
 
         if (animadorTorre != null) animadorTorre.SetBool("Gerando", false);
         if (animadorGerador != null) animadorGerador.SetBool("Gerando", false);
+    }
+
+    private IEnumerator EfeitoPiscada()
+    {
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = corPiscada;
+            yield return new WaitForSeconds(duracaoPiscada);
+            spriteRenderer.color = corOriginalSprite;
+        }
     }
 
     void AtualizarAnimacoesEstado(bool emConstrucao)
