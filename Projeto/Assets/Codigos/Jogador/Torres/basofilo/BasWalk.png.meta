@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 96a7f4c684486ce499a0a51ddd156d0c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1156562505523505858
+    second: BasWalk_0
+  - first:
+      213: 7884559164490382277
+    second: BasWalk_1
+  - first:
+      213: 4097670093151601616
+    second: BasWalk_2
+  - first:
+      213: -4699895574178175978
+    second: BasWalk_3
+  - first:
+      213: -1677664532654781808
+    second: BasWalk_4
+  - first:
+      213: 2301817566084604974
+    second: BasWalk_5
+  - first:
+      213: -570078410041008388
+    second: BasWalk_6
+  - first:
+      213: 2259835589484875108
+    second: BasWalk_7
+  - first:
+      213: 2624607600279315714
+    second: BasWalk_8
+  - first:
+      213: -7452818320886029925
+    second: BasWalk_9
+  - first:
+      213: 3423569134814088578
+    second: BasWalk_10
+  - first:
+      213: 7654206458602469279
+    second: BasWalk_11
+  - first:
+      213: -5813318374126049264
+    second: BasWalk_12
+  - first:
+      213: -1404303187709772472
+    second: BasWalk_13
+  - first:
+      213: 3400879518332426151
+    second: BasWalk_14
+  - first:
+      213: -6778034616746802914
+    second: BasWalk_15
+  - first:
+      213: 787738022807363232
+    second: BasWalk_16
+  - first:
+      213: -5830041508753477432
+    second: BasWalk_17
+  - first:
+      213: -8588713994336866827
+    second: BasWalk_18
+  - first:
+      213: -5089836042692325324
+    second: BasWalk_19
+  - first:
+      213: -1521279075912581353
+    second: BasWalk_20
+  - first:
+      213: 8515410363928433790
+    second: BasWalk_21
+  - first:
+      213: -2433855790483206574
+    second: BasWalk_22
+  - first:
+      213: 2867161275965423609
+    second: BasWalk_23
+  - first:
+      213: -6186985299467758444
+    second: BasWalk_24
+  - first:
+      213: -2321734756298924027
+    second: BasWalk_25
+  - first:
+      213: 5871476239665751791
+    second: BasWalk_26
+  - first:
+      213: 4366528280882635388
+    second: BasWalk_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BasWalk_0
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 3783
+        width: 390
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2caa346987fec0010800000000000000
+      internalID: 1156562505523505858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_1
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 3783
+        width: 390
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cbfff139c49b6d60800000000000000
+      internalID: 7884559164490382277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_2
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 3783
+        width: 390
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d30b054d39ddd830800000000000000
+      internalID: 4097670093151601616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_3
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 3771
+        width: 401
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614edab50ed96ceb0800000000000000
+      internalID: -4699895574178175978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_4
+      rect:
+        serializedVersion: 2
+        x: 3861
+        y: 3771
+        width: 401
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a07d60ffcb7b8e0800000000000000
+      internalID: -1677664532654781808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_5
+      rect:
+        serializedVersion: 2
+        x: 4765
+        y: 3776
+        width: 397
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e242a3c71e2b1ff10800000000000000
+      internalID: 2301817566084604974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_6
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 2876
+        width: 397
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfed26bd4bca618f0800000000000000
+      internalID: -570078410041008388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_7
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 2876
+        width: 397
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d080ade7c8c5f10800000000000000
+      internalID: 2259835589484875108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_8
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 2876
+        width: 377
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2056079e4ba7c6420800000000000000
+      internalID: 2624607600279315714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_9
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 2876
+        width: 377
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91a0105935429890800000000000000
+      internalID: -7452818320886029925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_10
+      rect:
+        serializedVersion: 2
+        x: 3885
+        y: 2876
+        width: 377
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28dc5904df5f28f20800000000000000
+      internalID: 3423569134814088578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_11
+      rect:
+        serializedVersion: 2
+        x: 4785
+        y: 2876
+        width: 377
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97308a6834393a60800000000000000
+      internalID: 7654206458602469279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_12
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1976
+        width: 377
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01827ff2db1f25fa0800000000000000
+      internalID: -5813318374126049264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_13
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1969
+        width: 377
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d3c9be0b9e28ce0800000000000000
+      internalID: -1404303187709772472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_14
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1969
+        width: 377
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a71b1e37e9523f20800000000000000
+      internalID: 3400879518332426151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_15
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 1979
+        width: 411
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1181897d659fe1a0800000000000000
+      internalID: -6778034616746802914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_16
+      rect:
+        serializedVersion: 2
+        x: 3851
+        y: 1979
+        width: 411
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae5081ee8b9eea00800000000000000
+      internalID: 787738022807363232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_17
+      rect:
+        serializedVersion: 2
+        x: 4751
+        y: 1979
+        width: 411
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c077fcf228871fa0800000000000000
+      internalID: -5830041508753477432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_18
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1074
+        width: 383
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdef1a8022cec880800000000000000
+      internalID: -8588713994336866827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_19
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1074
+        width: 383
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 430185616154d59b0800000000000000
+      internalID: -5089836042692325324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_20
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1073
+        width: 377
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ffef39db453eae0800000000000000
+      internalID: -1521279075912581353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_21
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 1073
+        width: 377
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7452a20c90dc2670800000000000000
+      internalID: 8515410363928433790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_22
+      rect:
+        serializedVersion: 2
+        x: 3885
+        y: 1073
+        width: 377
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e88bdbd05393ed0800000000000000
+      internalID: -2433855790483206574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_23
+      rect:
+        serializedVersion: 2
+        x: 4785
+        y: 1073
+        width: 377
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ffbca75df33ac720800000000000000
+      internalID: 2867161275965423609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_24
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 173
+        width: 377
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49419a276a9632aa0800000000000000
+      internalID: -6186985299467758444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_25
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 173
+        width: 377
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500ef1c4a8a87cfd0800000000000000
+      internalID: -2321734756298924027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_26
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 173
+        width: 377
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe66c64188cab7150800000000000000
+      internalID: 5871476239665751791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasWalk_27
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 173
+        width: 377
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72e4bb2656099c30800000000000000
+      internalID: 4366528280882635388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BasWalk_0: 1156562505523505858
+      BasWalk_1: 7884559164490382277
+      BasWalk_10: 3423569134814088578
+      BasWalk_11: 7654206458602469279
+      BasWalk_12: -5813318374126049264
+      BasWalk_13: -1404303187709772472
+      BasWalk_14: 3400879518332426151
+      BasWalk_15: -6778034616746802914
+      BasWalk_16: 787738022807363232
+      BasWalk_17: -5830041508753477432
+      BasWalk_18: -8588713994336866827
+      BasWalk_19: -5089836042692325324
+      BasWalk_2: 4097670093151601616
+      BasWalk_20: -1521279075912581353
+      BasWalk_21: 8515410363928433790
+      BasWalk_22: -2433855790483206574
+      BasWalk_23: 2867161275965423609
+      BasWalk_24: -6186985299467758444
+      BasWalk_25: -2321734756298924027
+      BasWalk_26: 5871476239665751791
+      BasWalk_27: 4366528280882635388
+      BasWalk_3: -4699895574178175978
+      BasWalk_4: -1677664532654781808
+      BasWalk_5: 2301817566084604974
+      BasWalk_6: -570078410041008388
+      BasWalk_7: 2259835589484875108
+      BasWalk_8: 2624607600279315714
+      BasWalk_9: -7452818320886029925
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

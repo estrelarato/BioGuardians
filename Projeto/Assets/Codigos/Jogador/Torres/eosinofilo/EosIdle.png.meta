@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 551d778c664e3924280fafd4cdd1984f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2406838516172432278
+    second: EosIdle_0
+  - first:
+      213: 3735974514034029681
+    second: EosIdle_1
+  - first:
+      213: -7448670062668474266
+    second: EosIdle_2
+  - first:
+      213: -1265122972144321259
+    second: EosIdle_3
+  - first:
+      213: 723322546216823927
+    second: EosIdle_4
+  - first:
+      213: -3116202233282063024
+    second: EosIdle_5
+  - first:
+      213: 7308433342249265652
+    second: EosIdle_6
+  - first:
+      213: 124934262534619845
+    second: EosIdle_7
+  - first:
+      213: 6497657946212486929
+    second: EosIdle_8
+  - first:
+      213: 8830713758603200421
+    second: EosIdle_9
+  - first:
+      213: -8577513398134967052
+    second: EosIdle_10
+  - first:
+      213: 7520275405621724088
+    second: EosIdle_11
+  - first:
+      213: -9078398901358018178
+    second: EosIdle_12
+  - first:
+      213: 1447268075608397440
+    second: EosIdle_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EosIdle_0
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1833
+        width: 266
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c50db1f11399ed0800000000000000
+      internalID: -2406838516172432278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_1
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1833
+        width: 226
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17439e6c609d8d330800000000000000
+      internalID: 3735974514034029681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_2
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1833
+        width: 226
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6681f81fa0201a890800000000000000
+      internalID: -7448670062668474266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 1833
+        width: 226
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51db6281c51617ee0800000000000000
+      internalID: -1265122972144321259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_4
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1233
+        width: 217
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ce8410602c90a00800000000000000
+      internalID: 723322546216823927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_5
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1233
+        width: 217
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05591f4449601c4d0800000000000000
+      internalID: -3116202233282063024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_6
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 1233
+        width: 202
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9636d2765cc6560800000000000000
+      internalID: 7308433342249265652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_7
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1233
+        width: 202
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2c6a2cc0bdbb100800000000000000
+      internalID: 124934262534619845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_8
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 633
+        width: 202
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f4dfbd9715c2a50800000000000000
+      internalID: 6497657946212486929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_9
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 633
+        width: 202
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7c2b6506ffc8a70800000000000000
+      internalID: 8830713758603200421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_10
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 633
+        width: 227
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4f200920d86f880800000000000000
+      internalID: -8577513398134967052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_11
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 633
+        width: 227
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3803523a26d5860800000000000000
+      internalID: 7520275405621724088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_12
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 33
+        width: 227
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7142437c4c030280800000000000000
+      internalID: -9078398901358018178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EosIdle_13
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 33
+        width: 266
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086d66595aab51410800000000000000
+      internalID: 1447268075608397440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EosIdle_0: -2406838516172432278
+      EosIdle_1: 3735974514034029681
+      EosIdle_10: -8577513398134967052
+      EosIdle_11: 7520275405621724088
+      EosIdle_12: -9078398901358018178
+      EosIdle_13: 1447268075608397440
+      EosIdle_2: -7448670062668474266
+      EosIdle_3: -1265122972144321259
+      EosIdle_4: 723322546216823927
+      EosIdle_5: -3116202233282063024
+      EosIdle_6: 7308433342249265652
+      EosIdle_7: 124934262534619845
+      EosIdle_8: 6497657946212486929
+      EosIdle_9: 8830713758603200421
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 3972bbcd53c890a46982cb7155e11159
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3032402091273298915
+    second: BasIdle_0
+  - first:
+      213: -2711976766571761883
+    second: BasIdle_1
+  - first:
+      213: 5900712900592220415
+    second: BasIdle_2
+  - first:
+      213: -8678572742863891981
+    second: BasIdle_3
+  - first:
+      213: 4974520466667776430
+    second: BasIdle_4
+  - first:
+      213: -5751870930689456157
+    second: BasIdle_5
+  - first:
+      213: -2471409343103227138
+    second: BasIdle_6
+  - first:
+      213: -8576123322161467614
+    second: BasIdle_7
+  - first:
+      213: 8206221198900001274
+    second: BasIdle_8
+  - first:
+      213: 7293670527906133712
+    second: BasIdle_9
+  - first:
+      213: 5846176074763807825
+    second: BasIdle_10
+  - first:
+      213: -9211414520557661880
+    second: BasIdle_11
+  - first:
+      213: -1183077235706931749
+    second: BasIdle_12
+  - first:
+      213: -1770957030348382447
+    second: BasIdle_13
+  - first:
+      213: -1941615015783091346
+    second: BasIdle_14
+  - first:
+      213: 5529304560502637451
+    second: BasIdle_15
+  - first:
+      213: 4459057529616291960
+    second: BasIdle_16
+  - first:
+      213: 5261338933769194184
+    second: BasIdle_17
+  - first:
+      213: 6875021374709482692
+    second: BasIdle_18
+  - first:
+      213: -655262558547056804
+    second: BasIdle_19
+  - first:
+      213: 1852696882124452019
+    second: BasIdle_20
+  - first:
+      213: -6765166374338800571
+    second: BasIdle_21
+  - first:
+      213: -8460251028911397852
+    second: BasIdle_22
+  - first:
+      213: 416534575195106569
+    second: BasIdle_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BasIdle_0
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 3775
+        width: 319
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e32f7ab2a1451a20800000000000000
+      internalID: 3032402091273298915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_1
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 3775
+        width: 319
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fa06ddf7f1d5ad0800000000000000
+      internalID: -2711976766571761883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_2
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 3775
+        width: 319
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff83d59ae1b83e150800000000000000
+      internalID: 5900712900592220415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_3
+      rect:
+        serializedVersion: 2
+        x: 2981
+        y: 3775
+        width: 311
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1d53842148f8780800000000000000
+      internalID: -8678572742863891981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_4
+      rect:
+        serializedVersion: 2
+        x: 3881
+        y: 3775
+        width: 311
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9a4af120c090540800000000000000
+      internalID: 4974520466667776430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 2875
+        width: 311
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e70c5efcdf3d20b0800000000000000
+      internalID: -5751870930689456157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_6
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 2875
+        width: 296
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa20c9eb4ac3bdd0800000000000000
+      internalID: -2471409343103227138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_7
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 2875
+        width: 296
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f6f98d64d7bf880800000000000000
+      internalID: -8576123322161467614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_8
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 2875
+        width: 296
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9f6b4b3ba52e170800000000000000
+      internalID: 8206221198900001274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_9
+      rect:
+        serializedVersion: 2
+        x: 3894
+        y: 2875
+        width: 287
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6b49c93b2583560800000000000000
+      internalID: 7293670527906133712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_10
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1975
+        width: 287
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c2fa66a2ac12150800000000000000
+      internalID: 5846176074763807825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_11
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1975
+        width: 287
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84119473c4b7a2080800000000000000
+      internalID: -9211414520557661880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_12
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 1975
+        width: 279
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd556d7b58dd49fe0800000000000000
+      internalID: -1183077235706931749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_13
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 1975
+        width: 269
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f9a9db6fb4c67e0800000000000000
+      internalID: -1770957030348382447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_14
+      rect:
+        serializedVersion: 2
+        x: 3912
+        y: 1975
+        width: 269
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e633fa52e6ffd05e0800000000000000
+      internalID: -1941615015783091346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_15
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1075
+        width: 275
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8305b7c3390cbc40800000000000000
+      internalID: 5529304560502637451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_16
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1075
+        width: 286
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8785fc5b231c1ed30800000000000000
+      internalID: 4459057529616291960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_17
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 1075
+        width: 286
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cace3e62e7040940800000000000000
+      internalID: 5261338933769194184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_18
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 1075
+        width: 296
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4c6cec38bf86f50800000000000000
+      internalID: 6875021374709482692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_19
+      rect:
+        serializedVersion: 2
+        x: 3885
+        y: 1075
+        width: 296
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57603bbc2a08e6f0800000000000000
+      internalID: -655262558547056804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_20
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 175
+        width: 296
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0708f8ff916b910800000000000000
+      internalID: 1852696882124452019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_21
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 175
+        width: 308
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5445e13a60d4d12a0800000000000000
+      internalID: -6765166374338800571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_22
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 175
+        width: 308
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4246a177386279a80800000000000000
+      internalID: -8460251028911397852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasIdle_23
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 175
+        width: 308
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d2c2f3df3d7c500800000000000000
+      internalID: 416534575195106569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BasIdle_0: 3032402091273298915
+      BasIdle_1: -2711976766571761883
+      BasIdle_10: 5846176074763807825
+      BasIdle_11: -9211414520557661880
+      BasIdle_12: -1183077235706931749
+      BasIdle_13: -1770957030348382447
+      BasIdle_14: -1941615015783091346
+      BasIdle_15: 5529304560502637451
+      BasIdle_16: 4459057529616291960
+      BasIdle_17: 5261338933769194184
+      BasIdle_18: 6875021374709482692
+      BasIdle_19: -655262558547056804
+      BasIdle_2: 5900712900592220415
+      BasIdle_20: 1852696882124452019
+      BasIdle_21: -6765166374338800571
+      BasIdle_22: -8460251028911397852
+      BasIdle_23: 416534575195106569
+      BasIdle_3: -8678572742863891981
+      BasIdle_4: 4974520466667776430
+      BasIdle_5: -5751870930689456157
+      BasIdle_6: -2471409343103227138
+      BasIdle_7: -8576123322161467614
+      BasIdle_8: 8206221198900001274
+      BasIdle_9: 7293670527906133712
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

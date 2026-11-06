@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI; // Para a classe Button
+using TMPro; // Para a classe TextMeshProUGUI
 
 [System.Serializable]
 public class Onda
@@ -27,19 +29,33 @@ public class GerenciadorOndas : MonoBehaviour
     [Tooltip("Waypoints que o inimigo deve seguir.")]
     [SerializeField] private Transform[] pontosDeCaminho;
 
-    // Propriedade pública para permitir a leitura por outros scripts (ex: BossStaphylococcus)
     public Transform[] PontosDeCaminho => pontosDeCaminho;
 
     [Header("Tempo entre ondas")]
-    [SerializeField] private float tempoEntreOndas = 5f;
-    [SerializeField] private float tempoInicioJogo = 2f;
+    [SerializeField] private float tempoEntreOndas = 10f;
+    [SerializeField] private float tempoInicioJogo = 5f;
+
+    [Header("UI de Contagem Regressiva e Skip")]
+    [Tooltip("Arraste seu texto de TextMeshPro (TMP) aqui")]
+    [SerializeField] private TextMeshProUGUI textoContagemTMP;
+    
+    [Tooltip("Arraste o seu Botão de Skip aqui")]
+    [SerializeField] private Button botaoSkip;
 
     private int indiceOndaAtual = 0;
     private GameManager gameManager;
+    private bool pularEspera = false;
+    private float tempoRestante = 0f;
 
     private void Start()
     {
         gameManager = FindFirstObjectByType<GameManager>();
+
+        // Conecta automaticamente a função de pular ao clique do botão
+        if (botaoSkip != null)
+        {
+            botaoSkip.onClick.AddListener(PularContagem);
+        }
 
         if (!ValidarConfiguracao()) return;
 
@@ -65,19 +81,27 @@ public class GerenciadorOndas : MonoBehaviour
 
     private IEnumerator IniciarOndas()
     {
-        yield return new WaitForSeconds(tempoInicioJogo);
+        // Contagem regressiva inicial antes de começar a 1ª Onda
+        yield return StartCoroutine(AguardarComContagem(tempoInicioJogo));
 
         while (indiceOndaAtual < ondas.Length)
         {
+            // Oculta a UI e o Botão durante o spawn da onda
+            AtualizarUIContagem(0, false);
+
+            // Spawna todos os inimigos da onda
             yield return StartCoroutine(GerarOnda(ondas[indiceOndaAtual]));
 
             indiceOndaAtual++;
 
+            // Se ainda restarem ondas, aguarda com contagem regressiva
             if (indiceOndaAtual < ondas.Length)
             {
-                yield return new WaitForSeconds(tempoEntreOndas);
+                yield return StartCoroutine(AguardarComContagem(tempoEntreOndas));
             }
         }
+
+        AtualizarUIContagem(0, false);
 
         if (gameManager != null)
         {
@@ -89,9 +113,13 @@ public class GerenciadorOndas : MonoBehaviour
     {
         if (onda.prefabsInimigos == null || onda.prefabsInimigos.Length == 0)
         {
-            Debug.LogError($"[GerenciadorOndas] A Onda {indiceOndaAtual + 1} não tem prefabs de inimigos atribuídos!", this);
+            Debug.LogError($"[GerenciadorOndas] A Onda {indiceOndaAtual + 1} não tem prefabs de inimigos!", this);
             yield break;
         }
+
+        // Garante que o botão fique oculto enquanto os inimigos nascem
+        if (botaoSkip != null) 
+            botaoSkip.gameObject.SetActive(false);
 
         for (int i = 0; i < onda.quantidade; i++)
         {
@@ -99,6 +127,45 @@ public class GerenciadorOndas : MonoBehaviour
             
             SpawnarInimigo(prefabAleatorio);
             yield return new WaitForSeconds(onda.intervalo);
+        }
+    }
+
+    private IEnumerator AguardarComContagem(float tempoTotal)
+    {
+        tempoRestante = tempoTotal;
+        pularEspera = false;
+
+        // Exibe a UI e o Botão de Skip quando o spawn terminar
+        AtualizarUIContagem(tempoRestante, true);
+
+        while (tempoRestante > 0 && !pularEspera)
+        {
+            tempoRestante -= Time.deltaTime;
+            AtualizarUIContagem(tempoRestante, true);
+            yield return null;
+        }
+
+        pularEspera = false;
+        AtualizarUIContagem(0, false);
+    }
+
+    public void PularContagem()
+    {
+        pularEspera = true;
+    }
+
+    private void AtualizarUIContagem(float tempo, bool visivel)
+    {
+        if (botaoSkip != null) 
+            botaoSkip.gameObject.SetActive(visivel);
+
+        if (textoContagemTMP != null)
+        {
+            textoContagemTMP.gameObject.SetActive(visivel);
+            if (visivel)
+            {
+                textoContagemTMP.text = $"{Mathf.CeilToInt(tempo)}";
+            }
         }
     }
 

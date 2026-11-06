@@ -105,5 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f1713eb24c8cd42ba0ffa771b72788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projetil
-  velocidade: 10
+  velocidade: 5
   dano: 10
+  tipoDano: 0

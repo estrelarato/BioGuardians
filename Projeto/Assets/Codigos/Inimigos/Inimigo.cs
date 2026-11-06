@@ -1,152 +1,134 @@
+using System.Collections;
 using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-    [Header("Atributos Básicos")]
+    [Header("Atributos de Vida e Movimento 2D")]
     public float vidaMaxima = 100f;
     public float vidaAtual;
-    public float velocidade = 2f;
-    public float dano = 10f;
+    public float velocidade = 3.5f;
 
-    [Header("Resistências Biológicas (0 = 0% | 1 = 100%)")]
-    [Range(0f, 1f)] 
-    [Tooltip("Reduz o dano de ataques Fagocíticos/Mecânicos")]
-    public float resistenciaFagocitica = 0f;
+    [Header("Resistências ao Tipo de Dano")]
+    [Tooltip("Coloque valores entre 0 (imune) e 1 (dano total). Valores acima de 1 aumentam o dano.")]
+    public float resistenciaFagocito = 1.0f;
+    public float resistenciaEnzimatico = 1.0f;
+    [Tooltip("Dano Verdadeiro ignora resistências (deixe em 1.0f)")]
+    public float resistenciaVerdadeiro = 1.0f;
 
-    [Range(0f, 1f)] 
-    [Tooltip("Reduz o dano de ataques Enzimáticos/Químicos")]
-    public float resistenciaEnzimatica = 0f;
+    [Header("Caminho 2D (Waypoints)")]
+    public Transform[] pontosCaminho;
+    private int indicePontoAtual = 0;
 
-    [Header("Economia")]
-    public int recompensaMoedas = 20;
-
-    [Header("Gerenciador de Barra de Vida")]
-    public BarraDeVidaInimigo barraDeVida;
-
-    [Header("Visual")]
+    [Header("Componentes 2D")]
     public SpriteRenderer spriteRenderer;
 
-    protected bool estaVivo = true;
-    protected Transform[] caminhos;
-    protected int indiceCaminhoAtual = 0;
-    protected float posicaoAnteriorX;
+    private bool estaEmKnockback = false;
 
     void Awake()
     {
         vidaAtual = vidaMaxima;
+        if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
-    void Start()
+    void Update()
     {
-        if (spriteRenderer == null)
-            spriteRenderer = GetComponent<SpriteRenderer>();
+        if (estaEmKnockback) return;
 
-        if (barraDeVida == null)
-            barraDeVida = GetComponentInChildren<BarraDeVidaInimigo>();
-
-        posicaoAnteriorX = transform.position.x;
-        
-        if (barraDeVida != null)
-            barraDeVida.AtualizarBarra();
+        // O inimigo segue puramente o caminho
+        MoverPeloCaminho();
     }
 
-    protected virtual void Update()
+    public void DefinirCaminho(Transform[] caminho)
     {
-        if (!estaVivo) return;
+        pontosCaminho = caminho;
+        indicePontoAtual = 0;
+    }
 
-        if (caminhos != null && indiceCaminhoAtual < caminhos.Length)
+    void MoverPeloCaminho()
+    {
+        if (pontosCaminho == null || pontosCaminho.Length == 0 || indicePontoAtual >= pontosCaminho.Length) return;
+
+        Transform destino = pontosCaminho[indicePontoAtual];
+        MoverPara(destino.position);
+
+        if (Vector2.Distance(transform.position, destino.position) <= 0.1f)
         {
-            Transform alvoAtual = caminhos[indiceCaminhoAtual];
-            transform.position = Vector2.MoveTowards(transform.position, alvoAtual.position, velocidade * Time.deltaTime);
-
-            AtualizarFlipSprite();
-
-            if (Vector2.Distance(transform.position, alvoAtual.position) < 0.1f)
-            {
-                indiceCaminhoAtual++;
-            }
+            indicePontoAtual++;
         }
     }
 
-    void AtualizarFlipSprite()
+    void MoverPara(Vector3 posicaoDestino)
     {
-        float deslocamentoX = transform.position.x - posicaoAnteriorX;
-        if (Mathf.Abs(deslocamentoX) > 0.001f && spriteRenderer != null)
+        transform.position = Vector2.MoveTowards(
+            transform.position, 
+            posicaoDestino, 
+            velocidade * Time.deltaTime
+        );
+
+        float direcaoX = posicaoDestino.x - transform.position.x;
+        if (Mathf.Abs(direcaoX) > 0.05f && spriteRenderer != null)
         {
-            spriteRenderer.flipX = (deslocamentoX < 0);
+            spriteRenderer.flipX = (direcaoX < 0);
         }
-        posicaoAnteriorX = transform.position.x;
     }
 
-    public void DefinirCaminho(Transform[] pontosDeCaminho)
+    // Sobrecarga de dano simples (padrão)
+    public void ReceberDano(float quantidade)
     {
-        caminhos = pontosDeCaminho;
-        indiceCaminhoAtual = 0;
+        ReceberDano(quantidade, TipoDano.Fagocito);
     }
 
-    public void DefinirCaminho(Transform[] pontosDeCaminho, int pontoInicial)
+    // Processa o dano aplicando os multiplicadores de resistência
+    public void ReceberDano(float quantidade, TipoDano tipo)
     {
-        caminhos = pontosDeCaminho;
-        indiceCaminhoAtual = pontoInicial;
-    }
+        float danoFinal = quantidade;
 
-    /// <summary>
-    /// Processa o dano baseado no tipo (Fagocítico, Enzimático ou Verdadeiro)
-    /// </summary>
-    public void ReceberDano(float quantidade, TipoDano tipoDano = TipoDano.Fagocito)
-    {
-        if (!estaVivo) return;
-
-        float danoCalculado = quantidade;
-
-        switch (tipoDano)
+        switch (tipo)
         {
             case TipoDano.Fagocito:
-                danoCalculado = quantidade * (1f - resistenciaFagocitica);
+                danoFinal *= resistenciaFagocito;
                 break;
-
             case TipoDano.Enzimatico:
-                danoCalculado = quantidade * (1f - resistenciaEnzimatica);
+                danoFinal *= resistenciaEnzimatico;
                 break;
-
             case TipoDano.Verdadeiro:
-                danoCalculado = quantidade; // Ignora qualquer tipo de resistência
+                danoFinal *= resistenciaVerdadeiro;
                 break;
         }
 
-        danoCalculado = Mathf.Max(danoCalculado, 0);
-        vidaAtual -= danoCalculado;
+        vidaAtual -= danoFinal;
 
-        if (barraDeVida != null)
-            barraDeVida.AtualizarBarra();
+        BarraDeVidaInimigo barra = GetComponentInChildren<BarraDeVidaInimigo>();
+        if (barra != null) barra.AtualizarBarra();
 
         if (vidaAtual <= 0)
         {
-            estaVivo = false;
-            GameManager gameManager = FindFirstObjectByType<GameManager>();
-            if (gameManager != null)
-            {
-                gameManager.GanharDinheiro(recompensaMoedas);
-            }
-            Morrer();
-        }
-    }
-
-    void Morrer()
-    {
-        Destroy(gameObject);
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("FimDoCaminho"))
-        {
-            VidaDoJogador sistemaVida = FindFirstObjectByType<VidaDoJogador>();
-            if (sistemaVida != null)
-            {
-                sistemaVida.TomarDano((int)dano);
-            }
             Destroy(gameObject);
         }
+    }
+
+    public void AplicarKnockback(Vector3 forca)
+    {
+        if (!gameObject.activeInHierarchy) return;
+        StartCoroutine(RoutineKnockback(forca));
+    }
+
+    private IEnumerator RoutineKnockback(Vector3 forca)
+    {
+        estaEmKnockback = true;
+
+        float tempo = 0f;
+        float duracao = 0.2f;
+        Vector3 inicio = transform.position;
+        Vector3 final = inicio + forca;
+
+        while (tempo < duracao)
+        {
+            transform.position = Vector3.Lerp(inicio, final, tempo / duracao);
+            tempo += Time.deltaTime;
+            yield return null;
+        }
+
+        estaEmKnockback = false;
     }
 }

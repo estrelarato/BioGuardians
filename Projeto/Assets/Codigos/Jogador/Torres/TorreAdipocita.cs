@@ -5,8 +5,7 @@ using UnityEngine;
 public class TorreAdipocita : TorreBase
 {
     [Header("Configurações Gerais")]
-    public int custo = 50;
-    public bool emConstrucao = true;
+    // 'custo' e 'emConstrucao' foram removidos daqui pois já existem na classe pai TorreBase
     public float tempoConstrucao = 3f;
 
     [Header("Geração de ATP")]

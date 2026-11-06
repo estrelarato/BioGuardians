@@ -14,7 +14,6 @@ public class TorreMastocita : TorreBase
 
     [Header("Animadores Independentes")]
     public Animator animadorTorre;
-    public Animator animadorAtirador;
 
     [Header("Configurações de Carga e Disparo")]
     public float tempoCarga = 0.5f;
@@ -129,13 +128,11 @@ public class TorreMastocita : TorreBase
     void DefinirBoolCarregando(bool carregando)
     {
         if (animadorTorre != null) animadorTorre.SetBool("estaCarregando", carregando);
-        if (animadorAtirador != null) animadorAtirador.SetBool("estaCarregando", carregando);
     }
 
     void AtualizarAnimacoesEstado(bool emAlerta)
     {
         if (animadorTorre != null) animadorTorre.SetBool("EmAlerta", emAlerta);
-        if (animadorAtirador != null) animadorAtirador.SetBool("EmAlerta", emAlerta);
     }
 
     void OnTriggerEnter2D(Collider2D other)
