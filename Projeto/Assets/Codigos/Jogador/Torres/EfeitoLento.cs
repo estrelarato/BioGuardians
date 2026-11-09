@@ -23,7 +23,7 @@ public class EfeitoLento : MonoBehaviour
             velocidadeBase = inimigo.velocidade;
         }
 
-        // Pega o SpriteRenderer mesmo se estiver num objeto filho (ex: sprite da bactéria)
+        // Pega o SpriteRenderer mesmo se estiver num objeto filho
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         if (spriteRenderer == null)
@@ -43,11 +43,20 @@ public class EfeitoLento : MonoBehaviour
     {
         if (inimigo == null) return;
 
+        // --- TRAVA DO INIMIGO ENCAPSULADO ---
+        InimigoEncapsulado encapsulado = GetComponent<InimigoEncapsulado>();
+        if (encapsulado != null && !encapsulado.PodeReceberLentidao())
+        {
+            Debug.Log("[EFEITO LENTO] Bloqueado pela cápsula do biofilme!");
+            return; // Interrompe a execução antes de desacelerar ou mudar a cor
+        }
+        // -------------------------------------
+
         // Se a nova lentidão for maior, atualiza a velocidade com base na velocidade base
         if (porcentagemLento > porcentagemLentoAtual)
         {
             porcentagemLentoAtual = porcentagemLento;
-            inimigo.velocidade = velocidadeBase * (1f - porcentagemLentoAtual);
+            inimigo.velocidade = velocidadeBase * (1f - porcentagemLentoAtual); // Corrigido a subtração aqui
         }
 
         // Aplica a cor verde no SpriteRenderer

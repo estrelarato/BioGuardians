@@ -124,11 +124,11 @@ MonoBehaviour:
   vidaMaxima: 15
   vidaAtual: 15
   velocidade: 2
-  dano: 10
-  resistenciaFagocitica: 0
-  resistenciaEnzimatica: 0.5
-  recompensaMoedas: 20
-  barraDeVida: {fileID: 0}
+  resistenciaFagocito: 1
+  resistenciaEnzimatico: 1
+  resistenciaVerdadeiro: 1
+  pontosCaminho:
+  - {fileID: 0}
   spriteRenderer: {fileID: 790880680866372598}
 --- !u!1 &1599382621867183103
 GameObject:
