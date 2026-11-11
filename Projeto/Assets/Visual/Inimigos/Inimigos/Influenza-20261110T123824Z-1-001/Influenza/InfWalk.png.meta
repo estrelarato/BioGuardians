@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 5009296577c9a8248a77bad5115afaf1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1548937754804462257
+    second: InfWalk_0
+  - first:
+      213: 1823485979513104714
+    second: InfWalk_1
+  - first:
+      213: -4782940052416492225
+    second: InfWalk_2
+  - first:
+      213: 7412535517775335128
+    second: InfWalk_3
+  - first:
+      213: -5609302160058006520
+    second: InfWalk_4
+  - first:
+      213: 1499093351120758276
+    second: InfWalk_5
+  - first:
+      213: -2832785525323213795
+    second: InfWalk_6
+  - first:
+      213: -2001328789892980333
+    second: InfWalk_7
+  - first:
+      213: 4090954720742794244
+    second: InfWalk_8
+  - first:
+      213: -8309989139106671864
+    second: InfWalk_9
+  - first:
+      213: 4655902486987383419
+    second: InfWalk_10
+  - first:
+      213: 2604891576073522195
+    second: InfWalk_11
+  - first:
+      213: -2488608536851050032
+    second: InfWalk_12
+  - first:
+      213: -7182046013404720031
+    second: InfWalk_13
+  - first:
+      213: -8656091795001595888
+    second: InfWalk_14
+  - first:
+      213: -9151782720178308056
+    second: InfWalk_15
+  - first:
+      213: 6983093831794656089
+    second: InfWalk_16
+  - first:
+      213: -3172194082110267658
+    second: InfWalk_17
+  - first:
+      213: 7209380822471718348
+    second: InfWalk_18
+  - first:
+      213: -385324082667389405
+    second: InfWalk_19
+  - first:
+      213: 7257395487919050626
+    second: InfWalk_20
+  - first:
+      213: -227653075586729545
+    second: InfWalk_21
+  - first:
+      213: -8129791246544011559
+    second: InfWalk_22
+  - first:
+      213: 8009604425652394621
+    second: InfWalk_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InfWalk_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2044
+        width: 404
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d50b19151118ae0800000000000000
+      internalID: -1548937754804462257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_1
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 2044
+        width: 404
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49a8cd46d25e4910800000000000000
+      internalID: 1823485979513104714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_2
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2044
+        width: 404
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d0ab90d559f9db0800000000000000
+      internalID: -4782940052416492225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_3
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 2048
+        width: 398
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de07f5b7cd9ed660800000000000000
+      internalID: 7412535517775335128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_4
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 2048
+        width: 398
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80449ef9761c722b0800000000000000
+      internalID: -5609302160058006520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_5
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1548
+        width: 398
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406e3b6d579ddc410800000000000000
+      internalID: 1499093351120758276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_6
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1546
+        width: 409
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14dd3ec29cefa8d0800000000000000
+      internalID: -2832785525323213795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_7
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 1546
+        width: 409
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391aaafa11ad934e0800000000000000
+      internalID: -2001328789892980333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_8
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 1546
+        width: 409
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404e41ac4adf5c830800000000000000
+      internalID: 4090954720742794244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_9
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 1537
+        width: 416
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803513cf7ecfcac80800000000000000
+      internalID: -8309989139106671864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_10
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1037
+        width: 416
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72adb5d4a61d9040800000000000000
+      internalID: 4655902486987383419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_11
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1037
+        width: 416
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c054e461f662420800000000000000
+      internalID: 2604891576073522195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_12
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1044
+        width: 405
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d11dff88bfa67dd0800000000000000
+      internalID: -2488608536851050032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_13
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1044
+        width: 405
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1645082f33f345c90800000000000000
+      internalID: -7182046013404720031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_14
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1044
+        width: 405
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018a1c7df526fd780800000000000000
+      internalID: -8656091795001595888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 535
+        width: 417
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cb63eaa165ef080800000000000000
+      internalID: -9151782720178308056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_16
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 535
+        width: 417
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953875d87dee8e060800000000000000
+      internalID: 6983093831794656089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_17
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 535
+        width: 417
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe98311a4a1af3d0800000000000000
+      internalID: -3172194082110267658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_18
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 546
+        width: 409
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5b0fd39addc0460800000000000000
+      internalID: 7209380822471718348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_19
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 546
+        width: 409
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ef431d9cd07aaf0800000000000000
+      internalID: -385324082667389405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_20
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 46
+        width: 409
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f00f3beb277b460800000000000000
+      internalID: 7257395487919050626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_21
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 43
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9b0a1ebb637dcf0800000000000000
+      internalID: -227653075586729545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_22
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 43
+        width: 417
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9def9ab4fed2d2f80800000000000000
+      internalID: -8129791246544011559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfWalk_23
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 43
+        width: 417
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a5866d9c4d72f60800000000000000
+      internalID: 8009604425652394621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      InfWalk_0: -1548937754804462257
+      InfWalk_1: 1823485979513104714
+      InfWalk_10: 4655902486987383419
+      InfWalk_11: 2604891576073522195
+      InfWalk_12: -2488608536851050032
+      InfWalk_13: -7182046013404720031
+      InfWalk_14: -8656091795001595888
+      InfWalk_15: -9151782720178308056
+      InfWalk_16: 6983093831794656089
+      InfWalk_17: -3172194082110267658
+      InfWalk_18: 7209380822471718348
+      InfWalk_19: -385324082667389405
+      InfWalk_2: -4782940052416492225
+      InfWalk_20: 7257395487919050626
+      InfWalk_21: -227653075586729545
+      InfWalk_22: -8129791246544011559
+      InfWalk_23: 8009604425652394621
+      InfWalk_3: 7412535517775335128
+      InfWalk_4: -5609302160058006520
+      InfWalk_5: 1499093351120758276
+      InfWalk_6: -2832785525323213795
+      InfWalk_7: -2001328789892980333
+      InfWalk_8: 4090954720742794244
+      InfWalk_9: -8309989139106671864
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

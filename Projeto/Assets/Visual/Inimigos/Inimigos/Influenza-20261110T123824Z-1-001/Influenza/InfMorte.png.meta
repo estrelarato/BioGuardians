@@ -1,0 +1,1729 @@
+fileFormatVersion: 2
+guid: 456b1506b692956448f4e17245e22ac2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6738813416271663739
+    second: InfMorte_0
+  - first:
+      213: 4748428335254092943
+    second: InfMorte_1
+  - first:
+      213: 2619053408975463498
+    second: InfMorte_2
+  - first:
+      213: 7094927967545881296
+    second: InfMorte_3
+  - first:
+      213: -2355988317800371412
+    second: InfMorte_4
+  - first:
+      213: -1275268548306707238
+    second: InfMorte_5
+  - first:
+      213: -8820371588842493722
+    second: InfMorte_6
+  - first:
+      213: 6766588101292352379
+    second: InfMorte_7
+  - first:
+      213: -591928031378241320
+    second: InfMorte_8
+  - first:
+      213: 5942403850040071157
+    second: InfMorte_9
+  - first:
+      213: 2721851991730980257
+    second: InfMorte_10
+  - first:
+      213: -3041865490233794003
+    second: InfMorte_11
+  - first:
+      213: 128907620038394541
+    second: InfMorte_12
+  - first:
+      213: -5942253139223976614
+    second: InfMorte_13
+  - first:
+      213: 7994590906671149548
+    second: InfMorte_14
+  - first:
+      213: -6280111423026651690
+    second: InfMorte_15
+  - first:
+      213: 7237214682341582603
+    second: InfMorte_16
+  - first:
+      213: -8960656673236977576
+    second: InfMorte_17
+  - first:
+      213: -2119046208326437637
+    second: InfMorte_18
+  - first:
+      213: -4553787023272121687
+    second: InfMorte_19
+  - first:
+      213: 6992090189910436519
+    second: InfMorte_20
+  - first:
+      213: -7866085982173894013
+    second: InfMorte_21
+  - first:
+      213: -5449739355753136129
+    second: InfMorte_22
+  - first:
+      213: 5971068001768116605
+    second: InfMorte_23
+  - first:
+      213: 720895318015543765
+    second: InfMorte_24
+  - first:
+      213: 6980393209013951887
+    second: InfMorte_25
+  - first:
+      213: 6606086627969074847
+    second: InfMorte_26
+  - first:
+      213: -288450826965871174
+    second: InfMorte_27
+  - first:
+      213: -176352128993918062
+    second: InfMorte_28
+  - first:
+      213: 4230581835657367701
+    second: InfMorte_29
+  - first:
+      213: -2513486408112643699
+    second: InfMorte_30
+  - first:
+      213: 20275340588967881
+    second: InfMorte_31
+  - first:
+      213: 5700657610461184550
+    second: InfMorte_32
+  - first:
+      213: 975898685412691555
+    second: InfMorte_33
+  - first:
+      213: 5200662127236629035
+    second: InfMorte_34
+  - first:
+      213: 8260507808880818502
+    second: InfMorte_35
+  - first:
+      213: -8809599664425667457
+    second: InfMorte_36
+  - first:
+      213: -1349252668043240887
+    second: InfMorte_37
+  - first:
+      213: 3989342197937460686
+    second: InfMorte_38
+  - first:
+      213: -5021021191568513176
+    second: InfMorte_39
+  - first:
+      213: -8893026122848451146
+    second: InfMorte_40
+  - first:
+      213: -154991844938734611
+    second: InfMorte_41
+  - first:
+      213: 3540956035309292356
+    second: InfMorte_42
+  - first:
+      213: 7470820551855457445
+    second: InfMorte_43
+  - first:
+      213: -1951531720408770071
+    second: InfMorte_44
+  - first:
+      213: 6230549313743781556
+    second: InfMorte_45
+  - first:
+      213: -2744000264020236477
+    second: InfMorte_46
+  - first:
+      213: 1114205403514767102
+    second: InfMorte_47
+  - first:
+      213: 7742755602255546577
+    second: InfMorte_48
+  - first:
+      213: 3661378188939818501
+    second: InfMorte_49
+  - first:
+      213: -8792689257807706731
+    second: InfMorte_50
+  - first:
+      213: 9172431860188808351
+    second: InfMorte_51
+  - first:
+      213: 1888205998350233234
+    second: InfMorte_52
+  - first:
+      213: -2793609668775636518
+    second: InfMorte_53
+  - first:
+      213: -3018053973042059090
+    second: InfMorte_54
+  - first:
+      213: -1239046427916394864
+    second: InfMorte_55
+  - first:
+      213: -1487997491240903470
+    second: InfMorte_56
+  - first:
+      213: 5828545815717879191
+    second: InfMorte_57
+  - first:
+      213: -5013415965452547344
+    second: InfMorte_58
+  - first:
+      213: 1945735956178793459
+    second: InfMorte_59
+  - first:
+      213: 2743028001142938905
+    second: InfMorte_60
+  - first:
+      213: -6160775651802296543
+    second: InfMorte_61
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InfMorte_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2044
+        width: 404
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72528c2913158d50800000000000000
+      internalID: 6738813416271663739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_1
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 2044
+        width: 404
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c3834a96ec5e140800000000000000
+      internalID: 4748428335254092943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_2
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2044
+        width: 404
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4422c9f23fb85420800000000000000
+      internalID: 2619053408975463498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_3
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 2044
+        width: 404
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d27e8c556f367260800000000000000
+      internalID: 7094927967545881296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2044
+        width: 404
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2be9868b19dd4fd0800000000000000
+      internalID: -2355988317800371412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_5
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1608
+        width: 52
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc53f013065d4ee0800000000000000
+      internalID: -1275268548306707238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1551
+        width: 380
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e86814b5ceb79580800000000000000
+      internalID: -8820371588842493722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_7
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1607
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b736ae6f600c7ed50800000000000000
+      internalID: 6766588101292352379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_8
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1551
+        width: 409
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d88a15779c09c7f0800000000000000
+      internalID: -591928031378241320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_9
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1607
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f35d8141d8a77250800000000000000
+      internalID: 5942403850040071157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_10
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1551
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5805a27f5f5c520800000000000000
+      internalID: 2721851991730980257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_11
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1607
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d226810047f19c5d0800000000000000
+      internalID: -3041865490233794003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_12
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 1551
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2ca352cc8f9c100800000000000000
+      internalID: 128907620038394541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_13
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 1607
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55ea17d040e88da0800000000000000
+      internalID: -5942253139223976614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_14
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 1551
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1b3bc821e72fe60800000000000000
+      internalID: 7994590906671149548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1539
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd9f982fef88d8a0800000000000000
+      internalID: -6280111423026651690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_16
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1539
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b072630c860cf6460800000000000000
+      internalID: 7237214682341582603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_17
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 1539
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858f9753b3a55a380800000000000000
+      internalID: -8960656673236977576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_18
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 1539
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4701263b2a792e0800000000000000
+      internalID: -2119046208326437637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_19
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 1539
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aae41f44d2bdc0c0800000000000000
+      internalID: -4553787023272121687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_20
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1107
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aaea176bf4e80160800000000000000
+      internalID: 6992090189910436519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1051
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a68dbb97c06d290800000000000000
+      internalID: -7866085982173894013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_22
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1107
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff3edd0ee2ae54b0800000000000000
+      internalID: -5449739355753136129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_23
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1051
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71171726be7dd250800000000000000
+      internalID: 5971068001768116605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_24
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1107
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d90f86e872210a00800000000000000
+      internalID: 720895318015543765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_25
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1051
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d53dfc3a65fd060800000000000000
+      internalID: 6980393209013951887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_26
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1107
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f960e8f99c88dab50800000000000000
+      internalID: 6606086627969074847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_27
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 1051
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5188b40873ffbf0800000000000000
+      internalID: -288450826965871174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_28
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 1107
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2930feb4ca87d8df0800000000000000
+      internalID: -176352128993918062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_29
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 1051
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590d393d3cb06ba30800000000000000
+      internalID: 4230581835657367701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_30
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1039
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d816ca8cd6d4e1dd0800000000000000
+      internalID: -2513486408112643699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_31
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1039
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c761899058084000800000000000000
+      internalID: 20275340588967881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_32
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 1039
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6228aa1b4edcc1f40800000000000000
+      internalID: 5700657610461184550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_33
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 1039
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e4bc01fa61b8d00800000000000000
+      internalID: 975898685412691555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_34
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 1039
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2244c286a67c2840800000000000000
+      internalID: 5200662127236629035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_35
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 607
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6497eac061833a270800000000000000
+      internalID: 8260507808880818502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_36
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 551
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74f18cc7c30eb580800000000000000
+      internalID: -8809599664425667457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 607
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ad809d8dd764de0800000000000000
+      internalID: -1349252668043240887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_38
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 551
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5d983b79dfc5730800000000000000
+      internalID: 3989342197937460686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_39
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 607
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867a9da24dfb15ab0800000000000000
+      internalID: -5021021191568513176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_40
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 551
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b54959cbdf959480800000000000000
+      internalID: -8893026122848451146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_41
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 607
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3285bfcbb59ddf0800000000000000
+      internalID: -154991844938734611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_42
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 551
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44bc2e9d0c0042130800000000000000
+      internalID: 3540956035309292356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_43
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 607
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a44806b5bfada760800000000000000
+      internalID: 7470820551855457445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_44
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 551
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9d02d6d34cae4e0800000000000000
+      internalID: -1951531720408770071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_45
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 539
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be7049079b577650800000000000000
+      internalID: 6230549313743781556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_46
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 539
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347ee775c4a5be9d0800000000000000
+      internalID: -2744000264020236477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_47
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 539
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6815349e3767f00800000000000000
+      internalID: 1114205403514767102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_48
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 539
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d88b17823bc37b60800000000000000
+      internalID: 7742755602255546577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_49
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 539
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506fe146014dfc230800000000000000
+      internalID: 3661378188939818501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_50
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 107
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5958af7a4b71af580800000000000000
+      internalID: -8792689257807706731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_51
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 51
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f948701ed260b4f70800000000000000
+      internalID: 9172431860188808351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_52
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 107
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e6d62f951443a10800000000000000
+      internalID: 1888205998350233234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_53
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 51
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad11883beca1b39d0800000000000000
+      internalID: -2793609668775636518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_54
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 107
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea82fdfd6e7bd16d0800000000000000
+      internalID: -3018053973042059090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_55
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 51
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e93dba6d50ecee0800000000000000
+      internalID: -1239046427916394864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_56
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 107
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dcd9eb5a22995be0800000000000000
+      internalID: -1487997491240903470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_57
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 51
+        width: 452
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d14f6d98723e050800000000000000
+      internalID: 5828545815717879191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_58
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 39
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0facdebddb4cc6ab0800000000000000
+      internalID: -5013415965452547344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_59
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 39
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3fdbe0b84a00b10800000000000000
+      internalID: 1945735956178793459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_60
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 39
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d13111f61311620800000000000000
+      internalID: 2743028001142938905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfMorte_61
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 39
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fc2759f27808aa0800000000000000
+      internalID: -6160775651802296543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      InfMorte_0: 6738813416271663739
+      InfMorte_1: 4748428335254092943
+      InfMorte_10: 2721851991730980257
+      InfMorte_11: -3041865490233794003
+      InfMorte_12: 128907620038394541
+      InfMorte_13: -5942253139223976614
+      InfMorte_14: 7994590906671149548
+      InfMorte_15: -6280111423026651690
+      InfMorte_16: 7237214682341582603
+      InfMorte_17: -8960656673236977576
+      InfMorte_18: -2119046208326437637
+      InfMorte_19: -4553787023272121687
+      InfMorte_2: 2619053408975463498
+      InfMorte_20: 6992090189910436519
+      InfMorte_21: -7866085982173894013
+      InfMorte_22: -5449739355753136129
+      InfMorte_23: 5971068001768116605
+      InfMorte_24: 720895318015543765
+      InfMorte_25: 6980393209013951887
+      InfMorte_26: 6606086627969074847
+      InfMorte_27: -288450826965871174
+      InfMorte_28: -176352128993918062
+      InfMorte_29: 4230581835657367701
+      InfMorte_3: 7094927967545881296
+      InfMorte_30: -2513486408112643699
+      InfMorte_31: 20275340588967881
+      InfMorte_32: 5700657610461184550
+      InfMorte_33: 975898685412691555
+      InfMorte_34: 5200662127236629035
+      InfMorte_35: 8260507808880818502
+      InfMorte_36: -8809599664425667457
+      InfMorte_37: -1349252668043240887
+      InfMorte_38: 3989342197937460686
+      InfMorte_39: -5021021191568513176
+      InfMorte_4: -2355988317800371412
+      InfMorte_40: -8893026122848451146
+      InfMorte_41: -154991844938734611
+      InfMorte_42: 3540956035309292356
+      InfMorte_43: 7470820551855457445
+      InfMorte_44: -1951531720408770071
+      InfMorte_45: 6230549313743781556
+      InfMorte_46: -2744000264020236477
+      InfMorte_47: 1114205403514767102
+      InfMorte_48: 7742755602255546577
+      InfMorte_49: 3661378188939818501
+      InfMorte_5: -1275268548306707238
+      InfMorte_50: -8792689257807706731
+      InfMorte_51: 9172431860188808351
+      InfMorte_52: 1888205998350233234
+      InfMorte_53: -2793609668775636518
+      InfMorte_54: -3018053973042059090
+      InfMorte_55: -1239046427916394864
+      InfMorte_56: -1487997491240903470
+      InfMorte_57: 5828545815717879191
+      InfMorte_58: -5013415965452547344
+      InfMorte_59: 1945735956178793459
+      InfMorte_6: -8820371588842493722
+      InfMorte_60: 2743028001142938905
+      InfMorte_61: -6160775651802296543
+      InfMorte_7: 6766588101292352379
+      InfMorte_8: -591928031378241320
+      InfMorte_9: 5942403850040071157
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

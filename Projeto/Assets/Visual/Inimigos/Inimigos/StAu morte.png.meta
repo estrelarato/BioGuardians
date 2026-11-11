@@ -1,0 +1,943 @@
+fileFormatVersion: 2
+guid: 4d7a1b20204b16f41ba1fcfb1c1c2a59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6917323391702520227
+    second: StAu morte_0
+  - first:
+      213: 9031324718887490488
+    second: StAu morte_1
+  - first:
+      213: 7162072411759567694
+    second: StAu morte_2
+  - first:
+      213: -1167593603073650320
+    second: StAu morte_3
+  - first:
+      213: 8246537167236156495
+    second: StAu morte_4
+  - first:
+      213: 5852823422106538539
+    second: StAu morte_5
+  - first:
+      213: 413907127062369738
+    second: StAu morte_6
+  - first:
+      213: -3415866650392865927
+    second: StAu morte_7
+  - first:
+      213: 7391597968587848566
+    second: StAu morte_8
+  - first:
+      213: -3660611641910195716
+    second: StAu morte_9
+  - first:
+      213: 7807210512895720022
+    second: StAu morte_10
+  - first:
+      213: -2031505243122749740
+    second: StAu morte_11
+  - first:
+      213: 7406843929295682228
+    second: StAu morte_12
+  - first:
+      213: 8534556552934705039
+    second: StAu morte_13
+  - first:
+      213: 7116401105827482790
+    second: StAu morte_14
+  - first:
+      213: 3094938617055290854
+    second: StAu morte_15
+  - first:
+      213: 908116813792499624
+    second: StAu morte_16
+  - first:
+      213: 6163936496768967080
+    second: StAu morte_17
+  - first:
+      213: -4850897003310104986
+    second: StAu morte_18
+  - first:
+      213: -6447937819404437525
+    second: StAu morte_19
+  - first:
+      213: -9170586851335983213
+    second: StAu morte_20
+  - first:
+      213: -2610140323026021367
+    second: StAu morte_21
+  - first:
+      213: -3933812314304422840
+    second: StAu morte_22
+  - first:
+      213: -5571234360042972303
+    second: StAu morte_23
+  - first:
+      213: -6547391246047131003
+    second: StAu morte_24
+  - first:
+      213: 986477929525316585
+    second: StAu morte_25
+  - first:
+      213: -5370142867471214647
+    second: StAu morte_26
+  - first:
+      213: -5135474134469130415
+    second: StAu morte_27
+  - first:
+      213: -197528852043742529
+    second: StAu morte_28
+  - first:
+      213: -3007508825011098325
+    second: StAu morte_29
+  - first:
+      213: 6070486715353645392
+    second: StAu morte_30
+  - first:
+      213: 1863228978754521488
+    second: StAu morte_31
+  - first:
+      213: -6282553893234355590
+    second: StAu morte_32
+  - first:
+      213: 2735582101534327308
+    second: StAu morte_33
+  - first:
+      213: 2569797990968833275
+    second: StAu morte_34
+  - first:
+      213: -4531249537163340781
+    second: StAu morte_35
+  - first:
+      213: -2771630470522752419
+    second: StAu morte_36
+  - first:
+      213: 3722739218390535715
+    second: StAu morte_37
+  - first:
+      213: 1472478156213918637
+    second: StAu morte_38
+  - first:
+      213: 2570249823567209164
+    second: StAu morte_39
+  - first:
+      213: 2974506833669807252
+    second: StAu morte_40
+  - first:
+      213: -2216966496797198629
+    second: StAu morte_41
+  - first:
+      213: -6094378995021432722
+    second: StAu morte_42
+  - first:
+      213: 8783303475805629583
+    second: StAu morte_43
+  - first:
+      213: 1788135977927950171
+    second: StAu morte_44
+  - first:
+      213: 5364950782727323667
+    second: StAu morte_45
+  - first:
+      213: -3671405072910342106
+    second: StAu morte_46
+  - first:
+      213: 8990300696304364529
+    second: StAu morte_47
+  - first:
+      213: 6125955876164751131
+    second: StAu morte_48
+  - first:
+      213: 9078394329578464931
+    second: StAu morte_49
+  - first:
+      213: -3733625416320228756
+    second: StAu morte_50
+  - first:
+      213: 6940957980194171967
+    second: StAu morte_51
+  - first:
+      213: -1680501791298989455
+    second: StAu morte_52
+  - first:
+      213: -1862717327590993367
+    second: StAu morte_53
+  - first:
+      213: 4434885794733929003
+    second: StAu morte_54
+  - first:
+      213: 8608636103489427295
+    second: StAu morte_55
+  - first:
+      213: -8274502984453771695
+    second: StAu morte_56
+  - first:
+      213: 3199758576768165993
+    second: StAu morte_57
+  - first:
+      213: -122315523254316160
+    second: StAu morte_58
+  - first:
+      213: 4106279224397384224
+    second: StAu morte_59
+  - first:
+      213: 1549452446308118294
+    second: StAu morte_60
+  - first:
+      213: 1884014507570803279
+    second: StAu morte_61
+  - first:
+      213: 1137545556470990943
+    second: StAu morte_62
+  - first:
+      213: -5146170183194766698
+    second: StAu morte_63
+  - first:
+      213: -4102806903752771263
+    second: StAu morte_64
+  - first:
+      213: 8768706387474518754
+    second: StAu morte_65
+  - first:
+      213: 6496571439948299782
+    second: StAu morte_66
+  - first:
+      213: -1140647994115415314
+    second: StAu morte_67
+  - first:
+      213: -7792473252315327541
+    second: StAu morte_68
+  - first:
+      213: 1340281628887200323
+    second: StAu morte_69
+  - first:
+      213: -662023430536916085
+    second: StAu morte_70
+  - first:
+      213: 7843370631003517909
+    second: StAu morte_71
+  - first:
+      213: 2576398981549238046
+    second: StAu morte_72
+  - first:
+      213: 7199580826033764437
+    second: StAu morte_73
+  - first:
+      213: -7937477478923180862
+    second: StAu morte_74
+  - first:
+      213: -401209788001726449
+    second: StAu morte_75
+  - first:
+      213: -1791110129842999347
+    second: StAu morte_76
+  - first:
+      213: 23447047284992344
+    second: StAu morte_77
+  - first:
+      213: -1982585951583127826
+    second: StAu morte_78
+  - first:
+      213: 5919116237420092089
+    second: StAu morte_79
+  - first:
+      213: -3475573293904602719
+    second: StAu morte_80
+  - first:
+      213: 5616209401419447179
+    second: StAu morte_81
+  - first:
+      213: -6482536913275792432
+    second: StAu morte_82
+  - first:
+      213: -6343565603341259163
+    second: StAu morte_83
+  - first:
+      213: -2572639700380697166
+    second: StAu morte_84
+  - first:
+      213: 8713973574250838453
+    second: StAu morte_85
+  - first:
+      213: -7313981012912987287
+    second: StAu morte_86
+  - first:
+      213: -6846153180983327789
+    second: StAu morte_87
+  - first:
+      213: 8885866556934462027
+    second: StAu morte_88
+  - first:
+      213: 1058936706094436905
+    second: StAu morte_89
+  - first:
+      213: -3982585644746058409
+    second: StAu morte_90
+  - first:
+      213: 6830233276668449765
+    second: StAu morte_91
+  - first:
+      213: -2757137922213021305
+    second: StAu morte_92
+  - first:
+      213: -2584791025202503139
+    second: StAu morte_93
+  - first:
+      213: 4339937532211198798
+    second: StAu morte_94
+  - first:
+      213: 1608633945747791094
+    second: StAu morte_95
+  - first:
+      213: -766317717058634134
+    second: StAu morte_96
+  - first:
+      213: -199275987690041760
+    second: StAu morte_97
+  - first:
+      213: -2381584986173406679
+    second: StAu morte_98
+  - first:
+      213: 7191437971057567883
+    second: StAu morte_99
+  - first:
+      213: -6650360520386914872
+    second: StAu morte_100
+  - first:
+      213: 804641896225159483
+    second: StAu morte_101
+  - first:
+      213: 8815594227208681605
+    second: StAu morte_102
+  - first:
+      213: -1677474529465693990
+    second: StAu morte_103
+  - first:
+      213: 5279211483267174150
+    second: StAu morte_104
+  - first:
+      213: -1086175796434015771
+    second: StAu morte_105
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StAu morte_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1dde6a9f44fff50800000000000000
+      internalID: 6917323391702520227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b35e785bf5b55d70800000000000000
+      internalID: 9031324718887490488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43ed8689eac46360800000000000000
+      internalID: 7162072411759567694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071d6ceddcfdbcfe0800000000000000
+      internalID: -1167593603073650320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4cca209cd5917270800000000000000
+      internalID: 8246537167236156495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b221fbf84e7693150800000000000000
+      internalID: 5852823422106538539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac51e8ec65e7eb500800000000000000
+      internalID: 413907127062369738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_7
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973da3721676890d0800000000000000
+      internalID: -3415866650392865927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_8
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b7d28a03b349660800000000000000
+      internalID: 7391597968587848566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_9
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9884f3b15e23dc0800000000000000
+      internalID: -3660611641910195716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a38dbd898c85c60800000000000000
+      internalID: 7807210512895720022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de2358aeb4aec3e0800000000000000
+      internalID: -2031505243122749740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_12
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba7d608f456ac660800000000000000
+      internalID: 7406843929295682228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_13
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87c72587f5d07670800000000000000
+      internalID: 8534556552934705039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac4b08f91982c260800000000000000
+      internalID: 7116401105827482790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e52837464e63fa20800000000000000
+      internalID: 3094938617055290854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_16
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a759a44e674a9c00800000000000000
+      internalID: 908116813792499624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1eafbf593ba8550800000000000000
+      internalID: 6163936496768967080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_18
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66eb1bb60e62eacb0800000000000000
+      internalID: -4850897003310104986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_19
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7779447b25486a0800000000000000
+      internalID: -6447937819404437525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f2048b8d78bb080800000000000000
+      internalID: -9170586851335983213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StAu morte_21
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9045c10943be6cbd0800000000000000
+      internalID: -2610140323026021367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 02a4992729f739f4bace48ac69ff57c4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":500.0,"y":500.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      StAu morte_0: 6917323391702520227
+      StAu morte_1: 9031324718887490488
+      StAu morte_10: 7807210512895720022
+      StAu morte_11: -2031505243122749740
+      StAu morte_12: 7406843929295682228
+      StAu morte_13: 8534556552934705039
+      StAu morte_14: 7116401105827482790
+      StAu morte_15: 3094938617055290854
+      StAu morte_16: 908116813792499624
+      StAu morte_17: 6163936496768967080
+      StAu morte_18: -4850897003310104986
+      StAu morte_19: -6447937819404437525
+      StAu morte_2: 7162072411759567694
+      StAu morte_20: -9170586851335983213
+      StAu morte_21: -2610140323026021367
+      StAu morte_3: -1167593603073650320
+      StAu morte_4: 8246537167236156495
+      StAu morte_5: 5852823422106538539
+      StAu morte_6: 413907127062369738
+      StAu morte_7: -3415866650392865927
+      StAu morte_8: 7391597968587848566
+      StAu morte_9: -3660611641910195716
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

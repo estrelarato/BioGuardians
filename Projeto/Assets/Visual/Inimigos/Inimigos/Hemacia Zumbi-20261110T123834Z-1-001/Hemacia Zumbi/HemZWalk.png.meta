@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 316b7d56b21280941b40489e0fa49959
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -698653419552390060
+    second: HemZWalk_0
+  - first:
+      213: -5404372798794258085
+    second: HemZWalk_1
+  - first:
+      213: 4865616741264452777
+    second: HemZWalk_2
+  - first:
+      213: -6370056274064765025
+    second: HemZWalk_3
+  - first:
+      213: 3438229635826702477
+    second: HemZWalk_4
+  - first:
+      213: 8296916302900012636
+    second: HemZWalk_5
+  - first:
+      213: -3460728844493386636
+    second: HemZWalk_6
+  - first:
+      213: -7959753542437227542
+    second: HemZWalk_7
+  - first:
+      213: 5482520183430013486
+    second: HemZWalk_8
+  - first:
+      213: 7547320813859804525
+    second: HemZWalk_9
+  - first:
+      213: 5786040073214850011
+    second: HemZWalk_10
+  - first:
+      213: -2837621845661714336
+    second: HemZWalk_11
+  - first:
+      213: 2356977805879560608
+    second: HemZWalk_12
+  - first:
+      213: 2549680966822734674
+    second: HemZWalk_13
+  - first:
+      213: 1752594384833051369
+    second: HemZWalk_14
+  - first:
+      213: 3302241255895345689
+    second: HemZWalk_15
+  - first:
+      213: 7667136207921660952
+    second: HemZWalk_16
+  - first:
+      213: 6214235403512669173
+    second: HemZWalk_17
+  - first:
+      213: 4310102416871907947
+    second: HemZWalk_18
+  - first:
+      213: 8140591559574500283
+    second: HemZWalk_19
+  - first:
+      213: 377859047986463436
+    second: HemZWalk_20
+  - first:
+      213: -1036244977206931636
+    second: HemZWalk_21
+  - first:
+      213: 2652684648044208145
+    second: HemZWalk_22
+  - first:
+      213: -4529150726369552551
+    second: HemZWalk_23
+  - first:
+      213: -1020809110333939542
+    second: HemZWalk_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HemZWalk_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 2438
+        width: 356
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454c772aa62ed46f0800000000000000
+      internalID: -698653419552390060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_1
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 2438
+        width: 356
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59a516b29fcff4b0800000000000000
+      internalID: -5404372798794258085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_2
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 2438
+        width: 356
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ace244a5a4268340800000000000000
+      internalID: 4865616741264452777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_3
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 2425
+        width: 359
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f0f1991930997a0800000000000000
+      internalID: -6370056274064765025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_4
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 2425
+        width: 359
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88dba323ab07bf20800000000000000
+      internalID: 3438229635826702477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_5
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1825
+        width: 359
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56a0852b61942370800000000000000
+      internalID: 8296916302900012636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_6
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1834
+        width: 371
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c0600a37509ffc0800000000000000
+      internalID: -3460728844493386636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_7
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 1834
+        width: 371
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae33f536356498190800000000000000
+      internalID: -7959753542437227542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_8
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 1834
+        width: 371
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2261472f03d51c40800000000000000
+      internalID: 5482520183430013486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_9
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 1835
+        width: 392
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d659604fa487db860800000000000000
+      internalID: 7547320813859804525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1235
+        width: 392
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd375247ac42c4050800000000000000
+      internalID: 5786040073214850011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_11
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1235
+        width: 414
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068f17a37fdbe98d0800000000000000
+      internalID: -2837621845661714336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_12
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 1235
+        width: 414
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a94eee93daa5b020800000000000000
+      internalID: 2356977805879560608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_13
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 1236
+        width: 424
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b2b0e9459426320800000000000000
+      internalID: 2549680966822734674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_14
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 1236
+        width: 424
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea715fae47725810800000000000000
+      internalID: 1752594384833051369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_15
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 636
+        width: 424
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a284c1deae3dd20800000000000000
+      internalID: 3302241255895345689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_16
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 636
+        width: 357
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814c4b542c3276a60800000000000000
+      internalID: 7667136207921660952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_17
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 636
+        width: 357
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f36701dc266d3650800000000000000
+      internalID: 6214235403512669173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_18
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 636
+        width: 357
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62e33fef4f80db30800000000000000
+      internalID: 4310102416871907947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_19
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 636
+        width: 356
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb33bf984e039f070800000000000000
+      internalID: 8140591559574500283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_20
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 36
+        width: 356
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2866a5dcc6e3500800000000000000
+      internalID: 377859047986463436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_21
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 36
+        width: 356
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f4c49fea48e91f0800000000000000
+      internalID: -1036244977206931636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_22
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 40
+        width: 361
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110aec302aa30d420800000000000000
+      internalID: 2652684648044208145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_23
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 40
+        width: 361
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9575a8c29693521c0800000000000000
+      internalID: -4529150726369552551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZWalk_24
+      rect:
+        serializedVersion: 2
+        x: 2533
+        y: 40
+        width: 361
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0201bc58b55d1f0800000000000000
+      internalID: -1020809110333939542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HemZWalk_0: -698653419552390060
+      HemZWalk_1: -5404372798794258085
+      HemZWalk_10: 5786040073214850011
+      HemZWalk_11: -2837621845661714336
+      HemZWalk_12: 2356977805879560608
+      HemZWalk_13: 2549680966822734674
+      HemZWalk_14: 1752594384833051369
+      HemZWalk_15: 3302241255895345689
+      HemZWalk_16: 7667136207921660952
+      HemZWalk_17: 6214235403512669173
+      HemZWalk_18: 4310102416871907947
+      HemZWalk_19: 8140591559574500283
+      HemZWalk_2: 4865616741264452777
+      HemZWalk_20: 377859047986463436
+      HemZWalk_21: -1036244977206931636
+      HemZWalk_22: 2652684648044208145
+      HemZWalk_23: -4529150726369552551
+      HemZWalk_24: -1020809110333939542
+      HemZWalk_3: -6370056274064765025
+      HemZWalk_4: 3438229635826702477
+      HemZWalk_5: 8296916302900012636
+      HemZWalk_6: -3460728844493386636
+      HemZWalk_7: -7959753542437227542
+      HemZWalk_8: 5482520183430013486
+      HemZWalk_9: 7547320813859804525
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

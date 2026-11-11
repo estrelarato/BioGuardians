@@ -1,0 +1,1885 @@
+fileFormatVersion: 2
+guid: 1d998564446284e4fb59735a5de41874
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1479478002543266837
+    second: S.A.R.M. morte_0
+  - first:
+      213: -5348456087149957188
+    second: S.A.R.M. morte_1
+  - first:
+      213: 5413599202036387254
+    second: S.A.R.M. morte_2
+  - first:
+      213: 8374240143629580261
+    second: S.A.R.M. morte_3
+  - first:
+      213: -1382241845020137548
+    second: S.A.R.M. morte_4
+  - first:
+      213: -5078680680680548048
+    second: S.A.R.M. morte_5
+  - first:
+      213: 1942025792150555277
+    second: S.A.R.M. morte_6
+  - first:
+      213: -7268072218180743582
+    second: S.A.R.M. morte_7
+  - first:
+      213: -2097370995252240389
+    second: S.A.R.M. morte_8
+  - first:
+      213: -7664278954359549217
+    second: S.A.R.M. morte_9
+  - first:
+      213: 3883029013536396269
+    second: S.A.R.M. morte_10
+  - first:
+      213: -2515037640419768643
+    second: S.A.R.M. morte_11
+  - first:
+      213: 387025165707963961
+    second: S.A.R.M. morte_12
+  - first:
+      213: 1441575239521788245
+    second: S.A.R.M. morte_13
+  - first:
+      213: 8641200320463339746
+    second: S.A.R.M. morte_14
+  - first:
+      213: -1259722737249525858
+    second: S.A.R.M. morte_15
+  - first:
+      213: 1909748004560716149
+    second: S.A.R.M. morte_16
+  - first:
+      213: 7199674516532768622
+    second: S.A.R.M. morte_17
+  - first:
+      213: 1343581378171860023
+    second: S.A.R.M. morte_18
+  - first:
+      213: -2557503954725205995
+    second: S.A.R.M. morte_19
+  - first:
+      213: 1173825531279511859
+    second: S.A.R.M. morte_20
+  - first:
+      213: -8496697860068964066
+    second: S.A.R.M. morte_21
+  - first:
+      213: 4808857739695865946
+    second: S.A.R.M. morte_22
+  - first:
+      213: 7258351562794255543
+    second: S.A.R.M. morte_23
+  - first:
+      213: 3464312694231380874
+    second: S.A.R.M. morte_24
+  - first:
+      213: -6848561704607655500
+    second: S.A.R.M. morte_25
+  - first:
+      213: 8506530646540734642
+    second: S.A.R.M. morte_26
+  - first:
+      213: 947605628277420379
+    second: S.A.R.M. morte_27
+  - first:
+      213: -2416927610596136249
+    second: S.A.R.M. morte_28
+  - first:
+      213: 683581749550145862
+    second: S.A.R.M. morte_29
+  - first:
+      213: -5073728833258163969
+    second: S.A.R.M. morte_30
+  - first:
+      213: 7409948024886445772
+    second: S.A.R.M. morte_31
+  - first:
+      213: -4296112676947809172
+    second: S.A.R.M. morte_32
+  - first:
+      213: -5406029520607610854
+    second: S.A.R.M. morte_33
+  - first:
+      213: 3458960180870085624
+    second: S.A.R.M. morte_34
+  - first:
+      213: -6431097653938685170
+    second: S.A.R.M. morte_35
+  - first:
+      213: 8475819016623986045
+    second: S.A.R.M. morte_36
+  - first:
+      213: -7941391006455891772
+    second: S.A.R.M. morte_37
+  - first:
+      213: 6880333054130810189
+    second: S.A.R.M. morte_38
+  - first:
+      213: -8120784274042816654
+    second: S.A.R.M. morte_39
+  - first:
+      213: 2284288102460785547
+    second: S.A.R.M. morte_40
+  - first:
+      213: -536692035091713404
+    second: S.A.R.M. morte_41
+  - first:
+      213: -1253282052284810725
+    second: S.A.R.M. morte_42
+  - first:
+      213: 293162010404546900
+    second: S.A.R.M. morte_43
+  - first:
+      213: -409318205487451042
+    second: S.A.R.M. morte_44
+  - first:
+      213: -3817157165639045224
+    second: S.A.R.M. morte_45
+  - first:
+      213: 5611905576448346892
+    second: S.A.R.M. morte_46
+  - first:
+      213: 1959252717738489505
+    second: S.A.R.M. morte_47
+  - first:
+      213: -8869230964295155561
+    second: S.A.R.M. morte_48
+  - first:
+      213: 4796435717847697904
+    second: S.A.R.M. morte_49
+  - first:
+      213: -212437429556691833
+    second: S.A.R.M. morte_50
+  - first:
+      213: 3444405165519825564
+    second: S.A.R.M. morte_51
+  - first:
+      213: 1747092394985557548
+    second: S.A.R.M. morte_52
+  - first:
+      213: -9054409232599641251
+    second: S.A.R.M. morte_53
+  - first:
+      213: 7250991748299392917
+    second: S.A.R.M. morte_54
+  - first:
+      213: -274863546628374966
+    second: S.A.R.M. morte_55
+  - first:
+      213: 6939562875874908926
+    second: S.A.R.M. morte_56
+  - first:
+      213: 6797185417379595502
+    second: S.A.R.M. morte_57
+  - first:
+      213: 6458880496060243366
+    second: S.A.R.M. morte_58
+  - first:
+      213: 7304115432223173723
+    second: S.A.R.M. morte_59
+  - first:
+      213: -6347889783201409824
+    second: S.A.R.M. morte_60
+  - first:
+      213: -2781816670074401892
+    second: S.A.R.M. morte_61
+  - first:
+      213: 1985695198735983033
+    second: S.A.R.M. morte_62
+  - first:
+      213: -3190114624140146391
+    second: S.A.R.M. morte_63
+  - first:
+      213: 2948223012482385740
+    second: S.A.R.M. morte_64
+  - first:
+      213: -6380721976168800967
+    second: S.A.R.M. morte_65
+  - first:
+      213: 572822641993995550
+    second: S.A.R.M. morte_66
+  - first:
+      213: -4071804241426337803
+    second: S.A.R.M. morte_67
+  - first:
+      213: -2526963033333861576
+    second: S.A.R.M. morte_68
+  - first:
+      213: 3529768490482940298
+    second: S.A.R.M. morte_69
+  - first:
+      213: 4256330002870708199
+    second: S.A.R.M. morte_70
+  - first:
+      213: -4464191856077546299
+    second: S.A.R.M. morte_71
+  - first:
+      213: 4157438136084977345
+    second: S.A.R.M. morte_72
+  - first:
+      213: -6606321404758681990
+    second: S.A.R.M. morte_73
+  - first:
+      213: -4983397743704204702
+    second: S.A.R.M. morte_74
+  - first:
+      213: -7143146488998110961
+    second: S.A.R.M. morte_75
+  - first:
+      213: -6704806319675427201
+    second: S.A.R.M. morte_76
+  - first:
+      213: -6644859677592573018
+    second: S.A.R.M. morte_77
+  - first:
+      213: -2875971754320562897
+    second: S.A.R.M. morte_78
+  - first:
+      213: 7304314516825339847
+    second: S.A.R.M. morte_79
+  - first:
+      213: -7449740071994013982
+    second: S.A.R.M. morte_80
+  - first:
+      213: -4319390610787789848
+    second: S.A.R.M. morte_81
+  - first:
+      213: 4222304562591944053
+    second: S.A.R.M. morte_82
+  - first:
+      213: 5230066950185203608
+    second: S.A.R.M. morte_83
+  - first:
+      213: -2951428462674283683
+    second: S.A.R.M. morte_84
+  - first:
+      213: 5110851558538209003
+    second: S.A.R.M. morte_85
+  - first:
+      213: 2991539039902739710
+    second: S.A.R.M. morte_86
+  - first:
+      213: -1322558951995503070
+    second: S.A.R.M. morte_87
+  - first:
+      213: 6918678422670343709
+    second: S.A.R.M. morte_88
+  - first:
+      213: -5454293738157966119
+    second: S.A.R.M. morte_89
+  - first:
+      213: 8089816854136318241
+    second: S.A.R.M. morte_90
+  - first:
+      213: -145533724264566066
+    second: S.A.R.M. morte_91
+  - first:
+      213: 6562774860652468006
+    second: S.A.R.M. morte_92
+  - first:
+      213: 8472731790105811664
+    second: S.A.R.M. morte_93
+  - first:
+      213: 43153835681840871
+    second: S.A.R.M. morte_94
+  - first:
+      213: 3987395299558744728
+    second: S.A.R.M. morte_95
+  - first:
+      213: -6156424638249319986
+    second: S.A.R.M. morte_96
+  - first:
+      213: -8632920004664727773
+    second: S.A.R.M. morte_97
+  - first:
+      213: -3790127889548056879
+    second: S.A.R.M. morte_98
+  - first:
+      213: 6889446387261178708
+    second: S.A.R.M. morte_99
+  - first:
+      213: -8093974118433175915
+    second: S.A.R.M. morte_100
+  - first:
+      213: -1044130730166452368
+    second: S.A.R.M. morte_101
+  - first:
+      213: -520246642283675538
+    second: S.A.R.M. morte_102
+  - first:
+      213: -5367018807556099019
+    second: S.A.R.M. morte_103
+  - first:
+      213: 8655646794207151741
+    second: S.A.R.M. morte_104
+  - first:
+      213: -2235279694225347323
+    second: S.A.R.M. morte_105
+  - first:
+      213: -5512641156393607499
+    second: S.A.R.M. morte_106
+  - first:
+      213: 6667425437653146012
+    second: S.A.R.M. morte_107
+  - first:
+      213: -1033673492314254546
+    second: S.A.R.M. morte_108
+  - first:
+      213: -4113476332511920706
+    second: S.A.R.M. morte_109
+  - first:
+      213: -3331641645573700055
+    second: S.A.R.M. morte_110
+  - first:
+      213: -7272924105420675193
+    second: S.A.R.M. morte_111
+  - first:
+      213: 7787636662369110196
+    second: S.A.R.M. morte_112
+  - first:
+      213: 5955436116749868662
+    second: S.A.R.M. morte_113
+  - first:
+      213: 1154507880712455310
+    second: S.A.R.M. morte_114
+  - first:
+      213: 2464579747565473632
+    second: S.A.R.M. morte_115
+  - first:
+      213: 8143686049443673251
+    second: S.A.R.M. morte_116
+  - first:
+      213: -8166175415113854077
+    second: S.A.R.M. morte_117
+  - first:
+      213: 8258347006574894474
+    second: S.A.R.M. morte_118
+  - first:
+      213: -7756159030313014520
+    second: S.A.R.M. morte_119
+  - first:
+      213: -4847988214344192295
+    second: S.A.R.M. morte_120
+  - first:
+      213: -8788298840087149599
+    second: S.A.R.M. morte_121
+  - first:
+      213: -2390684381692406187
+    second: S.A.R.M. morte_122
+  - first:
+      213: -9085787591170583449
+    second: S.A.R.M. morte_123
+  - first:
+      213: -3865488173300086645
+    second: S.A.R.M. morte_124
+  - first:
+      213: 1494184202657078451
+    second: S.A.R.M. morte_125
+  - first:
+      213: -7827052489402528735
+    second: S.A.R.M. morte_126
+  - first:
+      213: -5638732374140178000
+    second: S.A.R.M. morte_127
+  - first:
+      213: 340785485101386370
+    second: S.A.R.M. morte_128
+  - first:
+      213: 4682310623494429471
+    second: S.A.R.M. morte_129
+  - first:
+      213: 526956511346101757
+    second: S.A.R.M. morte_130
+  - first:
+      213: -1630728509491734691
+    second: S.A.R.M. morte_131
+  - first:
+      213: -4661076259664338108
+    second: S.A.R.M. morte_132
+  - first:
+      213: 6468434757814581609
+    second: S.A.R.M. morte_133
+  - first:
+      213: -2267198284916657603
+    second: S.A.R.M. morte_134
+  - first:
+      213: -2251906919094745093
+    second: S.A.R.M. morte_135
+  - first:
+      213: -2117444123277024155
+    second: S.A.R.M. morte_136
+  - first:
+      213: 7856901035857814518
+    second: S.A.R.M. morte_137
+  - first:
+      213: -7231306262494895622
+    second: S.A.R.M. morte_138
+  - first:
+      213: 6108290673912982148
+    second: S.A.R.M. morte_139
+  - first:
+      213: -2395229203412557352
+    second: S.A.R.M. morte_140
+  - first:
+      213: 4907362765280358138
+    second: S.A.R.M. morte_141
+  - first:
+      213: -6631353820309368723
+    second: S.A.R.M. morte_142
+  - first:
+      213: 909161040457531792
+    second: S.A.R.M. morte_143
+  - first:
+      213: -6704536213965124825
+    second: S.A.R.M. morte_144
+  - first:
+      213: 3379595603016046996
+    second: S.A.R.M. morte_145
+  - first:
+      213: -2841378673754892290
+    second: S.A.R.M. morte_146
+  - first:
+      213: -4212545858249821134
+    second: S.A.R.M. morte_147
+  - first:
+      213: -2987869077221671824
+    second: S.A.R.M. morte_148
+  - first:
+      213: 4065175869268552675
+    second: S.A.R.M. morte_149
+  - first:
+      213: 6055352847603641417
+    second: S.A.R.M. morte_150
+  - first:
+      213: -6856672527691379084
+    second: S.A.R.M. morte_151
+  - first:
+      213: 534036212981678683
+    second: S.A.R.M. morte_152
+  - first:
+      213: 1529071787118353614
+    second: S.A.R.M. morte_153
+  - first:
+      213: 3933243320967727163
+    second: S.A.R.M. morte_154
+  - first:
+      213: -3593479303981211273
+    second: S.A.R.M. morte_155
+  - first:
+      213: -3613828003098892922
+    second: S.A.R.M. morte_156
+  - first:
+      213: -5690878612419663047
+    second: S.A.R.M. morte_157
+  - first:
+      213: -2181498178787357867
+    second: S.A.R.M. morte_158
+  - first:
+      213: 4327585658745472192
+    second: S.A.R.M. morte_159
+  - first:
+      213: -1842346384723099060
+    second: S.A.R.M. morte_160
+  - first:
+      213: -6074259105886089125
+    second: S.A.R.M. morte_161
+  - first:
+      213: 926994650862883511
+    second: S.A.R.M. morte_162
+  - first:
+      213: -59300861406486728
+    second: S.A.R.M. morte_163
+  - first:
+      213: -1711958037907575187
+    second: S.A.R.M. morte_164
+  - first:
+      213: -1195854702040835816
+    second: S.A.R.M. morte_165
+  - first:
+      213: 3063609902851604968
+    second: S.A.R.M. morte_166
+  - first:
+      213: -796780129055285862
+    second: S.A.R.M. morte_167
+  - first:
+      213: 3370718919705867990
+    second: S.A.R.M. morte_168
+  - first:
+      213: -7383618822227821448
+    second: S.A.R.M. morte_169
+  - first:
+      213: 8620881954929314260
+    second: S.A.R.M. morte_170
+  - first:
+      213: -5470281933007130652
+    second: S.A.R.M. morte_171
+  - first:
+      213: -5918077818347099020
+    second: S.A.R.M. morte_172
+  - first:
+      213: 7832141003016743741
+    second: S.A.R.M. morte_173
+  - first:
+      213: -2275678222516495030
+    second: S.A.R.M. morte_174
+  - first:
+      213: 4280719355270471224
+    second: S.A.R.M. morte_175
+  - first:
+      213: -5320997017035992134
+    second: S.A.R.M. morte_176
+  - first:
+      213: -553608423093821742
+    second: S.A.R.M. morte_177
+  - first:
+      213: -6203830907755276382
+    second: S.A.R.M. morte_178
+  - first:
+      213: -6042506232795264236
+    second: S.A.R.M. morte_179
+  - first:
+      213: 6784493926262444593
+    second: S.A.R.M. morte_180
+  - first:
+      213: 8551418902297033989
+    second: S.A.R.M. morte_181
+  - first:
+      213: 2234132082246394019
+    second: S.A.R.M. morte_182
+  - first:
+      213: 8804414941945691544
+    second: S.A.R.M. morte_183
+  - first:
+      213: 7524947656808772613
+    second: S.A.R.M. morte_184
+  - first:
+      213: 6515735164900487922
+    second: S.A.R.M. morte_185
+  - first:
+      213: 165578967457257408
+    second: S.A.R.M. morte_186
+  - first:
+      213: 7208266664555516638
+    second: S.A.R.M. morte_187
+  - first:
+      213: -1763735247968679515
+    second: S.A.R.M. morte_188
+  - first:
+      213: 770889419239760473
+    second: S.A.R.M. morte_189
+  - first:
+      213: -461362342593648140
+    second: S.A.R.M. morte_190
+  - first:
+      213: -1103693076958790969
+    second: S.A.R.M. morte_191
+  - first:
+      213: -6976747442203183041
+    second: S.A.R.M. morte_192
+  - first:
+      213: -6871971574380423251
+    second: S.A.R.M. morte_193
+  - first:
+      213: -9159823580965130273
+    second: S.A.R.M. morte_194
+  - first:
+      213: -6715548812005070149
+    second: S.A.R.M. morte_195
+  - first:
+      213: -425849202224243672
+    second: S.A.R.M. morte_196
+  - first:
+      213: 5713539693396100529
+    second: S.A.R.M. morte_197
+  - first:
+      213: -3786569746108003279
+    second: S.A.R.M. morte_198
+  - first:
+      213: 5457608521073916896
+    second: S.A.R.M. morte_199
+  - first:
+      213: 8247440094427088526
+    second: S.A.R.M. morte_200
+  - first:
+      213: -1958774172507377801
+    second: S.A.R.M. morte_201
+  - first:
+      213: -4909237474881018812
+    second: S.A.R.M. morte_202
+  - first:
+      213: 1114649270592575228
+    second: S.A.R.M. morte_203
+  - first:
+      213: 4299470175420435225
+    second: S.A.R.M. morte_204
+  - first:
+      213: 5767636304452492309
+    second: S.A.R.M. morte_205
+  - first:
+      213: -9130930514878588613
+    second: S.A.R.M. morte_206
+  - first:
+      213: 7494157821680917597
+    second: S.A.R.M. morte_207
+  - first:
+      213: 1438841437817827144
+    second: S.A.R.M. morte_208
+  - first:
+      213: 7318581690129772899
+    second: S.A.R.M. morte_209
+  - first:
+      213: 5711797769956602124
+    second: S.A.R.M. morte_210
+  - first:
+      213: -2063387516098053750
+    second: S.A.R.M. morte_211
+  - first:
+      213: -7459502375067281926
+    second: S.A.R.M. morte_212
+  - first:
+      213: 373277645182172744
+    second: S.A.R.M. morte_213
+  - first:
+      213: 9356164972342166
+    second: S.A.R.M. morte_214
+  - first:
+      213: -6319411700548808353
+    second: S.A.R.M. morte_215
+  - first:
+      213: -3730472633795109137
+    second: S.A.R.M. morte_216
+  - first:
+      213: 4117636368919186908
+    second: S.A.R.M. morte_217
+  - first:
+      213: -7959256692043326534
+    second: S.A.R.M. morte_218
+  - first:
+      213: -5901553584093095542
+    second: S.A.R.M. morte_219
+  - first:
+      213: 7497565209779027958
+    second: S.A.R.M. morte_220
+  - first:
+      213: 412735238552246831
+    second: S.A.R.M. morte_221
+  - first:
+      213: -8537445162031924351
+    second: S.A.R.M. morte_222
+  - first:
+      213: -8438752370836020410
+    second: S.A.R.M. morte_223
+  - first:
+      213: -9116254007916830819
+    second: S.A.R.M. morte_224
+  - first:
+      213: 6677472980654456491
+    second: S.A.R.M. morte_225
+  - first:
+      213: -8251597109230475395
+    second: S.A.R.M. morte_226
+  - first:
+      213: -6708233172691795094
+    second: S.A.R.M. morte_227
+  - first:
+      213: 2422101189104738806
+    second: S.A.R.M. morte_228
+  - first:
+      213: -2494822020865583055
+    second: S.A.R.M. morte_229
+  - first:
+      213: -1206296903326288021
+    second: S.A.R.M. morte_230
+  - first:
+      213: -7673004027946930543
+    second: S.A.R.M. morte_231
+  - first:
+      213: -7121581515504191133
+    second: S.A.R.M. morte_232
+  - first:
+      213: -6819851156352787968
+    second: S.A.R.M. morte_233
+  - first:
+      213: -1544731012562206871
+    second: S.A.R.M. morte_234
+  - first:
+      213: 2069381222428473555
+    second: S.A.R.M. morte_235
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: S.A.R.M. morte_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be377656896d77be0800000000000000
+      internalID: -1479478002543266837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 6000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfa6aca68776c5b0800000000000000
+      internalID: -5348456087149957188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 6000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd87b1bac7f02b40800000000000000
+      internalID: 5413599202036387254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e77bd0ca07473470800000000000000
+      internalID: 8374240143629580261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_4
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 6000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7e4e98d5a41dce0800000000000000
+      internalID: -1382241845020137548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_5
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 6000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039956434d6e489b0800000000000000
+      internalID: -5078680680680548048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_6
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 6000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ac7cd2b2673fa10800000000000000
+      internalID: 1942025792150555277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e837153de922b90800000000000000
+      internalID: -7268072218180743582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 5000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff58c13134a4e2e0800000000000000
+      internalID: -2097370995252240389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_9
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 5000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd295e9e5e203a590800000000000000
+      internalID: -7664278954359549217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_10
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 5000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de35f5c805a43e530800000000000000
+      internalID: 3883029013536396269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_11
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 5000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db60b0e579ac81dd0800000000000000
+      internalID: -2515037640419768643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_12
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 5000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ee821765dfe5500800000000000000
+      internalID: 387025165707963961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_13
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 5000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551e1b4ea01810410800000000000000
+      internalID: 1441575239521788245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0853e88e5bbe770800000000000000
+      internalID: 8641200320463339746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_15
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f52c248d0948ee0800000000000000
+      internalID: -1259722737249525858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_16
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5714a5e11b9c08a10800000000000000
+      internalID: 1909748004560716149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f2e58c3d16ae360800000000000000
+      internalID: 7199674516532768622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_18
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73473c4152c55a210800000000000000
+      internalID: 1343581378171860023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_19
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51882f214bbe18cd0800000000000000
+      internalID: -2557503954725205995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_20
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331133cf9144a4010800000000000000
+      internalID: 1173825531279511859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1984ce405aa51a80800000000000000
+      internalID: -8496697860068964066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_22
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50c5f5c2ae7cb240800000000000000
+      internalID: 4808857739695865946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_23
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4c04b3a48dab460800000000000000
+      internalID: 7258351562794255543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_24
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83b98a6a06b31030800000000000000
+      internalID: 3464312694231380874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_25
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b954863a6505f0a0800000000000000
+      internalID: -6848561704607655500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_26
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0d802bd844d0670800000000000000
+      internalID: 8506530646540734642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_27
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51f2ac5c42962d00800000000000000
+      internalID: 947605628277420379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca6592c429557ed0800000000000000
+      internalID: -2416927610596136249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_29
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64160ecbaf19c7900800000000000000
+      internalID: 683581749550145862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_30
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff07df6028e7699b0800000000000000
+      internalID: -5073728833258163969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_31
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc6c673187c65d660800000000000000
+      internalID: 7409948024886445772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_32
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c297738442164c0800000000000000
+      internalID: -4296112676947809172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_33
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1878ea1bcce9f4b0800000000000000
+      internalID: -5406029520607610854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_34
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb7bf845f1b00030800000000000000
+      internalID: 3458960180870085624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0bf225d1c620c6a0800000000000000
+      internalID: -6431097653938685170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_36
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d759f522d7820a570800000000000000
+      internalID: 8475819016623986045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_37
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c8f6b574f28ac190800000000000000
+      internalID: -7941391006455891772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_38
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d68db857adb7f50800000000000000
+      internalID: 6880333054130810189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_39
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27779108abd2d4f80800000000000000
+      internalID: -8120784274042816654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_40
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8383df2deb63bf10800000000000000
+      internalID: 2284288102460785547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_41
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482b39600794d88f0800000000000000
+      internalID: -536692035091713404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1af0361d927b9ee0800000000000000
+      internalID: -1253282052284810725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_43
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4596dc39b45811400800000000000000
+      internalID: 293162010404546900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_44
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54f1d1c24fc15af0800000000000000
+      internalID: -409318205487451042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S.A.R.M. morte_45
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f6f3238cbb60bc0800000000000000
+      internalID: -3817157165639045224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4e8d56683aacc32449d1cc411cb4d709
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      S.A.R.M. morte_0: -1479478002543266837
+      S.A.R.M. morte_1: -5348456087149957188
+      S.A.R.M. morte_10: 3883029013536396269
+      S.A.R.M. morte_11: -2515037640419768643
+      S.A.R.M. morte_12: 387025165707963961
+      S.A.R.M. morte_13: 1441575239521788245
+      S.A.R.M. morte_14: 8641200320463339746
+      S.A.R.M. morte_15: -1259722737249525858
+      S.A.R.M. morte_16: 1909748004560716149
+      S.A.R.M. morte_17: 7199674516532768622
+      S.A.R.M. morte_18: 1343581378171860023
+      S.A.R.M. morte_19: -2557503954725205995
+      S.A.R.M. morte_2: 5413599202036387254
+      S.A.R.M. morte_20: 1173825531279511859
+      S.A.R.M. morte_21: -8496697860068964066
+      S.A.R.M. morte_22: 4808857739695865946
+      S.A.R.M. morte_23: 7258351562794255543
+      S.A.R.M. morte_24: 3464312694231380874
+      S.A.R.M. morte_25: -6848561704607655500
+      S.A.R.M. morte_26: 8506530646540734642
+      S.A.R.M. morte_27: 947605628277420379
+      S.A.R.M. morte_28: -2416927610596136249
+      S.A.R.M. morte_29: 683581749550145862
+      S.A.R.M. morte_3: 8374240143629580261
+      S.A.R.M. morte_30: -5073728833258163969
+      S.A.R.M. morte_31: 7409948024886445772
+      S.A.R.M. morte_32: -4296112676947809172
+      S.A.R.M. morte_33: -5406029520607610854
+      S.A.R.M. morte_34: 3458960180870085624
+      S.A.R.M. morte_35: -6431097653938685170
+      S.A.R.M. morte_36: 8475819016623986045
+      S.A.R.M. morte_37: -7941391006455891772
+      S.A.R.M. morte_38: 6880333054130810189
+      S.A.R.M. morte_39: -8120784274042816654
+      S.A.R.M. morte_4: -1382241845020137548
+      S.A.R.M. morte_40: 2284288102460785547
+      S.A.R.M. morte_41: -536692035091713404
+      S.A.R.M. morte_42: -1253282052284810725
+      S.A.R.M. morte_43: 293162010404546900
+      S.A.R.M. morte_44: -409318205487451042
+      S.A.R.M. morte_45: -3817157165639045224
+      S.A.R.M. morte_5: -5078680680680548048
+      S.A.R.M. morte_6: 1942025792150555277
+      S.A.R.M. morte_7: -7268072218180743582
+      S.A.R.M. morte_8: -2097370995252240389
+      S.A.R.M. morte_9: -7664278954359549217
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

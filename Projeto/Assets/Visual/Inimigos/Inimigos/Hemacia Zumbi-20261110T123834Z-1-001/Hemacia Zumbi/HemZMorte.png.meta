@@ -1,0 +1,2405 @@
+fileFormatVersion: 2
+guid: 190f4eeee109c2246b972676923ed911
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1819043701875874377
+    second: HemZMorte_0
+  - first:
+      213: 7815215661842693757
+    second: HemZMorte_1
+  - first:
+      213: 8806542516781477845
+    second: HemZMorte_2
+  - first:
+      213: 5082831618651401754
+    second: HemZMorte_3
+  - first:
+      213: -4684092310555846266
+    second: HemZMorte_4
+  - first:
+      213: 6437784448363773836
+    second: HemZMorte_5
+  - first:
+      213: -3399349856628280918
+    second: HemZMorte_6
+  - first:
+      213: -4269488640750055180
+    second: HemZMorte_7
+  - first:
+      213: -2282363934557984637
+    second: HemZMorte_8
+  - first:
+      213: 2151182599571742002
+    second: HemZMorte_9
+  - first:
+      213: -6455392835108249830
+    second: HemZMorte_10
+  - first:
+      213: -6054275229284575796
+    second: HemZMorte_11
+  - first:
+      213: 6453854717008723380
+    second: HemZMorte_12
+  - first:
+      213: -2528880349463369228
+    second: HemZMorte_13
+  - first:
+      213: -6696058113131366280
+    second: HemZMorte_14
+  - first:
+      213: -3951710728445634238
+    second: HemZMorte_15
+  - first:
+      213: 4917020792422327349
+    second: HemZMorte_16
+  - first:
+      213: -1136387111447643725
+    second: HemZMorte_17
+  - first:
+      213: -6631104072457913235
+    second: HemZMorte_18
+  - first:
+      213: 8130306436423520115
+    second: HemZMorte_19
+  - first:
+      213: -1917846685980544947
+    second: HemZMorte_20
+  - first:
+      213: -2652378359365709136
+    second: HemZMorte_21
+  - first:
+      213: -2738755304664050863
+    second: HemZMorte_22
+  - first:
+      213: -4953618979560413124
+    second: HemZMorte_23
+  - first:
+      213: -2901277475200708942
+    second: HemZMorte_24
+  - first:
+      213: -1764001474083390871
+    second: HemZMorte_25
+  - first:
+      213: -3085825839319670095
+    second: HemZMorte_26
+  - first:
+      213: 4686964381471916282
+    second: HemZMorte_27
+  - first:
+      213: 6637943731238350750
+    second: HemZMorte_28
+  - first:
+      213: 765459421027540646
+    second: HemZMorte_29
+  - first:
+      213: 8033017090642200882
+    second: HemZMorte_30
+  - first:
+      213: -8999075832961873485
+    second: HemZMorte_31
+  - first:
+      213: -5900006558640286596
+    second: HemZMorte_32
+  - first:
+      213: -6796369567880893079
+    second: HemZMorte_33
+  - first:
+      213: 7356447369337729265
+    second: HemZMorte_34
+  - first:
+      213: 7079587344747815824
+    second: HemZMorte_35
+  - first:
+      213: -844986821554125861
+    second: HemZMorte_36
+  - first:
+      213: 1887890327730291022
+    second: HemZMorte_37
+  - first:
+      213: 8235237202962340974
+    second: HemZMorte_38
+  - first:
+      213: -7759869611153856508
+    second: HemZMorte_39
+  - first:
+      213: 2657656619884869124
+    second: HemZMorte_40
+  - first:
+      213: 258797396433785308
+    second: HemZMorte_41
+  - first:
+      213: -1118154095196911278
+    second: HemZMorte_42
+  - first:
+      213: 6470718671324607791
+    second: HemZMorte_43
+  - first:
+      213: -1996881102275194216
+    second: HemZMorte_44
+  - first:
+      213: -2893020549305236672
+    second: HemZMorte_45
+  - first:
+      213: -2056520205945375894
+    second: HemZMorte_46
+  - first:
+      213: -75439732744899058
+    second: HemZMorte_47
+  - first:
+      213: -4742711989545807558
+    second: HemZMorte_48
+  - first:
+      213: -1324561991443219295
+    second: HemZMorte_49
+  - first:
+      213: 3008445171968338753
+    second: HemZMorte_50
+  - first:
+      213: -5424169385935212169
+    second: HemZMorte_51
+  - first:
+      213: -8487752567385814728
+    second: HemZMorte_52
+  - first:
+      213: 3464427812595251177
+    second: HemZMorte_53
+  - first:
+      213: 8088800737619431748
+    second: HemZMorte_54
+  - first:
+      213: 2100000778796120883
+    second: HemZMorte_55
+  - first:
+      213: 5776379654185059249
+    second: HemZMorte_56
+  - first:
+      213: -8603044646026900608
+    second: HemZMorte_57
+  - first:
+      213: -8904750492547940268
+    second: HemZMorte_58
+  - first:
+      213: 4117284004590299682
+    second: HemZMorte_59
+  - first:
+      213: 7751676649593901606
+    second: HemZMorte_60
+  - first:
+      213: 5485513606185638001
+    second: HemZMorte_61
+  - first:
+      213: -4284502539263573855
+    second: HemZMorte_62
+  - first:
+      213: -253590558328273030
+    second: HemZMorte_63
+  - first:
+      213: -4464712821559803974
+    second: HemZMorte_64
+  - first:
+      213: -8216596197270083273
+    second: HemZMorte_65
+  - first:
+      213: -958408256919363304
+    second: HemZMorte_66
+  - first:
+      213: 7099780254929784310
+    second: HemZMorte_67
+  - first:
+      213: -5646159938131934616
+    second: HemZMorte_68
+  - first:
+      213: 359199291982542497
+    second: HemZMorte_69
+  - first:
+      213: -7755311684365768727
+    second: HemZMorte_70
+  - first:
+      213: -7437778199240729414
+    second: HemZMorte_71
+  - first:
+      213: 4593431039989435591
+    second: HemZMorte_72
+  - first:
+      213: 9135141208019716422
+    second: HemZMorte_73
+  - first:
+      213: -2122257038761077678
+    second: HemZMorte_74
+  - first:
+      213: 1526074794037720357
+    second: HemZMorte_75
+  - first:
+      213: 7368420513451662965
+    second: HemZMorte_76
+  - first:
+      213: 8010430818235235924
+    second: HemZMorte_77
+  - first:
+      213: -7852034973577445282
+    second: HemZMorte_78
+  - first:
+      213: -2416119853651821990
+    second: HemZMorte_79
+  - first:
+      213: 1491661214049991349
+    second: HemZMorte_80
+  - first:
+      213: -4027111584278116542
+    second: HemZMorte_81
+  - first:
+      213: 843077948332219005
+    second: HemZMorte_82
+  - first:
+      213: 7150282842093809284
+    second: HemZMorte_83
+  - first:
+      213: -878489939856146062
+    second: HemZMorte_84
+  - first:
+      213: -6755723712353198127
+    second: HemZMorte_85
+  - first:
+      213: -7725262460196737495
+    second: HemZMorte_86
+  - first:
+      213: -8706540300023234788
+    second: HemZMorte_87
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HemZMorte_0
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 3038
+        width: 364
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5e6ce046571c6e0800000000000000
+      internalID: -1819043701875874377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_1
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 3038
+        width: 356
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ef337dc39357c60800000000000000
+      internalID: 7815215661842693757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_2
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 3033
+        width: 319
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df622c82cf173a70800000000000000
+      internalID: 8806542516781477845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_3
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 3038
+        width: 256
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e27da5d68d98640800000000000000
+      internalID: 5082831618651401754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_4
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 3038
+        width: 210
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6891e266cd2cefeb0800000000000000
+      internalID: -4684092310555846266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_5
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 3038
+        width: 265
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fb141d8da975950800000000000000
+      internalID: 6437784448363773836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 2438
+        width: 226
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa17560e05513d0d0800000000000000
+      internalID: -3399349856628280918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_7
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 2438
+        width: 209
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f01783b3babfb4c0800000000000000
+      internalID: -4269488640750055180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_8
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 2438
+        width: 209
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3882280181a6350e0800000000000000
+      internalID: -2282363934557984637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_9
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 2438
+        width: 209
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d99764d298add10800000000000000
+      internalID: 2151182599571742002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_10
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 2439
+        width: 209
+        height: 562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f55c92b66d966a0800000000000000
+      internalID: -6455392835108249830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_11
+      rect:
+        serializedVersion: 2
+        x: 3121
+        y: 2439
+        width: 282
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5db0281c4eafba0800000000000000
+      internalID: -6054275229284575796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_12
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1881
+        width: 54
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bdb84fcba2b09950800000000000000
+      internalID: 6453854717008723380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1825
+        width: 458
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f925c288bc97ecd0800000000000000
+      internalID: -2528880349463369228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_14
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1881
+        width: 56
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878be639f92d213a0800000000000000
+      internalID: -6696058113131366280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_15
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1825
+        width: 482
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249d5ef8704b829c0800000000000000
+      internalID: -3951710728445634238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_16
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 1881
+        width: 56
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534ea85fb54cc3440800000000000000
+      internalID: 4917020792422327349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_17
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1825
+        width: 482
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9b4d661fdba30f0800000000000000
+      internalID: -1136387111447643725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_18
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 1881
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6cff7caaf599f3a0800000000000000
+      internalID: -6631104072457913235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_19
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 1825
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f8812b0a6a4d070800000000000000
+      internalID: 8130306436423520115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_20
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 1881
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40387ca9907265e0800000000000000
+      internalID: -1917846685980544947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_21
+      rect:
+        serializedVersion: 2
+        x: 2427
+        y: 1825
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2d2106febd03bd0800000000000000
+      internalID: -2652378359365709136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_22
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 1881
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15358ca9f8cfdf9d0800000000000000
+      internalID: -2738755304664050863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_23
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 1825
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c382ba298c5314bb0800000000000000
+      internalID: -4953618979560413124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_24
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1822
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bec1d702879cb7d0800000000000000
+      internalID: -2901277475200708942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_25
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1822
+        width: 110
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a7ef161020587e0800000000000000
+      internalID: -1764001474083390871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_26
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1822
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b221a0afb1fc25d0800000000000000
+      internalID: -3085825839319670095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_27
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1822
+        width: 115
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0ca88b5417b0140800000000000000
+      internalID: 4686964381471916282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_28
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1822
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f2e7b77a6be1c50800000000000000
+      internalID: 6637943731238350750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_29
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 1822
+        width: 115
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae9250b9457f9a00800000000000000
+      internalID: 765459421027540646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_30
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 1822
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239ce52bb720b7f60800000000000000
+      internalID: 8033017090642200882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_31
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 1822
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b94185853cdc1380800000000000000
+      internalID: -8999075832961873485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_32
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 1822
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7455c36b47fe1ea0800000000000000
+      internalID: -5900006558640286596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_33
+      rect:
+        serializedVersion: 2
+        x: 2833
+        y: 1822
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d2f2003e17ea1a0800000000000000
+      internalID: -6796369567880893079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_34
+      rect:
+        serializedVersion: 2
+        x: 3092
+        y: 1822
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f07b3208e9571660800000000000000
+      internalID: 7356447369337729265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_35
+      rect:
+        serializedVersion: 2
+        x: 3433
+        y: 1822
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0936b084e2fbf3260800000000000000
+      internalID: 7079587344747815824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1281
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3416576f00644f0800000000000000
+      internalID: -844986821554125861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_37
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1225
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4182472042233a10800000000000000
+      internalID: 1887890327730291022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_38
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1281
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cd6ab9a90794270800000000000000
+      internalID: 8235237202962340974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_39
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1225
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40863d3c3b76f4490800000000000000
+      internalID: -7759869611153856508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_40
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1281
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406f33b6d94e1e420800000000000000
+      internalID: 2657656619884869124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_41
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1225
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd15b336cde679300800000000000000
+      internalID: 258797396433785308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_42
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 1281
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259c3af46c48b70f0800000000000000
+      internalID: -1118154095196911278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_43
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 1225
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f257ac5295c9cc950800000000000000
+      internalID: 6470718671324607791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_44
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 1281
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8925238a737a944e0800000000000000
+      internalID: -1996881102275194216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_45
+      rect:
+        serializedVersion: 2
+        x: 2427
+        y: 1225
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04381c6632de9d7d0800000000000000
+      internalID: -2893020549305236672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_46
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 1281
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a637633c4c5c573e0800000000000000
+      internalID: -2056520205945375894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_47
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 1225
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e063ac776fbf3fef0800000000000000
+      internalID: -75439732744899058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_48
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1222
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31d22fc2908e2eb0800000000000000
+      internalID: -4742711989545807558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_49
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1222
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1acfa09f2e53e9de0800000000000000
+      internalID: -1324561991443219295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_50
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1222
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b6969c1f420c920800000000000000
+      internalID: 3008445171968338753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_51
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1222
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77178c59eaa79b4b0800000000000000
+      internalID: -5424169385935212169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_52
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1222
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8390f8f8202753a80800000000000000
+      internalID: -8487752567385814728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_53
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1222
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e739bf7dbe141030800000000000000
+      internalID: 3464427812595251177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_54
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 1222
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44159b02a61314070800000000000000
+      internalID: 8088800737619431748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_55
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 1222
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33bbf200593b42d10800000000000000
+      internalID: 2100000778796120883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_56
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 1222
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b38e7fd0b2d92050800000000000000
+      internalID: 5776379654185059249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_57
+      rect:
+        serializedVersion: 2
+        x: 2833
+        y: 1222
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b8dbea978db9880800000000000000
+      internalID: -8603044646026900608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_58
+      rect:
+        serializedVersion: 2
+        x: 3092
+        y: 1222
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450023e3b98fb6480800000000000000
+      internalID: -8904750492547940268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_59
+      rect:
+        serializedVersion: 2
+        x: 3433
+        y: 1222
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22aa005ecf7832930800000000000000
+      internalID: 4117284004590299682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_60
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 681
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6221cb8b7dc739b60800000000000000
+      internalID: 7751676649593901606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_61
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 625
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1785443bf85702c40800000000000000
+      internalID: 5485513606185638001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_62
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 681
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a08feb04a36a84c0800000000000000
+      internalID: -4284502539263573855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_63
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 625
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7743741bb01b7cf0800000000000000
+      internalID: -253590558328273030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_64
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 681
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfbbc608572a02c0800000000000000
+      internalID: -4464712821559803974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_65
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 625
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73924eeba49c8fd80800000000000000
+      internalID: -8216596197270083273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_66
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 681
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8112588a4cc03b2f0800000000000000
+      internalID: -958408256919363304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_67
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 625
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd0c6e868c778260800000000000000
+      internalID: 7099780254929784310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_68
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 681
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862ca9e637fc4a1b0800000000000000
+      internalID: -5646159938131934616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_69
+      rect:
+        serializedVersion: 2
+        x: 2427
+        y: 625
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6f03a5ad12cf400800000000000000
+      internalID: 359199291982542497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_70
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 681
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e721facc199f5490800000000000000
+      internalID: -7755311684365768727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_71
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 625
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc9c148224b7c890800000000000000
+      internalID: -7437778199240729414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_72
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 622
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccc2de91352fbf30800000000000000
+      internalID: 4593431039989435591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_73
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 622
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6494c05578a86ce70800000000000000
+      internalID: 9135141208019716422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_74
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 622
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254d29aa77a3c82e0800000000000000
+      internalID: -2122257038761077678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_75
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 622
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525bb4f80f4bd2510800000000000000
+      internalID: 1526074794037720357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_76
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 622
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57edcfbda63e14660800000000000000
+      internalID: 7368420513451662965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_77
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 622
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45eb0ca5364ca2f60800000000000000
+      internalID: 8010430818235235924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_78
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 622
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5009fb1bc7f70390800000000000000
+      internalID: -7852034973577445282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_79
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 622
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a70545bc7387ed0800000000000000
+      internalID: -2416119853651821990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_80
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 622
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba7da498f173b410800000000000000
+      internalID: 1491661214049991349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_81
+      rect:
+        serializedVersion: 2
+        x: 2833
+        y: 622
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2470e34c953dc18c0800000000000000
+      internalID: -4027111584278116542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_82
+      rect:
+        serializedVersion: 2
+        x: 3092
+        y: 622
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a9e4c5de633bb00800000000000000
+      internalID: 843077948332219005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_83
+      rect:
+        serializedVersion: 2
+        x: 3433
+        y: 622
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e629e6c58ea3360800000000000000
+      internalID: 7150282842093809284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_84
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 81
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271ce1cdd0afec3f0800000000000000
+      internalID: -878489939856146062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_85
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 25
+        width: 507
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df1184b319de32a0800000000000000
+      internalID: -6755723712353198127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_86
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 22
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e205ff8ba5ac490800000000000000
+      internalID: -7725262460196737495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HemZMorte_87
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 22
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ffd72f9b72c2780800000000000000
+      internalID: -8706540300023234788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HemZMorte_0: -1819043701875874377
+      HemZMorte_1: 7815215661842693757
+      HemZMorte_10: -6455392835108249830
+      HemZMorte_11: -6054275229284575796
+      HemZMorte_12: 6453854717008723380
+      HemZMorte_13: -2528880349463369228
+      HemZMorte_14: -6696058113131366280
+      HemZMorte_15: -3951710728445634238
+      HemZMorte_16: 4917020792422327349
+      HemZMorte_17: -1136387111447643725
+      HemZMorte_18: -6631104072457913235
+      HemZMorte_19: 8130306436423520115
+      HemZMorte_2: 8806542516781477845
+      HemZMorte_20: -1917846685980544947
+      HemZMorte_21: -2652378359365709136
+      HemZMorte_22: -2738755304664050863
+      HemZMorte_23: -4953618979560413124
+      HemZMorte_24: -2901277475200708942
+      HemZMorte_25: -1764001474083390871
+      HemZMorte_26: -3085825839319670095
+      HemZMorte_27: 4686964381471916282
+      HemZMorte_28: 6637943731238350750
+      HemZMorte_29: 765459421027540646
+      HemZMorte_3: 5082831618651401754
+      HemZMorte_30: 8033017090642200882
+      HemZMorte_31: -8999075832961873485
+      HemZMorte_32: -5900006558640286596
+      HemZMorte_33: -6796369567880893079
+      HemZMorte_34: 7356447369337729265
+      HemZMorte_35: 7079587344747815824
+      HemZMorte_36: -844986821554125861
+      HemZMorte_37: 1887890327730291022
+      HemZMorte_38: 8235237202962340974
+      HemZMorte_39: -7759869611153856508
+      HemZMorte_4: -4684092310555846266
+      HemZMorte_40: 2657656619884869124
+      HemZMorte_41: 258797396433785308
+      HemZMorte_42: -1118154095196911278
+      HemZMorte_43: 6470718671324607791
+      HemZMorte_44: -1996881102275194216
+      HemZMorte_45: -2893020549305236672
+      HemZMorte_46: -2056520205945375894
+      HemZMorte_47: -75439732744899058
+      HemZMorte_48: -4742711989545807558
+      HemZMorte_49: -1324561991443219295
+      HemZMorte_5: 6437784448363773836
+      HemZMorte_50: 3008445171968338753
+      HemZMorte_51: -5424169385935212169
+      HemZMorte_52: -8487752567385814728
+      HemZMorte_53: 3464427812595251177
+      HemZMorte_54: 8088800737619431748
+      HemZMorte_55: 2100000778796120883
+      HemZMorte_56: 5776379654185059249
+      HemZMorte_57: -8603044646026900608
+      HemZMorte_58: -8904750492547940268
+      HemZMorte_59: 4117284004590299682
+      HemZMorte_6: -3399349856628280918
+      HemZMorte_60: 7751676649593901606
+      HemZMorte_61: 5485513606185638001
+      HemZMorte_62: -4284502539263573855
+      HemZMorte_63: -253590558328273030
+      HemZMorte_64: -4464712821559803974
+      HemZMorte_65: -8216596197270083273
+      HemZMorte_66: -958408256919363304
+      HemZMorte_67: 7099780254929784310
+      HemZMorte_68: -5646159938131934616
+      HemZMorte_69: 359199291982542497
+      HemZMorte_7: -4269488640750055180
+      HemZMorte_70: -7755311684365768727
+      HemZMorte_71: -7437778199240729414
+      HemZMorte_72: 4593431039989435591
+      HemZMorte_73: 9135141208019716422
+      HemZMorte_74: -2122257038761077678
+      HemZMorte_75: 1526074794037720357
+      HemZMorte_76: 7368420513451662965
+      HemZMorte_77: 8010430818235235924
+      HemZMorte_78: -7852034973577445282
+      HemZMorte_79: -2416119853651821990
+      HemZMorte_8: -2282363934557984637
+      HemZMorte_80: 1491661214049991349
+      HemZMorte_81: -4027111584278116542
+      HemZMorte_82: 843077948332219005
+      HemZMorte_83: 7150282842093809284
+      HemZMorte_84: -878489939856146062
+      HemZMorte_85: -6755723712353198127
+      HemZMorte_86: -7725262460196737495
+      HemZMorte_87: -8706540300023234788
+      HemZMorte_9: 2151182599571742002
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

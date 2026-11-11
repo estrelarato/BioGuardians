@@ -1,0 +1,877 @@
+fileFormatVersion: 2
+guid: 5e8677aaa5c967645bb31ed50461bc61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2193283308484576838
+    second: PsAr morte_0
+  - first:
+      213: -5553679275165755758
+    second: PsAr morte_1
+  - first:
+      213: -2254858563494497065
+    second: PsAr morte_2
+  - first:
+      213: -830330296393734865
+    second: PsAr morte_3
+  - first:
+      213: -6828311142763194451
+    second: PsAr morte_4
+  - first:
+      213: 8832042452931170476
+    second: PsAr morte_5
+  - first:
+      213: 4379380057308283681
+    second: PsAr morte_6
+  - first:
+      213: 268973351889288352
+    second: PsAr morte_7
+  - first:
+      213: -2806537724673570241
+    second: PsAr morte_8
+  - first:
+      213: -3331424548165067518
+    second: PsAr morte_9
+  - first:
+      213: 8324067577720380052
+    second: PsAr morte_10
+  - first:
+      213: 4383629684536592531
+    second: PsAr morte_11
+  - first:
+      213: -1852247298938536255
+    second: PsAr morte_12
+  - first:
+      213: -7028378125450518658
+    second: PsAr morte_13
+  - first:
+      213: -8851283630400666885
+    second: PsAr morte_14
+  - first:
+      213: 8010310371411953565
+    second: PsAr morte_15
+  - first:
+      213: 1874018197847418598
+    second: PsAr morte_16
+  - first:
+      213: -8577686057521937720
+    second: PsAr morte_17
+  - first:
+      213: -5876646105804380739
+    second: PsAr morte_18
+  - first:
+      213: 3725773962735853541
+    second: PsAr morte_19
+  - first:
+      213: 6189523560400259501
+    second: PsAr morte_20
+  - first:
+      213: 5549043035809501495
+    second: PsAr morte_21
+  - first:
+      213: -4500146039445367617
+    second: PsAr morte_22
+  - first:
+      213: 4737263792480709228
+    second: PsAr morte_23
+  - first:
+      213: 1087023795600040026
+    second: PsAr morte_24
+  - first:
+      213: -6798582207036099272
+    second: PsAr morte_25
+  - first:
+      213: 6621008853842606752
+    second: PsAr morte_26
+  - first:
+      213: -3791565327036984216
+    second: PsAr morte_27
+  - first:
+      213: 6736362622135617481
+    second: PsAr morte_28
+  - first:
+      213: 6630575138974261884
+    second: PsAr morte_29
+  - first:
+      213: -8132353829852526201
+    second: PsAr morte_30
+  - first:
+      213: -9155732064487651164
+    second: PsAr morte_31
+  - first:
+      213: -6921175920742251277
+    second: PsAr morte_32
+  - first:
+      213: -2741883206021984708
+    second: PsAr morte_33
+  - first:
+      213: 7438832581058682569
+    second: PsAr morte_34
+  - first:
+      213: 5047123682147758439
+    second: PsAr morte_35
+  - first:
+      213: -7876956443261361669
+    second: PsAr morte_36
+  - first:
+      213: -1443605313642455931
+    second: PsAr morte_37
+  - first:
+      213: -1340028880818492260
+    second: PsAr morte_38
+  - first:
+      213: -2283627672061128455
+    second: PsAr morte_39
+  - first:
+      213: 6763084545368724061
+    second: PsAr morte_40
+  - first:
+      213: -8830666776433087925
+    second: PsAr morte_41
+  - first:
+      213: 5803100242753146974
+    second: PsAr morte_42
+  - first:
+      213: 7689394060026692668
+    second: PsAr morte_43
+  - first:
+      213: -2680631850727559630
+    second: PsAr morte_44
+  - first:
+      213: -5055742243076221686
+    second: PsAr morte_45
+  - first:
+      213: 2332470850914828717
+    second: PsAr morte_46
+  - first:
+      213: -8188191752725269865
+    second: PsAr morte_47
+  - first:
+      213: -8098753085908102671
+    second: PsAr morte_48
+  - first:
+      213: -6501311387807105593
+    second: PsAr morte_49
+  - first:
+      213: 4608058869888668745
+    second: PsAr morte_50
+  - first:
+      213: -5300849106638949974
+    second: PsAr morte_51
+  - first:
+      213: 7993567421316591083
+    second: PsAr morte_52
+  - first:
+      213: 9008592260640554117
+    second: PsAr morte_53
+  - first:
+      213: 2967450599109243910
+    second: PsAr morte_54
+  - first:
+      213: -8602534492155773007
+    second: PsAr morte_55
+  - first:
+      213: 5078553553843730710
+    second: PsAr morte_56
+  - first:
+      213: 3160915051820739716
+    second: PsAr morte_57
+  - first:
+      213: -1933264345760839740
+    second: PsAr morte_58
+  - first:
+      213: 7154897785642091207
+    second: PsAr morte_59
+  - first:
+      213: 4459283326049084860
+    second: PsAr morte_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PsAr morte_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646440e6c8b107e10800000000000000
+      internalID: 2193283308484576838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296db47bf1e5de2b0800000000000000
+      internalID: -5553679275165755758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4b920551225b0e0800000000000000
+      internalID: -2254858563494497065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25e435aef21a74f0800000000000000
+      internalID: -830330296393734865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da712cf8137fc31a0800000000000000
+      internalID: -6828311142763194451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0d12811d7b19a70800000000000000
+      internalID: 8832042452931170476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1234a4c85fea6cc30800000000000000
+      internalID: 4379380057308283681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_7
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac3865a6d59bb300800000000000000
+      internalID: 268973351889288352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_8
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a49102fcc2d09d0800000000000000
+      internalID: -2806537724673570241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_9
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20dda9a260764c1d0800000000000000
+      internalID: -3331424548165067518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a9e50fb57058370800000000000000
+      internalID: 8324067577720380052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39849adf8f7c5dc30800000000000000
+      internalID: 4383629684536592531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_12
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce779e25ee7b46e0800000000000000
+      internalID: -1852247298938536255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_13
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f5565355f267e90800000000000000
+      internalID: -7028378125450518658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf20dbb2f6ce92580800000000000000
+      internalID: -8851283630400666885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9703a4a7d65a2f60800000000000000
+      internalID: 8010310371411953565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_16
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e620593f99d10a10800000000000000
+      internalID: 1874018197847418598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2859a2affe5f880800000000000000
+      internalID: -8577686057521937720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_18
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5e8d8a085f17ea0800000000000000
+      internalID: -5876646105804380739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_19
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef154addab94b330800000000000000
+      internalID: 3725773962735853541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9819a72ea95e550800000000000000
+      internalID: 6189523560400259501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731d7c0bd39220d40800000000000000
+      internalID: 5549043035809501495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_22
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb45a7915054c81c0800000000000000
+      internalID: -4500146039445367617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ae126f1542eb140800000000000000
+      internalID: 4737263792480709228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsAr morte_24
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50232ff162e51f00800000000000000
+      internalID: 1087023795600040026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 734618d6a9f56ba4f880281bdab8f03a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":500.0,"y":500.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PsAr morte_0: 2193283308484576838
+      PsAr morte_1: -5553679275165755758
+      PsAr morte_10: 8324067577720380052
+      PsAr morte_11: 4383629684536592531
+      PsAr morte_12: -1852247298938536255
+      PsAr morte_13: -7028378125450518658
+      PsAr morte_14: -8851283630400666885
+      PsAr morte_15: 8010310371411953565
+      PsAr morte_16: 1874018197847418598
+      PsAr morte_17: -8577686057521937720
+      PsAr morte_18: -5876646105804380739
+      PsAr morte_19: 3725773962735853541
+      PsAr morte_2: -2254858563494497065
+      PsAr morte_20: 6189523560400259501
+      PsAr morte_21: 5549043035809501495
+      PsAr morte_22: -4500146039445367617
+      PsAr morte_23: 4737263792480709228
+      PsAr morte_24: 1087023795600040026
+      PsAr morte_3: -830330296393734865
+      PsAr morte_4: -6828311142763194451
+      PsAr morte_5: 8832042452931170476
+      PsAr morte_6: 4379380057308283681
+      PsAr morte_7: 268973351889288352
+      PsAr morte_8: -2806537724673570241
+      PsAr morte_9: -3331424548165067518
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
