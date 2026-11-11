@@ -4279,7 +4279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FeiticoBase
   nomeFeitico: "Antibi\xF3tico"
   tempoCooldown: 2
-  prefabEfeitoArea: {fileID: 0}
+  prefabEfeitoArea: {fileID: 8668370481572113880, guid: 2f69ce3f8607ee343bc3621717513f7a, type: 3}
   ehCuraDireta: 0
   quantidadeCuraBase: 5
   imagemOverlayCooldown: {fileID: 0}
@@ -5627,6 +5627,8 @@ MonoBehaviour:
     - {fileID: 4031656386603330090, guid: e7076698ed6674f45b6cdbbefa3b7ed2, type: 3}
     - {fileID: 1341494652975857643, guid: c1424548a9522e649afd2472bc49d534, type: 3}
     - {fileID: 480608993905014199, guid: 98311370ca446024bb8a22e2db7264b6, type: 3}
+    - {fileID: 1723154505732446762, guid: db58a54f65fecc1439c7f4271a9d4567, type: 3}
+    - {fileID: 5855930053596025734, guid: 0fcda5992ad38bb49a425f3fb1568e9d, type: 3}
     quantidade: 5
     intervalo: 1
   - prefabsInimigos:

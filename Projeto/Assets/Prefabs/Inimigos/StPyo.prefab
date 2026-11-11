@@ -54,9 +54,7 @@ MonoBehaviour:
   resistenciaFagocito: 1
   resistenciaEnzimatico: 1
   resistenciaVerdadeiro: 1
-  pontosCaminho:
-  - {fileID: 0}
-  - {fileID: 0}
+  pontosCaminho: []
   spriteRenderer: {fileID: 0}
 --- !u!58 &8126131942117606141
 CircleCollider2D:
