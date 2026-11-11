@@ -42,14 +42,6 @@ public class EfeitoLento : MonoBehaviour
     public void AplicarLentidao(float porcentagemLento, float duracao)
     {
         if (inimigo == null) return;
-
-        // --- TRAVA DO INIMIGO ENCAPSULADO ---
-        InimigoEncapsulado encapsulado = GetComponent<InimigoEncapsulado>();
-        if (encapsulado != null && !encapsulado.PodeReceberLentidao())
-        {
-            Debug.Log("[EFEITO LENTO] Bloqueado pela cápsula do biofilme!");
-            return; // Interrompe a execução antes de desacelerar ou mudar a cor
-        }
         // -------------------------------------
 
         // Se a nova lentidão for maior, atualiza a velocidade com base na velocidade base

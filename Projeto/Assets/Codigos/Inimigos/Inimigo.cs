@@ -19,6 +19,9 @@ public class Inimigo : MonoBehaviour
     public Transform[] pontosCaminho;
     private int indicePontoAtual = 0;
 
+    // Propriedade para permitir que scripts externos leiam o waypoint atual
+    public int IndicePontoAtual => indicePontoAtual;
+
     [Header("Componentes 2D")]
     public SpriteRenderer spriteRenderer;
 
@@ -38,10 +41,11 @@ public class Inimigo : MonoBehaviour
         MoverPeloCaminho();
     }
 
-    public void DefinirCaminho(Transform[] caminho)
+    // Sobrecarga: Permite definir o caminho começando de um waypoint específico
+    public void DefinirCaminho(Transform[] caminho, int indiceInicial = 0)
     {
         pontosCaminho = caminho;
-        indicePontoAtual = 0;
+        indicePontoAtual = indiceInicial;
     }
 
     void MoverPeloCaminho()
