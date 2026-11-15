@@ -1,9 +1,14 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+
+    [Header("Configuração da Fase")]
+    [Tooltip("1 = Pulmão, 2 = Pele, 3 = Corrente Sanguínea, 4 = Cérebro")]
+    public int numeroDestaFase = 1;
 
     [Header("Interfaces de Fim de Jogo")]
     public GameObject painelVitoria;
@@ -104,12 +109,43 @@ public class GameManager : MonoBehaviour
     {
         jogoFinalizado = true;
         Debug.Log("Parabéns! Defendeu o organismo de todas as ameaças!");
+
+        // Salva o progresso e desbloqueia a próxima fase automaticamente
+        if (SaveManager.Instancia != null)
+        {
+            SaveManager.Instancia.DesbloquearProximaFase(numeroDestaFase);
+        }
+        else
+        {
+            Debug.LogWarning("[SAVE] SaveManager não encontrado na cena. Inicie pelo 00_Boot para testar o save.");
+        }
         
         if (painelVitoria != null)
         {
             painelVitoria.SetActive(true);
         }
 
+        void GanharJogo()
+        {
+            jogoFinalizado = true;
+            Debug.Log("Parabéns! Defendeu o organismo de todas as ameaças!");
+
+            // Pega o índice desta cena no Build Settings automaticamente
+            int indiceFaseAtual = SceneManager.GetActiveScene().buildIndex;
+
+            if (SaveManager.Instancia != null)
+            {
+                SaveManager.Instancia.DesbloquearProximaFase(indiceFaseAtual);
+            }
+        
+            if (painelVitoria != null)
+            {
+                painelVitoria.SetActive(true);
+            }
+
+            Time.timeScale = 0f; 
+        }
+        
         Time.timeScale = 0f; 
     }
 
