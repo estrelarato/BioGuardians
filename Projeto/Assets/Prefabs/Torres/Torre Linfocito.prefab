@@ -25,8 +25,8 @@ Transform:
   m_GameObject: {fileID: 4307275521347239283}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0.229, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0.20383447, y: 0.21285304, z: 0}
+  m_LocalScale: {x: 0.50000006, y: 0.50000006, z: 0.50000006}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8264496433217785719}
@@ -196,11 +196,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eee4cd2d95487e44bb6ec99383fed05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Torre
+  custo: 1
+  emConstrucao: 1
   alcance: 3
   taxaAtaque: 1
   dano: 10
-  custo: 1
-  emConstrucao: 1
+  tipoDano: 0
   animadorTorre: {fileID: 5351430111261900132}
   animadorAtirador: {fileID: 4169132924200490439}
   duracaoAnimacaoAtaque: 0.3
@@ -309,8 +310,8 @@ Transform:
   m_GameObject: {fileID: 8658346951230163916}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.149, y: 0.285, z: 0}
-  m_LocalScale: {x: 0.043414976, y: 0.043414976, z: 0.043414976}
+  m_LocalPosition: {x: 0.15, y: 0.291, z: 0}
+  m_LocalScale: {x: 0.043414988, y: 0.043414988, z: 0.043414988}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8264496433217785719}
@@ -362,14 +363,14 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7111396506342550342, guid: 4efa7438ae75cd54a9d56d5f0e8ce4b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4efa7438ae75cd54a9d56d5f0e8ce4b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.68, y: 2.31}
+  m_Size: {x: 3.75, y: 3.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

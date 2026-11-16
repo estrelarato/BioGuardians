@@ -8,6 +8,11 @@ public class Inimigo : MonoBehaviour
     public float vidaAtual;
     public float velocidade = 3.5f;
 
+    [Header("Ataque na Base / Fim do Caminho")]
+    public int danoAoEncostar = 1;
+    public string tagAlvo = "FimDoCaminho";
+    private bool jaCausouDano = false;
+
     [Header("Resistências ao Tipo de Dano")]
     [Tooltip("Coloque valores entre 0 (imune) e 1 (dano total). Valores acima de 1 aumentam o dano.")]
     public float resistenciaFagocito = 1.0f;
@@ -73,6 +78,34 @@ public class Inimigo : MonoBehaviour
         if (Mathf.Abs(direcaoX) > 0.05f && spriteRenderer != null)
         {
             spriteRenderer.flipX = (direcaoX < 0);
+        }
+    }
+
+    // Detecta quando o inimigo entra na área marcada com a Tag FimDoCaminho
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (jaCausouDano) return;
+
+        if (other.CompareTag(tagAlvo))
+        {
+            jaCausouDano = true;
+
+            VidaDoJogador vidaJogador = other.GetComponent<VidaDoJogador>();
+            if (vidaJogador == null)
+            {
+                vidaJogador = FindFirstObjectByType<VidaDoJogador>();
+            }
+
+            if (vidaJogador != null)
+            {
+                vidaJogador.TomarDano(danoAoEncostar);
+            }
+            else
+            {
+                Debug.LogWarning("VidaDoJogador não encontrado na cena!");
+            }
+
+            Destroy(gameObject);
         }
     }
 

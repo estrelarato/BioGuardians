@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class TropaBasofila : MonoBehaviour
@@ -9,9 +10,10 @@ public class TropaBasofila : MonoBehaviour
     public float intervaloAtaque = 1.2f;
     public float forcaKnockback = 2.0f;
     public float raioVisao = 6.0f;
+    public LayerMask layerInimigos;
 
     [Header("Área de Limite da Torre")]
-    public Vector3 posicaoTorreOrigem;
+    public Vector2 posicaoTorreOrigem;
     public float raioAreaTorre = 5.0f;
 
     [Header("Tipo de Dano")]
@@ -20,19 +22,35 @@ public class TropaBasofila : MonoBehaviour
     [Header("Componentes 2D e Animação")]
     public SpriteRenderer spriteRenderer;
     public Animator animator;
+    [Tooltip("Marque se a arte original do sprite já nasce olhando para a esquerda")]
+    public bool spriteOlhaParaEsquerdaPorPadrao = false;
+    [Tooltip("Duração total que a tropa fica parada executando o golpe")]
+    public float duracaoAnimacaoAtaque = 0.35f;
+    [Range(0f, 1f), Tooltip("Momento da animação em que o dano é aplicado (0.5 = metade)")]
+    public float momentoImpactoGolpe = 0.5f;
 
     [Header("Parâmetros do Animator")]
-    public string nomeBoolAndando = "estaAndando";
-    public string nomeTriggerAtaque = "Atacar";
+    public string nomeBoolAndando = "Andando";
+    public string nomeTriggerAtacar = "Atacar";
 
     private Transform pontoRally;
     private Inimigo alvoInimigo;
     private float tempoUltimoAtaque;
+    private bool atacando = false;
+    private Coroutine corrotinaAtaque;
+
+    private int hashAndando;
+    private int hashAtacar;
+    private readonly Collider2D[] bufferInimigos = new Collider2D[16];
+    private float proximoTempoBusca;
 
     void Awake()
     {
         if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        if (animator == null) animator = GetComponent<Animator>();
+        if (animator == null) animator = GetComponentInChildren<Animator>();
+
+        hashAndando = Animator.StringToHash(nomeBoolAndando);
+        hashAtacar = Animator.StringToHash(nomeTriggerAtacar);
     }
 
     public void ConfigurarTorreERally(Vector3 origemTorre, float raioMaximo, Transform rally)
@@ -44,6 +62,17 @@ public class TropaBasofila : MonoBehaviour
 
     void Update()
     {
+        // Enquanto ataca, fica parada e continua olhando para o inimigo
+        if (atacando)
+        {
+            AtualizarAnimatorAndando(false);
+            if (alvoInimigo != null)
+            {
+                OlharPara(alvoInimigo.transform.position);
+            }
+            return;
+        }
+
         BuscarInimigo();
 
         bool estaAndando = false;
@@ -59,56 +88,65 @@ public class TropaBasofila : MonoBehaviour
             }
             else
             {
+                OlharPara(alvoInimigo.transform.position);
                 ExecutarAtaque();
                 estaAndando = false;
             }
         }
         else if (pontoRally != null)
         {
-            Vector3 destinoValidado = RestringirPosicaoAArea(pontoRally.position);
+            Vector2 destinoValidado = RestringirPosicaoAArea(pontoRally.position);
             float distRally = Vector2.Distance(transform.position, destinoValidado);
-            
+
             if (distRally > 0.2f)
             {
                 MoverPara(destinoValidado);
                 estaAndando = true;
             }
-            else
-            {
-                estaAndando = false;
-            }
-        }
-        else
-        {
-            estaAndando = false;
         }
 
-        if (animator != null)
-        {
-            animator.SetBool(nomeBoolAndando, estaAndando);
-        }
+        AtualizarAnimatorAndando(estaAndando);
     }
 
-    void MoverPara(Vector3 destino)
+    void AtualizarAnimatorAndando(bool andando)
     {
-        Vector3 destinoValidado = RestringirPosicaoAArea(destino);
+        if (animator == null) return;
+        animator.SetBool(hashAndando, andando);
+    }
+
+    void MoverPara(Vector2 destino)
+    {
+        Vector2 destinoValidado = RestringirPosicaoAArea(destino);
+
+        // Vira para a direção do movimento antes de deslocar
+        OlharPara(destinoValidado);
 
         transform.position = Vector2.MoveTowards(
-            transform.position, 
-            destinoValidado, 
+            transform.position,
+            destinoValidado,
             velocidade * Time.deltaTime
         );
+    }
 
-        float direcaoX = destinoValidado.x - transform.position.x;
-        if (Mathf.Abs(direcaoX) > 0.05f && spriteRenderer != null)
+    void OlharPara(Vector2 alvoPosicao)
+    {
+        float direcaoX = alvoPosicao.x - transform.position.x;
+
+        // Evita tremida (flip rápido) quando o alvo está exatamente na mesma linha vertical
+        if (Mathf.Abs(direcaoX) <= 0.02f) return;
+
+        bool indoParaEsquerda = direcaoX < 0f;
+        bool deveInverter = spriteOlhaParaEsquerdaPorPadrao ? !indoParaEsquerda : indoParaEsquerda;
+
+        if (spriteRenderer != null)
         {
-            spriteRenderer.flipX = (direcaoX < 0);
+            spriteRenderer.flipX = deveInverter;
         }
     }
 
-    Vector3 RestringirPosicaoAArea(Vector3 posicaoDesejada)
+    Vector2 RestringirPosicaoAArea(Vector2 posicaoDesejada)
     {
-        Vector3 vetorDistancia = posicaoDesejada - posicaoTorreOrigem;
+        Vector2 vetorDistancia = posicaoDesejada - posicaoTorreOrigem;
         if (vetorDistancia.magnitude > raioAreaTorre)
         {
             return posicaoTorreOrigem + vetorDistancia.normalized * raioAreaTorre;
@@ -118,14 +156,30 @@ public class TropaBasofila : MonoBehaviour
 
     void BuscarInimigo()
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, raioVisao);
+        if (alvoInimigo != null)
+        {
+            float distTorreAlvo = Vector2.Distance(alvoInimigo.transform.position, posicaoTorreOrigem);
+            float distVisaoAlvo = Vector2.Distance(transform.position, alvoInimigo.transform.position);
+
+            if (distTorreAlvo > raioAreaTorre || distVisaoAlvo > raioVisao)
+            {
+                alvoInimigo = null;
+            }
+        }
+
+        if (Time.time < proximoTempoBusca) return;
+        proximoTempoBusca = Time.time + 0.15f;
+
+        int quantidade = layerInimigos != 0
+            ? Physics2D.OverlapCircleNonAlloc(transform.position, raioVisao, bufferInimigos, layerInimigos)
+            : Physics2D.OverlapCircleNonAlloc(transform.position, raioVisao, bufferInimigos);
+
         float menorDistancia = Mathf.Infinity;
         Inimigo inimigoProximo = null;
 
-        foreach (Collider2D hit in hits)
+        for (int i = 0; i < quantidade; i++)
         {
-            Inimigo inig = hit.GetComponent<Inimigo>();
-            if (inig != null)
+            if (bufferInimigos[i].TryGetComponent(out Inimigo inig))
             {
                 float distTorre = Vector2.Distance(inig.transform.position, posicaoTorreOrigem);
                 if (distTorre <= raioAreaTorre)
@@ -139,6 +193,7 @@ public class TropaBasofila : MonoBehaviour
                 }
             }
         }
+
         alvoInimigo = inimigoProximo;
     }
 
@@ -148,16 +203,43 @@ public class TropaBasofila : MonoBehaviour
         {
             tempoUltimoAtaque = Time.time;
 
-            if (animator != null)
-            {
-                animator.SetTrigger(nomeTriggerAtaque);
-            }
+            // Garante que olha para o alvo no início do ataque
+            OlharPara(alvoInimigo.transform.position);
 
+            if (corrotinaAtaque != null) StopCoroutine(corrotinaAtaque);
+            corrotinaAtaque = StartCoroutine(RotinaAnimacaoAtaque());
+        }
+    }
+
+    private IEnumerator RotinaAnimacaoAtaque()
+    {
+        atacando = true;
+        AtualizarAnimatorAndando(false);
+
+        if (animator != null)
+        {
+            animator.ResetTrigger(hashAtacar);
+            animator.SetTrigger(hashAtacar);
+        }
+
+        float tempoAntesImpacto = duracaoAnimacaoAtaque * momentoImpactoGolpe;
+        yield return new WaitForSeconds(tempoAntesImpacto);
+
+        if (alvoInimigo != null)
+        {
+            OlharPara(alvoInimigo.transform.position);
             Vector3 direcaoEmpurrao = ObterDirecaoOpostaAoMovimento(alvoInimigo);
-
             alvoInimigo.ReceberDano(danoAtaque, tipoDano);
             alvoInimigo.AplicarKnockback(direcaoEmpurrao * forcaKnockback);
         }
+
+        float tempoRestante = duracaoAnimacaoAtaque - tempoAntesImpacto;
+        if (tempoRestante > 0f)
+        {
+            yield return new WaitForSeconds(tempoRestante);
+        }
+
+        atacando = false;
     }
 
     Vector3 ObterDirecaoOpostaAoMovimento(Inimigo inimigo)
@@ -167,8 +249,11 @@ public class TropaBasofila : MonoBehaviour
             Transform waypointDestino = ObterPontoAtualInimigo(inimigo);
             if (waypointDestino != null)
             {
-                Vector3 direcaoIndo = (waypointDestino.position - inimigo.transform.position).normalized;
-                return -direcaoIndo;
+                Vector3 direcaoIndo = waypointDestino.position - inimigo.transform.position;
+                if (direcaoIndo.sqrMagnitude > 0.001f)
+                {
+                    return -direcaoIndo.normalized;
+                }
             }
         }
 
@@ -177,7 +262,11 @@ public class TropaBasofila : MonoBehaviour
 
     Transform ObterPontoAtualInimigo(Inimigo inimigo)
     {
-        System.Reflection.FieldInfo campoIndice = typeof(Inimigo).GetField("indicePontoAtual", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        var campoIndice = typeof(Inimigo).GetField(
+            "indicePontoAtual",
+            System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance
+        );
+
         if (campoIndice != null)
         {
             int idx = (int)campoIndice.GetValue(inimigo);

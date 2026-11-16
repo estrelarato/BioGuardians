@@ -160,12 +160,12 @@ TextureImporter:
       name: EosAtaque_0
       rect:
         serializedVersion: 2
-        x: 189
-        y: 1833
-        width: 352
-        height: 491
+        x: 0
+        y: 1800
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: EosAtaque_1
       rect:
         serializedVersion: 2
-        x: 789
-        y: 1833
-        width: 352
-        height: 491
+        x: 600
+        y: 1800
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -204,12 +204,12 @@ TextureImporter:
       name: EosAtaque_2
       rect:
         serializedVersion: 2
-        x: 1389
-        y: 1833
-        width: 352
-        height: 491
+        x: 1200
+        y: 1800
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -226,12 +226,12 @@ TextureImporter:
       name: EosAtaque_3
       rect:
         serializedVersion: 2
-        x: 1989
-        y: 1833
-        width: 405
-        height: 491
+        x: 1800
+        y: 1800
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -248,12 +248,12 @@ TextureImporter:
       name: EosAtaque_4
       rect:
         serializedVersion: 2
-        x: 2589
-        y: 1833
-        width: 405
-        height: 491
+        x: 2400
+        y: 1800
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -270,12 +270,12 @@ TextureImporter:
       name: EosAtaque_5
       rect:
         serializedVersion: 2
-        x: 189
-        y: 1233
-        width: 321
-        height: 491
+        x: 0
+        y: 1200
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -292,12 +292,12 @@ TextureImporter:
       name: EosAtaque_6
       rect:
         serializedVersion: 2
-        x: 772
-        y: 1233
-        width: 329
-        height: 492
+        x: 600
+        y: 1200
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -314,12 +314,12 @@ TextureImporter:
       name: EosAtaque_7
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 1233
-        width: 329
-        height: 492
+        x: 1200
+        y: 1200
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -336,12 +336,12 @@ TextureImporter:
       name: EosAtaque_8
       rect:
         serializedVersion: 2
-        x: 1972
-        y: 1233
-        width: 329
-        height: 492
+        x: 1800
+        y: 1200
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -358,12 +358,12 @@ TextureImporter:
       name: EosAtaque_9
       rect:
         serializedVersion: 2
-        x: 2572
-        y: 1233
-        width: 339
-        height: 492
+        x: 2400
+        y: 1200
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -380,12 +380,12 @@ TextureImporter:
       name: EosAtaque_10
       rect:
         serializedVersion: 2
-        x: 189
-        y: 633
-        width: 352
-        height: 491
+        x: 0
+        y: 600
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -402,12 +402,12 @@ TextureImporter:
       name: EosAtaque_11
       rect:
         serializedVersion: 2
-        x: 789
-        y: 633
-        width: 352
-        height: 491
+        x: 600
+        y: 600
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -424,12 +424,12 @@ TextureImporter:
       name: EosAtaque_12
       rect:
         serializedVersion: 2
-        x: 1389
-        y: 633
-        width: 352
-        height: 491
+        x: 1200
+        y: 600
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -446,12 +446,12 @@ TextureImporter:
       name: EosAtaque_13
       rect:
         serializedVersion: 2
-        x: 1989
-        y: 633
-        width: 377
-        height: 491
+        x: 1800
+        y: 600
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -468,12 +468,12 @@ TextureImporter:
       name: EosAtaque_14
       rect:
         serializedVersion: 2
-        x: 2589
-        y: 633
-        width: 377
-        height: 491
+        x: 2400
+        y: 600
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -490,12 +490,12 @@ TextureImporter:
       name: EosAtaque_15
       rect:
         serializedVersion: 2
-        x: 189
-        y: 33
-        width: 352
-        height: 491
+        x: 0
+        y: 0
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -512,12 +512,12 @@ TextureImporter:
       name: EosAtaque_16
       rect:
         serializedVersion: 2
-        x: 771
-        y: 33
-        width: 361
-        height: 491
+        x: 600
+        y: 0
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -534,12 +534,12 @@ TextureImporter:
       name: EosAtaque_17
       rect:
         serializedVersion: 2
-        x: 1371
-        y: 33
-        width: 361
-        height: 491
+        x: 1200
+        y: 0
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -556,12 +556,12 @@ TextureImporter:
       name: EosAtaque_18
       rect:
         serializedVersion: 2
-        x: 1971
-        y: 33
-        width: 361
-        height: 491
+        x: 1800
+        y: 0
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -578,12 +578,12 @@ TextureImporter:
       name: EosAtaque_19
       rect:
         serializedVersion: 2
-        x: 2589
-        y: 33
-        width: 343
-        height: 491
+        x: 2400
+        y: 0
+        width: 600
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -600,7 +600,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 206b9852f6eca5340bcf3405741bf7be
     internalID: 0
     vertices: []
     indices: 
@@ -608,7 +608,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":600.0,"y":600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       EosAtaque_0: 8246437264635241612
       EosAtaque_1: -4282984204663223802

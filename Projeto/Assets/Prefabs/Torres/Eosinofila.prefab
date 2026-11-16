@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 2475314716146629797}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.66, y: 0.013659924, z: 0}
+  m_LocalPosition: {x: 0.49, y: 0.241, z: 0}
   m_LocalScale: {x: 0.375, y: 0.375, z: 0.375}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -102,6 +102,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7071249041735464428}
   - component: {fileID: 6078113374874193439}
+  - component: {fileID: 6338384038605321727}
+  - component: {fileID: 8317817414330711425}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -184,6 +186,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!95 &6338384038605321727
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3262151588519838407}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ae143d25519f8a345bdfaaec5572729d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8317817414330711425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3262151588519838407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a3259c7aa45a24aad3eb044091a8f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventosAnimacaoEosinofila
 --- !u!1 &4075785000087284281
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +246,7 @@ Transform:
   m_GameObject: {fileID: 4075785000087284281}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.61, y: 0.013659924, z: 0}
+  m_LocalPosition: {x: 0.564, y: 0.194, z: 0}
   m_LocalScale: {x: 0.375, y: 0.375, z: 0.375}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -387,20 +423,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TropaEosinofila
   velocidade: 2
-  distanciaIdealAtrasBasofila: 1.8
-  toleranciaMovimento: 0.8
   alcanceTiro: 5
   taxaDisparo: 0.4
-  posicaoTorreOrigem: {x: 0, y: 0, z: 0}
+  layerInimigos:
+    serializedVersion: 2
+    m_Bits: 0
+  posicaoTorreOrigem: {x: 0, y: 0}
   raioAreaTorre: 5
+  distanciaRepousoTorre: 1.2
   tipoDano: 1
   prefabProjetil: {fileID: 4732030833341360399, guid: d49cd0b1a76e17d42902eb67c163d05a, type: 3}
-  canoEsquerdo: {fileID: 289473633046256588}
-  canoDireito: {fileID: 7678639251287677571}
+  canoArma1: {fileID: 0}
+  canoArma2: {fileID: 0}
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
+  objetoVisual: {fileID: 0}
+  spriteOlhaParaEsquerdaPorPadrao: 0
+  duracaoAnimacaoAtaque: 0.3
   nomeBoolAndando: estaAndando
-  nomeTriggerAtaque: Atacar
+  nomeBoolAtirando: Atirando
 --- !u!70 &6043529072523864204
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

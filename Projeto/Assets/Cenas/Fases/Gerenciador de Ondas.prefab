@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128601658808891247}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -19.839998, y: 3.2799995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -49,10 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GerenciadorOndas
   ondas:
   - prefabsInimigos:
-    - {fileID: 4031656386603330090, guid: e7076698ed6674f45b6cdbbefa3b7ed2, type: 3}
-    - {fileID: 1341494652975857643, guid: c1424548a9522e649afd2472bc49d534, type: 3}
-    - {fileID: 480608993905014199, guid: 98311370ca446024bb8a22e2db7264b6, type: 3}
-    - {fileID: 5922205029458505422, guid: 86b7559f20fa0ed4d95f577527be6ab0, type: 3}
+    - {fileID: 189617772217006032, guid: 3202a4a7e0ae55c419b8c15534df8c54, type: 3}
     quantidade: 10
     intervalo: 1
   - prefabsInimigos:
@@ -95,7 +92,7 @@ Transform:
   m_GameObject: {fileID: 830742127267311023}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.75, y: 0.25, z: 0}
+  m_LocalPosition: {x: 36.49, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

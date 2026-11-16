@@ -172,12 +172,12 @@ TextureImporter:
       name: BasAtaque_0
       rect:
         serializedVersion: 2
-        x: 329
-        y: 3775
-        width: 542
-        height: 496
+        x: 0
+        y: 3600
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: BasAtaque_1
       rect:
         serializedVersion: 2
-        x: 1239
-        y: 3775
-        width: 539
-        height: 476
+        x: 900
+        y: 3600
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: BasAtaque_2
       rect:
         serializedVersion: 2
-        x: 2139
-        y: 3775
-        width: 539
-        height: 476
+        x: 1800
+        y: 3600
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: BasAtaque_3
       rect:
         serializedVersion: 2
-        x: 3039
-        y: 3775
-        width: 335
-        height: 641
+        x: 2700
+        y: 3600
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: BasAtaque_4
       rect:
         serializedVersion: 2
-        x: 3939
-        y: 3775
-        width: 339
-        height: 606
+        x: 3600
+        y: 3600
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -282,12 +282,12 @@ TextureImporter:
       name: BasAtaque_5
       rect:
         serializedVersion: 2
-        x: 339
-        y: 2875
-        width: 339
-        height: 606
+        x: 0
+        y: 2700
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: BasAtaque_6
       rect:
         serializedVersion: 2
-        x: 945
-        y: 2902
-        width: 503
-        height: 514
+        x: 900
+        y: 2700
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -326,12 +326,12 @@ TextureImporter:
       name: BasAtaque_7
       rect:
         serializedVersion: 2
-        x: 1845
-        y: 2902
-        width: 503
-        height: 514
+        x: 1800
+        y: 2700
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -348,12 +348,12 @@ TextureImporter:
       name: BasAtaque_8
       rect:
         serializedVersion: 2
-        x: 2827
-        y: 2920
-        width: 371
-        height: 515
+        x: 2700
+        y: 2700
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -370,12 +370,12 @@ TextureImporter:
       name: BasAtaque_9
       rect:
         serializedVersion: 2
-        x: 3727
-        y: 2920
-        width: 371
-        height: 529
+        x: 3600
+        y: 2700
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -392,12 +392,12 @@ TextureImporter:
       name: BasAtaque_10
       rect:
         serializedVersion: 2
-        x: 256
-        y: 2005
-        width: 291
-        height: 671
+        x: 0
+        y: 1800
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -414,12 +414,12 @@ TextureImporter:
       name: BasAtaque_11
       rect:
         serializedVersion: 2
-        x: 1156
-        y: 2005
-        width: 291
-        height: 671
+        x: 900
+        y: 1800
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -436,12 +436,12 @@ TextureImporter:
       name: BasAtaque_12
       rect:
         serializedVersion: 2
-        x: 2163
-        y: 1971
-        width: 536
-        height: 448
+        x: 1800
+        y: 1800
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -458,12 +458,12 @@ TextureImporter:
       name: BasAtaque_13
       rect:
         serializedVersion: 2
-        x: 3039
-        y: 1975
-        width: 508
-        height: 455
+        x: 2700
+        y: 1800
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -480,12 +480,12 @@ TextureImporter:
       name: BasAtaque_14
       rect:
         serializedVersion: 2
-        x: 3939
-        y: 1975
-        width: 508
-        height: 455
+        x: 3600
+        y: 1800
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -502,12 +502,12 @@ TextureImporter:
       name: BasAtaque_15
       rect:
         serializedVersion: 2
-        x: 339
-        y: 1075
-        width: 508
-        height: 455
+        x: 0
+        y: 900
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -524,12 +524,12 @@ TextureImporter:
       name: BasAtaque_16
       rect:
         serializedVersion: 2
-        x: 1239
-        y: 1075
-        width: 508
-        height: 455
+        x: 900
+        y: 900
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -546,12 +546,12 @@ TextureImporter:
       name: BasAtaque_17
       rect:
         serializedVersion: 2
-        x: 2139
-        y: 1075
-        width: 509
-        height: 467
+        x: 1800
+        y: 900
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -568,12 +568,12 @@ TextureImporter:
       name: BasAtaque_18
       rect:
         serializedVersion: 2
-        x: 3039
-        y: 1075
-        width: 509
-        height: 467
+        x: 2700
+        y: 900
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -590,12 +590,12 @@ TextureImporter:
       name: BasAtaque_19
       rect:
         serializedVersion: 2
-        x: 3939
-        y: 1074
-        width: 495
-        height: 475
+        x: 3600
+        y: 900
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -612,12 +612,12 @@ TextureImporter:
       name: BasAtaque_20
       rect:
         serializedVersion: 2
-        x: 339
-        y: 174
-        width: 495
-        height: 475
+        x: 0
+        y: 0
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -634,12 +634,12 @@ TextureImporter:
       name: BasAtaque_21
       rect:
         serializedVersion: 2
-        x: 1239
-        y: 173
-        width: 499
-        height: 473
+        x: 900
+        y: 0
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -656,12 +656,12 @@ TextureImporter:
       name: BasAtaque_22
       rect:
         serializedVersion: 2
-        x: 2139
-        y: 173
-        width: 499
-        height: 473
+        x: 1800
+        y: 0
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -678,12 +678,12 @@ TextureImporter:
       name: BasAtaque_23
       rect:
         serializedVersion: 2
-        x: 3029
-        y: 175
-        width: 542
-        height: 496
+        x: 2700
+        y: 0
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -700,7 +700,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6e48751e3d41a804cbb5550e3a9b4a46
     internalID: 0
     vertices: []
     indices: 
@@ -708,7 +708,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":900.0,"y":900.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       BasAtaque_0: -5087956943800166493
       BasAtaque_1: -3244544163011643725

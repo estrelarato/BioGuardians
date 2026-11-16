@@ -172,12 +172,12 @@ TextureImporter:
       name: InfWalk_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 2044
-        width: 404
-        height: 409
+        x: 0
+        y: 2000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: InfWalk_1
       rect:
         serializedVersion: 2
-        x: 548
-        y: 2044
-        width: 404
-        height: 392
+        x: 500
+        y: 2000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: InfWalk_2
       rect:
         serializedVersion: 2
-        x: 1048
-        y: 2044
-        width: 404
-        height: 392
+        x: 1000
+        y: 2000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: InfWalk_3
       rect:
         serializedVersion: 2
-        x: 1556
-        y: 2048
-        width: 398
-        height: 404
+        x: 1500
+        y: 2000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: InfWalk_4
       rect:
         serializedVersion: 2
-        x: 2056
-        y: 2048
-        width: 398
-        height: 420
+        x: 2000
+        y: 2000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -282,12 +282,12 @@ TextureImporter:
       name: InfWalk_5
       rect:
         serializedVersion: 2
-        x: 56
-        y: 1548
-        width: 398
-        height: 420
+        x: 0
+        y: 1500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: InfWalk_6
       rect:
         serializedVersion: 2
-        x: 546
-        y: 1546
-        width: 409
-        height: 405
+        x: 500
+        y: 1500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -326,12 +326,12 @@ TextureImporter:
       name: InfWalk_7
       rect:
         serializedVersion: 2
-        x: 1046
-        y: 1546
-        width: 409
-        height: 388
+        x: 1000
+        y: 1500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -348,12 +348,12 @@ TextureImporter:
       name: InfWalk_8
       rect:
         serializedVersion: 2
-        x: 1546
-        y: 1546
-        width: 409
-        height: 388
+        x: 1500
+        y: 1500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -370,12 +370,12 @@ TextureImporter:
       name: InfWalk_9
       rect:
         serializedVersion: 2
-        x: 2046
-        y: 1537
-        width: 416
-        height: 415
+        x: 2000
+        y: 1500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -392,12 +392,12 @@ TextureImporter:
       name: InfWalk_10
       rect:
         serializedVersion: 2
-        x: 46
-        y: 1037
-        width: 416
-        height: 438
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -414,12 +414,12 @@ TextureImporter:
       name: InfWalk_11
       rect:
         serializedVersion: 2
-        x: 546
-        y: 1037
-        width: 416
-        height: 438
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -436,12 +436,12 @@ TextureImporter:
       name: InfWalk_12
       rect:
         serializedVersion: 2
-        x: 1048
-        y: 1044
-        width: 405
-        height: 409
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -458,12 +458,12 @@ TextureImporter:
       name: InfWalk_13
       rect:
         serializedVersion: 2
-        x: 1548
-        y: 1044
-        width: 405
-        height: 396
+        x: 1500
+        y: 1000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -480,12 +480,12 @@ TextureImporter:
       name: InfWalk_14
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 1044
-        width: 405
-        height: 396
+        x: 2000
+        y: 1000
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -502,12 +502,12 @@ TextureImporter:
       name: InfWalk_15
       rect:
         serializedVersion: 2
-        x: 38
-        y: 535
-        width: 417
-        height: 418
+        x: 0
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -524,12 +524,12 @@ TextureImporter:
       name: InfWalk_16
       rect:
         serializedVersion: 2
-        x: 538
-        y: 535
-        width: 417
-        height: 434
+        x: 500
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -546,12 +546,12 @@ TextureImporter:
       name: InfWalk_17
       rect:
         serializedVersion: 2
-        x: 1038
-        y: 535
-        width: 417
-        height: 434
+        x: 1000
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -568,12 +568,12 @@ TextureImporter:
       name: InfWalk_18
       rect:
         serializedVersion: 2
-        x: 1546
-        y: 546
-        width: 409
-        height: 405
+        x: 1500
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -590,12 +590,12 @@ TextureImporter:
       name: InfWalk_19
       rect:
         serializedVersion: 2
-        x: 2046
-        y: 546
-        width: 409
-        height: 389
+        x: 2000
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -612,12 +612,12 @@ TextureImporter:
       name: InfWalk_20
       rect:
         serializedVersion: 2
-        x: 46
-        y: 46
-        width: 409
-        height: 389
+        x: 0
+        y: 0
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -634,12 +634,12 @@ TextureImporter:
       name: InfWalk_21
       rect:
         serializedVersion: 2
-        x: 538
-        y: 43
-        width: 417
-        height: 417
+        x: 500
+        y: 0
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -656,12 +656,12 @@ TextureImporter:
       name: InfWalk_22
       rect:
         serializedVersion: 2
-        x: 1038
-        y: 43
-        width: 417
-        height: 430
+        x: 1000
+        y: 0
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -678,12 +678,12 @@ TextureImporter:
       name: InfWalk_23
       rect:
         serializedVersion: 2
-        x: 1538
-        y: 43
-        width: 417
-        height: 430
+        x: 1500
+        y: 0
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -700,7 +700,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fae759e4c993e5945b93cc611c644501
     internalID: 0
     vertices: []
     indices: 
@@ -708,7 +708,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":500.0,"y":500.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       InfWalk_0: -1548937754804462257
       InfWalk_1: 1823485979513104714

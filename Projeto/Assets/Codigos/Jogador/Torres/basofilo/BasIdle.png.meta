@@ -172,12 +172,12 @@ TextureImporter:
       name: BasIdle_0
       rect:
         serializedVersion: 2
-        x: 279
-        y: 3775
-        width: 319
-        height: 502
+        x: 0
+        y: 3600
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: BasIdle_1
       rect:
         serializedVersion: 2
-        x: 1179
-        y: 3775
-        width: 319
-        height: 498
+        x: 900
+        y: 3600
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: BasIdle_2
       rect:
         serializedVersion: 2
-        x: 2079
-        y: 3775
-        width: 319
-        height: 498
+        x: 1800
+        y: 3600
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: BasIdle_3
       rect:
         serializedVersion: 2
-        x: 2981
-        y: 3775
-        width: 311
-        height: 498
+        x: 2700
+        y: 3600
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: BasIdle_4
       rect:
         serializedVersion: 2
-        x: 3881
-        y: 3775
-        width: 311
-        height: 498
+        x: 3600
+        y: 3600
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -282,12 +282,12 @@ TextureImporter:
       name: BasIdle_5
       rect:
         serializedVersion: 2
-        x: 281
-        y: 2875
-        width: 311
-        height: 498
+        x: 0
+        y: 2700
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: BasIdle_6
       rect:
         serializedVersion: 2
-        x: 1185
-        y: 2875
-        width: 296
-        height: 505
+        x: 900
+        y: 2700
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -326,12 +326,12 @@ TextureImporter:
       name: BasIdle_7
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 2875
-        width: 296
-        height: 505
+        x: 1800
+        y: 2700
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -348,12 +348,12 @@ TextureImporter:
       name: BasIdle_8
       rect:
         serializedVersion: 2
-        x: 2985
-        y: 2875
-        width: 296
-        height: 505
+        x: 2700
+        y: 2700
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -370,12 +370,12 @@ TextureImporter:
       name: BasIdle_9
       rect:
         serializedVersion: 2
-        x: 3894
-        y: 2875
-        width: 287
-        height: 508
+        x: 3600
+        y: 2700
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -392,12 +392,12 @@ TextureImporter:
       name: BasIdle_10
       rect:
         serializedVersion: 2
-        x: 294
-        y: 1975
-        width: 287
-        height: 508
+        x: 0
+        y: 1800
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -414,12 +414,12 @@ TextureImporter:
       name: BasIdle_11
       rect:
         serializedVersion: 2
-        x: 1194
-        y: 1975
-        width: 287
-        height: 508
+        x: 900
+        y: 1800
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -436,12 +436,12 @@ TextureImporter:
       name: BasIdle_12
       rect:
         serializedVersion: 2
-        x: 2102
-        y: 1975
-        width: 279
-        height: 516
+        x: 1800
+        y: 1800
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -458,12 +458,12 @@ TextureImporter:
       name: BasIdle_13
       rect:
         serializedVersion: 2
-        x: 3012
-        y: 1975
-        width: 269
-        height: 521
+        x: 2700
+        y: 1800
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -480,12 +480,12 @@ TextureImporter:
       name: BasIdle_14
       rect:
         serializedVersion: 2
-        x: 3912
-        y: 1975
-        width: 269
-        height: 521
+        x: 3600
+        y: 1800
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -502,12 +502,12 @@ TextureImporter:
       name: BasIdle_15
       rect:
         serializedVersion: 2
-        x: 306
-        y: 1075
-        width: 275
-        height: 512
+        x: 0
+        y: 900
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -524,19 +524,19 @@ TextureImporter:
       name: BasIdle_16
       rect:
         serializedVersion: 2
-        x: 1195
-        y: 1075
-        width: 286
-        height: 512
+        x: 900
+        y: 900
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8785fc5b231c1ed30800000000000000
+      spriteID: 5ec628cbaef8be3478972c518bf18651
       internalID: 4459057529616291960
       vertices: []
       indices: 
@@ -546,19 +546,19 @@ TextureImporter:
       name: BasIdle_17
       rect:
         serializedVersion: 2
-        x: 2095
-        y: 1075
-        width: 286
-        height: 512
+        x: 1800
+        y: 900
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8cace3e62e7040940800000000000000
+      spriteID: ae44d829714ae6f4ebe95aee9b7bad5c
       internalID: 5261338933769194184
       vertices: []
       indices: 
@@ -568,19 +568,19 @@ TextureImporter:
       name: BasIdle_18
       rect:
         serializedVersion: 2
-        x: 2985
-        y: 1075
-        width: 296
-        height: 505
+        x: 2700
+        y: 900
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4c4c6cec38bf86f50800000000000000
+      spriteID: 40e9f64471de731408c94d383207d7c8
       internalID: 6875021374709482692
       vertices: []
       indices: 
@@ -590,19 +590,19 @@ TextureImporter:
       name: BasIdle_19
       rect:
         serializedVersion: 2
-        x: 3885
-        y: 1075
-        width: 296
-        height: 505
+        x: 3600
+        y: 900
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c57603bbc2a08e6f0800000000000000
+      spriteID: 35314afaa907f5c46bf4ebc0c76d72b3
       internalID: -655262558547056804
       vertices: []
       indices: 
@@ -612,19 +612,19 @@ TextureImporter:
       name: BasIdle_20
       rect:
         serializedVersion: 2
-        x: 285
-        y: 175
-        width: 296
-        height: 505
+        x: 0
+        y: 0
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3b0708f8ff916b910800000000000000
+      spriteID: 27f2104adfa882e4f939573a0d100167
       internalID: 1852696882124452019
       vertices: []
       indices: 
@@ -634,19 +634,19 @@ TextureImporter:
       name: BasIdle_21
       rect:
         serializedVersion: 2
-        x: 1185
-        y: 175
-        width: 308
-        height: 504
+        x: 900
+        y: 0
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5445e13a60d4d12a0800000000000000
+      spriteID: 29ecc843d9979aa42b394607d7104767
       internalID: -6765166374338800571
       vertices: []
       indices: 
@@ -656,19 +656,19 @@ TextureImporter:
       name: BasIdle_22
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 175
-        width: 308
-        height: 504
+        x: 1800
+        y: 0
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4246a177386279a80800000000000000
+      spriteID: 187c9c51ebb2fec4684af36ce8fb61b1
       internalID: -8460251028911397852
       vertices: []
       indices: 
@@ -678,19 +678,19 @@ TextureImporter:
       name: BasIdle_23
       rect:
         serializedVersion: 2
-        x: 2985
-        y: 175
-        width: 308
-        height: 504
+        x: 2700
+        y: 0
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 90d2c2f3df3d7c500800000000000000
+      spriteID: 75a03bfe2b9a49a4c82c534c3a8cda76
       internalID: 416534575195106569
       vertices: []
       indices: 
@@ -700,7 +700,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 28230154100a3534ca61fb1735fad864
     internalID: 0
     vertices: []
     indices: 
@@ -708,7 +708,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":900.0,"y":900.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       BasIdle_0: 3032402091273298915
       BasIdle_1: -2711976766571761883
