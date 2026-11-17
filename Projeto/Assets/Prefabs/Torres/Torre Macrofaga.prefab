@@ -167,7 +167,7 @@ MonoBehaviour:
   taxaAtaque: 2
   dano: 15
   custo: 1
-  emConstrucao: 0
+  emConstrucao: 1
   tipoDano: 0
   raioDanoChao: 2
   layerInimigos:

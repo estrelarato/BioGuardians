@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TropaNeutrofila
   velocidade: 3
-  dano: 10
+  dano: 15
   raioExplosao: 3
   raioDeteccao: 3
   distanciaParaExplodir: 1

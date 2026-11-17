@@ -7,6 +7,8 @@ public class TropaBasofila : MonoBehaviour
     public float velocidade = 3.5f;
     public float danoAtaque = 20f;
     public float alcanceAtaque = 1.2f;
+    [Tooltip("Folga extra no alcance após iniciar o combate para não dar passinhos atrás do knockback")]
+    public float folgaAlcancePosAtaque = 0.6f;
     public float intervaloAtaque = 1.2f;
     public float forcaKnockback = 2.0f;
     public float raioVisao = 6.0f;
@@ -24,19 +26,22 @@ public class TropaBasofila : MonoBehaviour
     public Animator animator;
     [Tooltip("Marque se a arte original do sprite já nasce olhando para a esquerda")]
     public bool spriteOlhaParaEsquerdaPorPadrao = false;
-    [Tooltip("Duração total que a tropa fica parada executando o golpe")]
-    public float duracaoAnimacaoAtaque = 0.35f;
-    [Range(0f, 1f), Tooltip("Momento da animação em que o dano é aplicado (0.5 = metade)")]
-    public float momentoImpactoGolpe = 0.5f;
+    [Tooltip("Duração mínima que a tropa fica parada executando o ataque")]
+    public float duracaoAnimacaoAtaque = 0.5f;
+    [Tooltip("Tempo que ela permanece firme na posição após o golpe antes de voltar a andar")]
+    public float tempoRecuperacaoPosAtaque = 0.25f;
 
-    [Header("Parâmetros do Animator")]
+    [Header("Parâmetros e Estado do Animator")]
     public string nomeBoolAndando = "Andando";
     public string nomeTriggerAtacar = "Atacar";
+    [Tooltip("Nome exato do State de ataque dentro do Animator Controller")]
+    public string nomeEstadoAtaqueAnimator = "Atacar";
 
     private Transform pontoRally;
     private Inimigo alvoInimigo;
     private float tempoUltimoAtaque;
     private bool atacando = false;
+    private bool emEngajamento = false;
     private Coroutine corrotinaAtaque;
 
     private int hashAndando;
@@ -62,8 +67,7 @@ public class TropaBasofila : MonoBehaviour
 
     void Update()
     {
-        // Enquanto ataca, fica parada e continua olhando para o inimigo
-        if (atacando)
+        if (atacando || EstaNoEstadoDeAtaque())
         {
             AtualizarAnimatorAndando(false);
             if (alvoInimigo != null)
@@ -80,32 +84,36 @@ public class TropaBasofila : MonoBehaviour
         if (alvoInimigo != null)
         {
             float distancia = Vector2.Distance(transform.position, alvoInimigo.transform.position);
+            float alcanceEfetivo = emEngajamento ? (alcanceAtaque + folgaAlcancePosAtaque) : alcanceAtaque;
 
-            if (distancia > alcanceAtaque)
+            if (distancia > alcanceEfetivo)
             {
+                emEngajamento = false;
                 MoverPara(alvoInimigo.transform.position);
                 estaAndando = true;
             }
             else
             {
+                emEngajamento = true;
                 OlharPara(alvoInimigo.transform.position);
                 ExecutarAtaque();
                 estaAndando = false;
             }
         }
-        else if (pontoRally != null)
+        else
         {
-            Vector2 destinoValidado = RestringirPosicaoAArea(pontoRally.position);
-            float distRally = Vector2.Distance(transform.position, destinoValidado);
-
-            if (distRally > 0.2f)
-            {
-                MoverPara(destinoValidado);
-                estaAndando = true;
-            }
+            emEngajamento = false;
         }
 
         AtualizarAnimatorAndando(estaAndando);
+    }
+
+    bool EstaNoEstadoDeAtaque()
+    {
+        if (animator == null || string.IsNullOrEmpty(nomeEstadoAtaqueAnimator)) return false;
+
+        AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
+        return info.IsName(nomeEstadoAtaqueAnimator) && info.normalizedTime < 1.0f;
     }
 
     void AtualizarAnimatorAndando(bool andando)
@@ -116,9 +124,9 @@ public class TropaBasofila : MonoBehaviour
 
     void MoverPara(Vector2 destino)
     {
-        Vector2 destinoValidado = RestringirPosicaoAArea(destino);
+        if (atacando) return;
 
-        // Vira para a direção do movimento antes de deslocar
+        Vector2 destinoValidado = RestringirPosicaoAArea(destino);
         OlharPara(destinoValidado);
 
         transform.position = Vector2.MoveTowards(
@@ -131,8 +139,6 @@ public class TropaBasofila : MonoBehaviour
     void OlharPara(Vector2 alvoPosicao)
     {
         float direcaoX = alvoPosicao.x - transform.position.x;
-
-        // Evita tremida (flip rápido) quando o alvo está exatamente na mesma linha vertical
         if (Mathf.Abs(direcaoX) <= 0.02f) return;
 
         bool indoParaEsquerda = direcaoX < 0f;
@@ -202,8 +208,6 @@ public class TropaBasofila : MonoBehaviour
         if (Time.time >= tempoUltimoAtaque + intervaloAtaque && alvoInimigo != null)
         {
             tempoUltimoAtaque = Time.time;
-
-            // Garante que olha para o alvo no início do ataque
             OlharPara(alvoInimigo.transform.position);
 
             if (corrotinaAtaque != null) StopCoroutine(corrotinaAtaque);
@@ -222,24 +226,30 @@ public class TropaBasofila : MonoBehaviour
             animator.SetTrigger(hashAtacar);
         }
 
-        float tempoAntesImpacto = duracaoAnimacaoAtaque * momentoImpactoGolpe;
-        yield return new WaitForSeconds(tempoAntesImpacto);
+        yield return new WaitForSeconds(duracaoAnimacaoAtaque);
 
-        if (alvoInimigo != null)
+        while (EstaNoEstadoDeAtaque())
         {
-            OlharPara(alvoInimigo.transform.position);
-            Vector3 direcaoEmpurrao = ObterDirecaoOpostaAoMovimento(alvoInimigo);
-            alvoInimigo.ReceberDano(danoAtaque, tipoDano);
-            alvoInimigo.AplicarKnockback(direcaoEmpurrao * forcaKnockback);
+            yield return null;
         }
 
-        float tempoRestante = duracaoAnimacaoAtaque - tempoAntesImpacto;
-        if (tempoRestante > 0f)
+        if (tempoRecuperacaoPosAtaque > 0f)
         {
-            yield return new WaitForSeconds(tempoRestante);
+            yield return new WaitForSeconds(tempoRecuperacaoPosAtaque);
         }
 
         atacando = false;
+    }
+
+    public void AplicarImpactoGolpe()
+    {
+        if (alvoInimigo == null) return;
+
+        OlharPara(alvoInimigo.transform.position);
+        Vector3 direcaoEmpurrao = ObterDirecaoOpostaAoMovimento(alvoInimigo);
+
+        alvoInimigo.ReceberDano(danoAtaque, tipoDano);
+        alvoInimigo.AplicarKnockback(direcaoEmpurrao * forcaKnockback);
     }
 
     Vector3 ObterDirecaoOpostaAoMovimento(Inimigo inimigo)

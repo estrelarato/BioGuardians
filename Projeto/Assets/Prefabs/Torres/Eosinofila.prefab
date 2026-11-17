@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 289473633046256588}
   - component: {fileID: 4545329414189531158}
   m_Layer: 7
-  m_Name: Circle
+  m_Name: DI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,12 +25,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2475314716146629797}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49, y: 0.241, z: 0}
-  m_LocalScale: {x: 0.375, y: 0.375, z: 0.375}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.95421, y: 0.44562548, z: 0}
+  m_LocalScale: {x: 1.5331153, y: 1.5331153, z: 1.5331153}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1989285746780892627}
+  m_Father: {fileID: 7071249041735464428}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4545329414189531158
 SpriteRenderer:
@@ -123,7 +123,9 @@ Transform:
   m_LocalPosition: {x: 0.012, y: 0.132, z: 0}
   m_LocalScale: {x: 0.2446, y: 0.2446, z: 0.2446}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 289473633046256588}
+  - {fileID: 7678639251287677571}
   m_Father: {fileID: 1989285746780892627}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6078113374874193439
@@ -196,7 +198,7 @@ Animator:
   m_GameObject: {fileID: 3262151588519838407}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae143d25519f8a345bdfaaec5572729d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 70940707cd5ff7442b54426138c4a500, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -231,7 +233,7 @@ GameObject:
   - component: {fileID: 7678639251287677571}
   - component: {fileID: 8912971986688131361}
   m_Layer: 7
-  m_Name: Circle (1)
+  m_Name: ES
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -245,12 +247,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4075785000087284281}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.564, y: 0.194, z: 0}
-  m_LocalScale: {x: 0.375, y: 0.375, z: 0.375}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.256746, y: 0.25347507, z: 0}
+  m_LocalScale: {x: 1.5331153, y: 1.5331153, z: 1.5331153}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1989285746780892627}
+  m_Father: {fileID: 7071249041735464428}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8912971986688131361
 SpriteRenderer:
@@ -346,8 +348,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7071249041735464428}
-  - {fileID: 289473633046256588}
-  - {fileID: 7678639251287677571}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8335610254513332569
@@ -423,7 +423,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TropaEosinofila
   velocidade: 2
-  alcanceTiro: 5
+  alcanceTiro: 4
+  distanciaSeguraMinima: 2
   taxaDisparo: 0.4
   layerInimigos:
     serializedVersion: 2
@@ -433,14 +434,14 @@ MonoBehaviour:
   distanciaRepousoTorre: 1.2
   tipoDano: 1
   prefabProjetil: {fileID: 4732030833341360399, guid: d49cd0b1a76e17d42902eb67c163d05a, type: 3}
-  canoArma1: {fileID: 0}
-  canoArma2: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  animator: {fileID: 0}
-  objetoVisual: {fileID: 0}
+  canoArma1: {fileID: 289473633046256588}
+  canoArma2: {fileID: 7678639251287677571}
+  spriteRenderer: {fileID: 6078113374874193439}
+  animator: {fileID: 6338384038605321727}
+  objetoVisual: {fileID: 7071249041735464428}
   spriteOlhaParaEsquerdaPorPadrao: 0
   duracaoAnimacaoAtaque: 0.3
-  nomeBoolAndando: estaAndando
+  nomeBoolAndando: Andando
   nomeBoolAtirando: Atirando
 --- !u!70 &6043529072523864204
 CapsuleCollider2D:

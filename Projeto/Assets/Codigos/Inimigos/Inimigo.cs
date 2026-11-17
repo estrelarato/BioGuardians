@@ -27,20 +27,34 @@ public class Inimigo : MonoBehaviour
     // Propriedade para permitir que scripts externos leiam o waypoint atual
     public int IndicePontoAtual => indicePontoAtual;
 
-    [Header("Componentes 2D")]
+    [Header("Componentes 2D e Animação")]
     public SpriteRenderer spriteRenderer;
+    public Animator animator;
+    [Tooltip("Nome do parâmetro Trigger de morte no Animator")]
+    public string nomeTriggerMorte = "Morrer";
+    [Tooltip("Tempo que a animação de morte leva antes de começar a sumir")]
+    public float duracaoAnimacaoMorte = 0.6f;
+    [Tooltip("Tempo que o sprite leva sumindo aos poucos (Fade Out)")]
+    public float duracaoFadeOut = 0.8f;
 
     private bool estaEmKnockback = false;
+    private bool estaMorto = false;
+    private int hashMorrer;
+
+    public bool EstaMorto => estaMorto;
 
     void Awake()
     {
         vidaAtual = vidaMaxima;
         if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        if (animator == null) animator = GetComponentInChildren<Animator>();
+
+        hashMorrer = Animator.StringToHash(nomeTriggerMorte);
     }
 
     void Update()
     {
-        if (estaEmKnockback) return;
+        if (estaMorto || estaEmKnockback) return;
 
         // O inimigo segue puramente o caminho
         MoverPeloCaminho();
@@ -84,7 +98,7 @@ public class Inimigo : MonoBehaviour
     // Detecta quando o inimigo entra na área marcada com a Tag FimDoCaminho
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (jaCausouDano) return;
+        if (estaMorto || jaCausouDano) return;
 
         if (other.CompareTag(tagAlvo))
         {
@@ -118,6 +132,8 @@ public class Inimigo : MonoBehaviour
     // Processa o dano aplicando os multiplicadores de resistência
     public void ReceberDano(float quantidade, TipoDano tipo)
     {
+        if (estaMorto) return;
+
         float danoFinal = quantidade;
 
         switch (tipo)
@@ -140,13 +156,74 @@ public class Inimigo : MonoBehaviour
 
         if (vidaAtual <= 0)
         {
-            Destroy(gameObject);
+            vidaAtual = 0;
+            Morrer();
         }
+    }
+
+    void Morrer()
+    {
+        if (estaMorto) return;
+        estaMorto = true;
+
+        // 1. Interrompe qualquer movimento ou knockback em andamento
+        StopAllCoroutines();
+        estaEmKnockback = false;
+
+        // 2. Desativa todos os colisores para que torres e tropas parem de detectá-lo
+        Collider2D[] colisores = GetComponentsInChildren<Collider2D>();
+        foreach (Collider2D col in colisores)
+        {
+            col.enabled = false;
+        }
+
+        // 3. Desativa a barra de vida visual
+        BarraDeVidaInimigo barra = GetComponentInChildren<BarraDeVidaInimigo>();
+        if (barra != null)
+        {
+            barra.gameObject.SetActive(false);
+        }
+
+        // 4. Inicia a sequência de animação de morte + fade out
+        StartCoroutine(RotinaMorte());
+    }
+
+    private IEnumerator RotinaMorte()
+    {
+        // Dispara a animação de morte no Animator
+        if (animator != null && !string.IsNullOrEmpty(nomeTriggerMorte))
+        {
+            animator.ResetTrigger(hashMorrer);
+            animator.SetTrigger(hashMorrer);
+        }
+
+        // Aguarda a animação de morte tocar por completo
+        if (duracaoAnimacaoMorte > 0f)
+        {
+            yield return new WaitForSeconds(duracaoAnimacaoMorte);
+        }
+
+        // Faz o sprite desaparecer aos poucos (Fade Out)
+        if (spriteRenderer != null && duracaoFadeOut > 0f)
+        {
+            Color corInicial = spriteRenderer.color;
+            float tempoDecorrido = 0f;
+
+            while (tempoDecorrido < duracaoFadeOut)
+            {
+                tempoDecorrido += Time.deltaTime;
+                float novoAlpha = Mathf.Lerp(corInicial.a, 0f, tempoDecorrido / duracaoFadeOut);
+                spriteRenderer.color = new Color(corInicial.r, corInicial.g, corInicial.b, novoAlpha);
+                yield return null;
+            }
+        }
+
+        Destroy(gameObject);
     }
 
     public void AplicarKnockback(Vector3 forca)
     {
-        if (!gameObject.activeInHierarchy) return;
+        if (estaMorto || !gameObject.activeInHierarchy) return;
         StartCoroutine(RoutineKnockback(forca));
     }
 

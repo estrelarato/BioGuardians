@@ -331,12 +331,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo
   vidaMaxima: 15
   vidaAtual: 15
-  velocidade: 2
+  velocidade: 1
+  danoAoEncostar: 3
+  tagAlvo: FimDoCaminho
   resistenciaFagocito: 1
-  resistenciaEnzimatico: 1
-  resistenciaVerdadeiro: 1
+  resistenciaEnzimatico: 0
+  resistenciaVerdadeiro: 0
   pontosCaminho: []
   spriteRenderer: {fileID: 0}
+  animator: {fileID: 0}
+  nomeTriggerMorte: Morrer
+  duracaoAnimacaoMorte: 0.6
+  duracaoFadeOut: 0.8
 --- !u!1 &5406329054365896073
 GameObject:
   m_ObjectHideFlags: 0

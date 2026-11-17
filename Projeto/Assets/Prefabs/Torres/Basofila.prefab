@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2766111052143475763}
   - component: {fileID: 6353536069912306649}
   - component: {fileID: 1704681102316928904}
+  - component: {fileID: 1158273337815618785}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -103,7 +104,7 @@ Animator:
   m_GameObject: {fileID: 4321888496532919500}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 70940707cd5ff7442b54426138c4a500, type: 2}
+  m_Controller: {fileID: 9100000, guid: ae143d25519f8a345bdfaaec5572729d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -115,6 +116,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1158273337815618785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4321888496532919500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db70c2bb9a0cbe4b9fdcb2f3aaced6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::impactoBa
 --- !u!1 &4953939350748071498
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +211,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 0.9257703, b: 0.49622637, a: 1}
@@ -225,13 +238,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TropaBasofila
   velocidade: 3.5
   danoAtaque: 25
-  alcanceAtaque: 1.3
+  alcanceAtaque: 1
+  folgaAlcancePosAtaque: 0.7
   intervaloAtaque: 1.2
   forcaKnockback: 2.5
-  raioVisao: 4
+  raioVisao: 3
   layerInimigos:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   posicaoTorreOrigem: {x: 0, y: 0}
   raioAreaTorre: 5
   tipoDano: 0
@@ -239,9 +253,10 @@ MonoBehaviour:
   animator: {fileID: 1704681102316928904}
   spriteOlhaParaEsquerdaPorPadrao: 0
   duracaoAnimacaoAtaque: 0.35
-  momentoImpactoGolpe: 0.5
+  tempoRecuperacaoPosAtaque: 0.25
   nomeBoolAndando: Andando
   nomeTriggerAtacar: Atacar
+  nomeEstadoAtaqueAnimator: Atacar
 --- !u!50 &-7621801883684366822
 Rigidbody2D:
   serializedVersion: 5

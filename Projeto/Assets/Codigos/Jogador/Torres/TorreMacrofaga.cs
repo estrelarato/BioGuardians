@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TorreMacrofaga : MonoBehaviour
+public class TorreMacrofaga : TorreBase
 {
     [Header("Configurações Gerais")]
     public float alcance = 2.5f;

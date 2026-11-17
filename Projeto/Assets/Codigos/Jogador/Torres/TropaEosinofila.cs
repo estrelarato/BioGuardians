@@ -7,6 +7,8 @@ public class TropaEosinofila : MonoBehaviour
     [Tooltip("Velocidade de caminhada mais suave e calma")]
     public float velocidade = 2.0f;
     public float alcanceTiro = 5.0f;
+    [Tooltip("Se o inimigo chegar mais perto que essa distância, a EO se afasta")]
+    public float distanciaSeguraMinima = 2.5f;
     public float taxaDisparo = 0.8f;
     public LayerMask layerInimigos;
 
@@ -52,11 +54,18 @@ public class TropaEosinofila : MonoBehaviour
     private readonly Collider2D[] bufferInimigos = new Collider2D[16];
     private float proximoTempoBusca;
     private float escalaBaseX = 1f;
+    private bool olhandoEsquerdaAtual = false;
 
     void Awake()
     {
         if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (animator == null) animator = GetComponentInChildren<Animator>();
+
+        // Se objetoVisual não foi atribuído, tenta pegar o pai do SpriteRenderer se for filho deste objeto
+        if (objetoVisual == null && spriteRenderer != null && spriteRenderer.transform != transform)
+        {
+            objetoVisual = spriteRenderer.transform;
+        }
 
         if (objetoVisual != null)
         {
@@ -97,7 +106,7 @@ public class TropaEosinofila : MonoBehaviour
             AtualizarAnimator(false, true);
             if (inimigoAtual != null)
             {
-                OlharPara(inimigoAtual.transform.position);
+                DefinirDirecaoOlhar(inimigoAtual.transform.position);
             }
             return;
         }
@@ -110,7 +119,27 @@ public class TropaEosinofila : MonoBehaviour
         {
             float distanciaParaInimigo = Vector2.Distance(transform.position, inimigoAtual.transform.position);
 
-            if (distanciaParaInimigo > alcanceTiro)
+            if (distanciaParaInimigo < distanciaSeguraMinima)
+            {
+                Vector2 direcaoFuga = ((Vector2)transform.position - (Vector2)inimigoAtual.transform.position).normalized;
+                if (direcaoFuga.sqrMagnitude < 0.01f) direcaoFuga = Vector2.left;
+
+                Vector2 destinoRecuo = (Vector2)transform.position + direcaoFuga * (distanciaSeguraMinima - distanciaParaInimigo + 0.5f);
+                Vector2 posicaoAnterior = transform.position;
+
+                MoverPara(destinoRecuo);
+                DefinirDirecaoOlhar(inimigoAtual.transform.position);
+
+                if (Vector2.Distance(posicaoAnterior, transform.position) > 0.001f)
+                {
+                    estaAndando = true;
+                }
+                else
+                {
+                    IniciarSequenciaDeTiro();
+                }
+            }
+            else if (distanciaParaInimigo > alcanceTiro)
             {
                 Vector2 posicaoAnterior = transform.position;
                 MoverPara(inimigoAtual.transform.position);
@@ -121,13 +150,13 @@ public class TropaEosinofila : MonoBehaviour
                 }
                 else
                 {
-                    OlharPara(inimigoAtual.transform.position);
+                    DefinirDirecaoOlhar(inimigoAtual.transform.position);
                 }
             }
             else
             {
                 estaAndando = false;
-                OlharPara(inimigoAtual.transform.position);
+                DefinirDirecaoOlhar(inimigoAtual.transform.position);
                 IniciarSequenciaDeTiro();
             }
         }
@@ -142,6 +171,17 @@ public class TropaEosinofila : MonoBehaviour
         }
 
         AtualizarAnimator(estaAndando, estaAtirando);
+    }
+
+    // Aplica o flip no LateUpdate para garantir que o Animator não sobrescreva o espelhamento
+    void LateUpdate()
+    {
+        if (inimigoAtual != null)
+        {
+            DefinirDirecaoOlhar(inimigoAtual.transform.position);
+        }
+
+        AplicarEspelhamentoVisual();
     }
 
     void AtualizarAlvo()
@@ -201,7 +241,7 @@ public class TropaEosinofila : MonoBehaviour
     void MoverPara(Vector2 destino)
     {
         Vector2 destinoValidado = RestringirPosicaoAArea(destino);
-        OlharPara(destinoValidado);
+        DefinirDirecaoOlhar(destinoValidado);
 
         transform.position = Vector2.MoveTowards(
             transform.position,
@@ -210,13 +250,18 @@ public class TropaEosinofila : MonoBehaviour
         );
     }
 
-    void OlharPara(Vector2 alvoPosicao)
+    void DefinirDirecaoOlhar(Vector2 alvoPosicao)
     {
         float direcaoX = alvoPosicao.x - transform.position.x;
         if (Mathf.Abs(direcaoX) <= 0.02f) return;
 
-        bool indoParaEsquerda = direcaoX < 0f;
-        bool deveInverter = spriteOlhaParaEsquerdaPorPadrao ? !indoParaEsquerda : indoParaEsquerda;
+        olhandoEsquerdaAtual = direcaoX < 0f;
+        AplicarEspelhamentoVisual();
+    }
+
+    void AplicarEspelhamentoVisual()
+    {
+        bool deveInverter = spriteOlhaParaEsquerdaPorPadrao ? !olhandoEsquerdaAtual : olhandoEsquerdaAtual;
 
         if (objetoVisual != null)
         {
@@ -271,10 +316,6 @@ public class TropaEosinofila : MonoBehaviour
         estaAtirando = false;
     }
 
-    // =========================================================================
-    // MÉTODOS CHAMADOS PELOS ANIMATION EVENTS NA TIMELINE DA ANIMAÇÃO
-    // =========================================================================
-
     public void DispararArma1()
     {
         ExecutarDisparoNoCano(canoArma1);
@@ -287,14 +328,13 @@ public class TropaEosinofila : MonoBehaviour
 
     private void ExecutarDisparoNoCano(Transform pontoSaida)
     {
-        // Se o alvo morreu entre o tiro 1 e o tiro 2, tenta pegar outro alvo válido na hora
         if (inimigoAtual == null)
         {
             AtualizarAlvo();
             if (inimigoAtual == null) return;
         }
 
-        OlharPara(inimigoAtual.transform.position);
+        DefinirDirecaoOlhar(inimigoAtual.transform.position);
 
         if (pontoSaida == null) pontoSaida = transform;
 
@@ -321,6 +361,8 @@ public class TropaEosinofila : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, alcanceTiro);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, distanciaSeguraMinima);
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(posicaoTorreOrigem, raioAreaTorre);
     }
