@@ -48,14 +48,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10eb6c8d24c2ba48a1ee574028afccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo
-  vidaMaxima: 10
+  vidaMaxima: 50
   vidaAtual: 10
-  velocidade: 1.2
+  velocidade: 2
   danoAoEncostar: 10
   tagAlvo: FimDoCaminho
-  resistenciaFagocito: 0
-  resistenciaEnzimatico: 0.5
-  resistenciaVerdadeiro: 0
+  resistenciaFagocito: 1
+  resistenciaEnzimatico: 1
+  resistenciaVerdadeiro: 1
   pontosCaminho: []
   spriteRenderer: {fileID: 2526435115130838957}
   animator: {fileID: 2898798886169485298}
@@ -309,7 +309,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 8
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1548937754804462257, guid: 5009296577c9a8248a77bad5115afaf1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

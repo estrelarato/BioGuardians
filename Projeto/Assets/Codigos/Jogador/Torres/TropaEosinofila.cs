@@ -15,8 +15,6 @@ public class TropaEosinofila : MonoBehaviour
     [Header("Área de Limite da Torre")]
     public Vector2 posicaoTorreOrigem;
     public float raioAreaTorre = 5.0f;
-    [Tooltip("Distância máxima que ela fica parada em relação à torre quando não há inimigos")]
-    public float distanciaRepousoTorre = 1.2f;
 
     [Header("Tipo de Dano")]
     public TipoDano tipoDano = TipoDano.Enzimatico;
@@ -44,7 +42,6 @@ public class TropaEosinofila : MonoBehaviour
 
     private TropaBasofila basofilaAlvo;
     private Inimigo inimigoAtual;
-    private Vector2 pontoRepousoPertoDaTorre;
     private float tempoUltimoTiro;
     private bool estaAtirando = false;
     private Coroutine corrotinaAtaque;
@@ -75,19 +72,13 @@ public class TropaEosinofila : MonoBehaviour
 
         hashAndando = Animator.StringToHash(nomeBoolAndando);
         hashAtirando = Animator.StringToHash(nomeBoolAtirando);
-
-        pontoRepousoPertoDaTorre = transform.position;
     }
 
     public void ConfigurarTorre(Vector3 origemTorre, float raioMaximo)
     {
         posicaoTorreOrigem = origemTorre;
         raioAreaTorre = raioMaximo;
-
-        Vector2 direcaoAtual = ((Vector2)transform.position - posicaoTorreOrigem).normalized;
-        if (direcaoAtual.sqrMagnitude < 0.01f) direcaoAtual = Vector2.down;
-
-        pontoRepousoPertoDaTorre = RestringirPosicaoAArea(posicaoTorreOrigem + direcaoAtual * distanciaRepousoTorre);
+        transform.position = RestringirPosicaoAArea(transform.position);
     }
 
     public void ConfigurarAlvoBasofila(TropaBasofila baso)
@@ -160,15 +151,7 @@ public class TropaEosinofila : MonoBehaviour
                 IniciarSequenciaDeTiro();
             }
         }
-        else
-        {
-            float distParaRepouso = Vector2.Distance(transform.position, pontoRepousoPertoDaTorre);
-            if (distParaRepouso > 0.15f)
-            {
-                MoverPara(pontoRepousoPertoDaTorre);
-                estaAndando = true;
-            }
-        }
+        // Quando inimigoAtual == null, estaAndando permanece false e ela fica parada no último local
 
         AtualizarAnimator(estaAndando, estaAtirando);
     }

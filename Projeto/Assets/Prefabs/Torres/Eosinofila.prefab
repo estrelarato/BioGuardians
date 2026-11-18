@@ -397,7 +397,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 12
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 0.6004095, b: 0.20943397, a: 1}
@@ -424,14 +424,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TropaEosinofila
   velocidade: 2
   alcanceTiro: 4
-  distanciaSeguraMinima: 2
+  distanciaSeguraMinima: 1.5
   taxaDisparo: 0.4
   layerInimigos:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   posicaoTorreOrigem: {x: 0, y: 0}
   raioAreaTorre: 5
-  distanciaRepousoTorre: 1.2
   tipoDano: 1
   prefabProjetil: {fileID: 4732030833341360399, guid: d49cd0b1a76e17d42902eb67c163d05a, type: 3}
   canoArma1: {fileID: 289473633046256588}

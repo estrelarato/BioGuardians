@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 144888025423731436}
   - component: {fileID: 230401612672801739}
   - component: {fileID: -7115474797452171072}
+  - component: {fileID: 6856869340700760153}
   m_Layer: 6
   m_Name: protozoario hemacia
   m_TagString: Inimigo
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.83825, y: -0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2210711, y: 0.18901579, z: 0.20216581}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,14 +83,14 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 8119473290379688366, guid: 4f721b38e428fb94f8525c2473b78147, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 0
+  m_Size: {x: 2.1870275, y: 2.1870275}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -107,14 +108,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10eb6c8d24c2ba48a1ee574028afccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo
-  vidaMaxima: 100
-  vidaAtual: 0
+  vidaMaxima: 5
+  vidaAtual: 5
   velocidade: 5
+  danoAoEncostar: 1
+  tagAlvo: FimDoCaminho
   resistenciaFagocito: 1
   resistenciaEnzimatico: 1
   resistenciaVerdadeiro: 1
   pontosCaminho: []
   spriteRenderer: {fileID: 0}
+  animator: {fileID: 0}
+  nomeTriggerMorte: Morrer
+  duracaoAnimacaoMorte: 0.6
+  duracaoFadeOut: 0.8
 --- !u!58 &230401612672801739
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -178,3 +185,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &6856869340700760153
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364171454443061022}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c208157c15fd5243a317b2c15b85f41, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

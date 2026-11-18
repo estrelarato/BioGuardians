@@ -23,6 +23,15 @@ public class TorreNeutrofila : TorreBase
 
     private List<GameObject> minhasTropas = new List<GameObject>();
 
+    public override float ObterRaioAlcance()
+    {
+        if (prefabTropa != null && prefabTropa.TryGetComponent(out TropaNeutrofila tropa))
+        {
+            return tropa.raioDeteccao;
+        }
+        return 0f;
+    }
+
     void Update()
     {
         if (emConstrucao) return;

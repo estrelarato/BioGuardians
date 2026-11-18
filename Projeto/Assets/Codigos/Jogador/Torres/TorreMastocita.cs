@@ -29,10 +29,11 @@ public class TorreMastocita : TorreBase
     private Inimigo alvoAtual;
     private bool estaCarregandoTiro = false;
 
-    // Referências locais da magia que está a ser carregada
     private GameObject magiaObjAtual;
     private Magia magiaAtual;
     private Coroutine corrotinaCarga;
+
+    public override float ObterRaioAlcance() => alcance;
 
     void Update()
     {
@@ -44,7 +45,6 @@ public class TorreMastocita : TorreBase
         bool temAlvo = (alvoAtual != null);
         AtualizarAnimacoesEstado(temAlvo);
 
-        // Inicia o carregamento quando o tempo do cooldown permitir e houver alvo
         if (temAlvo && Time.time >= tempoProximoAtaque && !estaCarregandoTiro)
         {
             IniciarCarga();
@@ -89,9 +89,6 @@ public class TorreMastocita : TorreBase
         }
     }
 
-    // ========================================================================
-    // CHAME ESTE MÉTODO VIA ANIMATION EVENT NO FRAME EXATO DO DISPARO
-    // ========================================================================
     public void DispararMagia()
     {
         if (!estaCarregandoTiro) return;
@@ -100,14 +97,13 @@ public class TorreMastocita : TorreBase
 
         if (magiaObjAtual != null)
         {
-            magiaObjAtual.transform.SetParent(null); // Desvincula do ponto de disparo
+            magiaObjAtual.transform.SetParent(null);
             if (magiaAtual != null)
             {
                 magiaAtual.LiberarTiro();
             }
         }
 
-        // Aplica efeito no alvo se ainda existir
         if (alvoAtual != null)
         {
             EfeitoLento efeito = alvoAtual.GetComponent<EfeitoLento>();
@@ -118,7 +114,6 @@ public class TorreMastocita : TorreBase
             efeito.AplicarLentidao(porcentagemLento, duracaoLento);
         }
 
-        // Reseta o estado para o próximo ataque respeitando a taxa de ataque
         tempoProximoAtaque = Time.time + (1f / taxaAtaque);
         estaCarregandoTiro = false;
         magiaObjAtual = null;

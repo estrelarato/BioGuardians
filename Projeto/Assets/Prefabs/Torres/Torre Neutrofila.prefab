@@ -103,10 +103,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb5c0401c1124542abdd22d6bbcf170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorreN
+  custo: 35
+  emConstrucao: 1
+  mostrarAlcanceNaConstrucao: 1
+  corCirculoAlcance: {r: 0.2, g: 0.8, b: 1, a: 0.75}
+  larguraLinhaAlcance: 0.06
+  segmentosCirculo: 48
   tempoEntreSpawns: 5
   limiteTropasVivas: 1
-  custo: 1
-  emConstrucao: 1
   prefabTropa: {fileID: 4349345500968376248, guid: 077b7ad7efb14e540a3601296434bd74, type: 3}
   pontoSpawn: {fileID: 276204700233910473}
   animadorTorre: {fileID: 6696023377487002631}
@@ -186,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2478b51f39bf3f1408469ee63d9347c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorreControleVenda
-  valorVenda: 10
+  valorVenda: 20
 --- !u!1 &4699369152237885776
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +270,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 20
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5773041331335176264, guid: 5d2810b702d70c14d94f26e58dfc692c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

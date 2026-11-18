@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 13
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6673050267026638081, guid: b877aaab83b65cb47959d1ff49819e53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -130,14 +130,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TropaNeutrofila
   velocidade: 3
-  dano: 15
-  raioExplosao: 3
+  dano: 25
+  raioExplosao: 2
   raioDeteccao: 3
   distanciaParaExplodir: 1
   tipoDano: 1
   animadorTropa: {fileID: 6631114379722092956}
   spriteRenderer: {fileID: 1980736179742502351}
   efeitoExplosaoPrefab: {fileID: 0}
+  corFlashAzul: {r: 0.15, g: 0.75, b: 1, a: 0.7}
+  corFlashBranco: {r: 1, g: 1, b: 1, a: 0.85}
+  duracaoFlashExplosao: 0.35
+  velocidadePiscada: 0.045
+  ordemCamadaEfeito: 15
 --- !u!50 &6476210397199971464
 Rigidbody2D:
   serializedVersion: 5

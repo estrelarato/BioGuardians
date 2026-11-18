@@ -14,8 +14,8 @@ public class TorreLinfocita : TorreBase
     public TipoDano tipoDano = TipoDano.Fagocito;
 
     [Header("Animadores Independentes")]
-    public Animator animadorTorre;    // Base ou estrutura da torre
-    public Animator animadorAtirador; // Personagem ou núcleo do Linfócito
+    public Animator animadorTorre;
+    public Animator animadorAtirador;
 
     [Header("Configurações de Animação")]
     public float duracaoAnimacaoAtaque = 0.3f;
@@ -28,6 +28,28 @@ public class TorreLinfocita : TorreBase
     private List<Inimigo> inimigosNoAlcance = new List<Inimigo>();
     private Inimigo alvoAtual;
     private Coroutine corrotinaAtaque;
+
+    public override float ObterRaioAlcance() => alcance;
+
+    void Awake()
+    {
+        SincronizarColliderAlcance();
+    }
+
+    void SincronizarColliderAlcance()
+    {
+        CircleCollider2D[] colisores = GetComponentsInChildren<CircleCollider2D>();
+        float escalaPai = Mathf.Abs(transform.lossyScale.x);
+        if (escalaPai < 0.001f) escalaPai = 1f;
+
+        foreach (CircleCollider2D col in colisores)
+        {
+            if (col.isTrigger)
+            {
+                col.radius = alcance / escalaPai;
+            }
+        }
+    }
 
     void Update()
     {

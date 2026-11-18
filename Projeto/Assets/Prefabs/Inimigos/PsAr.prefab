@@ -121,15 +121,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10eb6c8d24c2ba48a1ee574028afccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo
-  vidaMaxima: 15
-  vidaAtual: 15
+  vidaMaxima: 50
+  vidaAtual: 0
   velocidade: 2
+  danoAoEncostar: 1
+  tagAlvo: FimDoCaminho
   resistenciaFagocito: 1
   resistenciaEnzimatico: 1
   resistenciaVerdadeiro: 1
   pontosCaminho:
   - {fileID: 0}
   spriteRenderer: {fileID: 790880680866372598}
+  animator: {fileID: 0}
+  nomeTriggerMorte: Morrer
+  duracaoAnimacaoMorte: 0.6
+  duracaoFadeOut: 0.8
 --- !u!1 &1599382621867183103
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +343,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 7
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1675171864662081879, guid: 93e5109af19e03745a136769a174c220, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

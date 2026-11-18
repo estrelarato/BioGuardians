@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9142534194069094453}
   - component: {fileID: 6783724322884032180}
   - component: {fileID: 1100300728324013083}
+  - component: {fileID: 6618299002834149114}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 20
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7111396506342550342, guid: 25fb79711d521734897573638b74cfdb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -115,6 +116,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6618299002834149114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4914063956715947835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7c7450a915f1b47bd7f31ba02f8299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventosAnimacaoMacrofaga
 --- !u!1 &8585284440692856723
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +178,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TorreMacrofaga
   custo: 75
   emConstrucao: 1
+  mostrarAlcanceNaConstrucao: 1
+  corCirculoAlcance: {r: 0.2, g: 0.8, b: 1, a: 0.75}
+  larguraLinhaAlcance: 0.06
+  segmentosCirculo: 48
   alcance: 3
   taxaAtaque: 2
   dano: 15
@@ -173,7 +190,11 @@ MonoBehaviour:
   layerInimigos:
     serializedVersion: 2
     m_Bits: 64
+  prefabEfeitoAtaque: {fileID: 0}
+  pontoOrigemEfeito: {fileID: 0}
+  duracaoEfeito: 1.5
   animadorTorre: {fileID: 1100300728324013083}
+  nomeTriggerAtacar: Atacar
 --- !u!114 &346490351970487741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2478b51f39bf3f1408469ee63d9347c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorreControleVenda
-  valorVenda: 30
+  valorVenda: 50
 --- !u!58 &8786876241669276830
 CircleCollider2D:
   m_ObjectHideFlags: 0

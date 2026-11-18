@@ -111,7 +111,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 20
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7111396506342550342, guid: c3ef2cc47b26b474898221242545fe97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -196,8 +196,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eee4cd2d95487e44bb6ec99383fed05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Torre
-  custo: 1
+  custo: 20
   emConstrucao: 1
+  mostrarAlcanceNaConstrucao: 1
+  corCirculoAlcance: {r: 0.2, g: 0.8, b: 1, a: 0.75}
+  larguraLinhaAlcance: 0.06
+  segmentosCirculo: 48
   alcance: 3
   taxaAtaque: 1
   dano: 10
@@ -282,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2478b51f39bf3f1408469ee63d9347c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorreControleVenda
-  valorVenda: 5
+  valorVenda: 10
 --- !u!1 &8658346951230163916
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +367,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 19
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 4efa7438ae75cd54a9d56d5f0e8ce4b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -373,7 +377,7 @@ SpriteRenderer:
   m_Size: {x: 3.75, y: 3.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!95 &4169132924200490439

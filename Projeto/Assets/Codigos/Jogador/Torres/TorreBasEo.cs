@@ -18,6 +18,8 @@ public class TorreBaEo : TorreBase
     private TropaEosinofila eosinofilaAtual;
     private bool foiConstruida = false;
 
+    public override float ObterRaioAlcance() => raioAreaTorre;
+
     void Start()
     {
         if (pontoSpawn == null) pontoSpawn = transform;

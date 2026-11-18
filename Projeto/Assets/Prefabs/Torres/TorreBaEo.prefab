@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 8316144889486658379}
   - component: {fileID: 2997435392877725613}
   - component: {fileID: 7023400961305406593}
-  - component: {fileID: -74778560445742866}
+  - component: {fileID: 1128206326274672429}
+  - component: {fileID: 629870652241757821}
+  - component: {fileID: 32016541074924599}
   m_Layer: 0
   m_Name: TorreBaEo
   m_TagString: Untagged
@@ -84,7 +86,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 20
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.23018861, g: 0.17676748, b: 0.17676748, a: 1}
@@ -109,14 +111,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c41ce3b2a634c44b07aaeadf9cf72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorreBasEo
-  custo: 1
+  custo: 100
   emConstrucao: 1
+  mostrarAlcanceNaConstrucao: 1
+  corCirculoAlcance: {r: 0.2, g: 0.8, b: 1, a: 0.75}
+  larguraLinhaAlcance: 0.06
+  segmentosCirculo: 48
   prefabBasofila: {fileID: 4953939350748071498, guid: 2acf736887e2fac45a6ca4f9c921c92b, type: 3}
   prefabEosinofila: {fileID: 7825358211268178907, guid: 838eefdcb7c4aea49bf414572edbe7d8, type: 3}
-  raioAreaTorre: 5
+  raioAreaTorre: 4.5
   pontoSpawn: {fileID: 291332195342338740}
   pontoRally: {fileID: 0}
---- !u!114 &-74778560445742866
+--- !u!114 &1128206326274672429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,7 +134,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2478b51f39bf3f1408469ee63d9347c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorreControleVenda
-  valorVenda: 50
+  valorVenda: 60
+--- !u!70 &629870652241757821
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2372236646428359004}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.10488069, y: 0.44151902}
+  m_Size: {x: 0.4464953, y: 1.2906895}
+  m_Direction: 0
+--- !u!50 &32016541074924599
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2372236646428359004}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3653670894184370911
 GameObject:
   m_ObjectHideFlags: 0

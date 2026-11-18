@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 20
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6032309788180516927, guid: 8985e8c1ba5e3784ca28d179a473d072, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -209,10 +209,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 723ab9514154e7c4fa5857f7648e0c2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorreGeradoraATP
-  custo: 1
+  custo: 40
   emConstrucao: 1
-  custo: 1
-  emConstrucao: 1
+  mostrarAlcanceNaConstrucao: 1
+  corCirculoAlcance: {r: 0.2, g: 0.8, b: 1, a: 0.75}
+  larguraLinhaAlcance: 0.06
+  segmentosCirculo: 48
   tempoConstrucao: 3
   quantidadeATP: 10
   tempoEntreGeracoes: 5
@@ -234,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2478b51f39bf3f1408469ee63d9347c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorreControleVenda
-  valorVenda: 50
+  valorVenda: 20
 --- !u!50 &-6581243564075551290
 Rigidbody2D:
   serializedVersion: 5
