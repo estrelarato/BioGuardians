@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5a1e5bc48d1c30543a8ff5a7482c59e7
+guid: ce7571f6fb887e84bbda599bf5a9acbc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7427409090858188102
-    second: istockphoto-2205353362-612x612 1_0
+      213: 6944679929654441133
+    second: OPCOES DE ESCOLHA inteira_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: istockphoto-2205353362-612x612 1_0
+      name: OPCOES DE ESCOLHA inteira_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 612
-        height: 408
+        x: 90
+        y: 216
+        width: 332
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64dfb1e4735731760800000000000000
-      internalID: 7427409090858188102
+      spriteID: da476ddf995706060800000000000000
+      internalID: 6944679929654441133
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      istockphoto-2205353362-612x612 1_0: 7427409090858188102
+      OPCOES DE ESCOLHA inteira_0: 6944679929654441133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

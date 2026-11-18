@@ -163,11 +163,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99319772f0393a84dbc811ede9464e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorreMacrofaga
+  custo: 75
+  emConstrucao: 1
   alcance: 3
   taxaAtaque: 2
   dano: 15
-  custo: 1
-  emConstrucao: 1
   tipoDano: 0
   raioDanoChao: 2
   layerInimigos:

@@ -8,8 +8,7 @@ public class TorreMacrofaga : TorreBase
     public float alcance = 2.5f;
     public float taxaAtaque = 0.8f;
     public float dano = 30f;
-    public int custo = 75;
-    public bool emConstrucao = true;
+    // Removidos custo e emConstrucao daqui (eles vêm do TorreBase!)
 
     [Header("Tipo de Dano (Biológico)")]
     [Tooltip("Escolha o tipo de dano em área do Macrófago")]
@@ -23,6 +22,13 @@ public class TorreMacrofaga : TorreBase
     public Animator animadorTorre;
 
     private float tempoProximoAtaque = 0f;
+
+    // Define 75 como custo padrão no Inspector assim que você adiciona o script ao objeto
+    private void Reset()
+    {
+        custo = 75;
+        emConstrucao = true;
+    }
 
     void Update()
     {
@@ -51,7 +57,6 @@ public class TorreMacrofaga : TorreBase
             Inimigo inimigo = col.GetComponent<Inimigo>();
             if (inimigo != null)
             {
-                // Envia o dano junto com o TipoDano selecionado no Inspector
                 inimigo.ReceberDano(dano, tipoDano);
             }
         }
