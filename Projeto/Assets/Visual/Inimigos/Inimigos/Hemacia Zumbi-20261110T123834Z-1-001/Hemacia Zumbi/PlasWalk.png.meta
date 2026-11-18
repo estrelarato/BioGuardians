@@ -145,12 +145,12 @@ TextureImporter:
       name: PlasWalk_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 646
-        width: 176
-        height: 52
+        x: 0
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -167,12 +167,12 @@ TextureImporter:
       name: PlasWalk_1
       rect:
         serializedVersion: 2
-        x: 214
-        y: 646
-        width: 176
-        height: 46
+        x: 200
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: PlasWalk_2
       rect:
         serializedVersion: 2
-        x: 414
-        y: 646
-        width: 176
-        height: 46
+        x: 400
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: PlasWalk_3
       rect:
         serializedVersion: 2
-        x: 609
-        y: 646
-        width: 185
-        height: 42
+        x: 600
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: PlasWalk_4
       rect:
         serializedVersion: 2
-        x: 9
-        y: 446
-        width: 185
-        height: 42
+        x: 0
+        y: 400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,12 +255,12 @@ TextureImporter:
       name: PlasWalk_5
       rect:
         serializedVersion: 2
-        x: 209
-        y: 446
-        width: 185
-        height: 42
+        x: 200
+        y: 400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: PlasWalk_6
       rect:
         serializedVersion: 2
-        x: 413
-        y: 446
-        width: 177
-        height: 47
+        x: 400
+        y: 400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: PlasWalk_7
       rect:
         serializedVersion: 2
-        x: 655
-        y: 446
-        width: 99
-        height: 90
+        x: 600
+        y: 400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: PlasWalk_8
       rect:
         serializedVersion: 2
-        x: 55
-        y: 246
-        width: 99
-        height: 90
+        x: 0
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: PlasWalk_9
       rect:
         serializedVersion: 2
-        x: 255
-        y: 246
-        width: 99
-        height: 98
+        x: 200
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: PlasWalk_10
       rect:
         serializedVersion: 2
-        x: 455
-        y: 246
-        width: 99
-        height: 98
+        x: 400
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,12 +387,12 @@ TextureImporter:
       name: PlasWalk_11
       rect:
         serializedVersion: 2
-        x: 655
-        y: 246
-        width: 99
-        height: 103
+        x: 600
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: PlasWalk_12
       rect:
         serializedVersion: 2
-        x: 55
-        y: 46
-        width: 99
-        height: 103
+        x: 0
+        y: 0
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -431,12 +431,12 @@ TextureImporter:
       name: PlasWalk_13
       rect:
         serializedVersion: 2
-        x: 255
-        y: 46
-        width: 99
-        height: 103
+        x: 200
+        y: 0
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -453,12 +453,12 @@ TextureImporter:
       name: PlasWalk_14
       rect:
         serializedVersion: 2
-        x: 455
-        y: 46
-        width: 99
-        height: 82
+        x: 400
+        y: 0
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -475,7 +475,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 159ec3712a4270040b21860bc6381429
     internalID: 0
     vertices: []
     indices: 
@@ -483,7 +483,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":200.0,"y":200.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       PlasWalk_0: 8119473290379688366
       PlasWalk_1: 6655935142730088097

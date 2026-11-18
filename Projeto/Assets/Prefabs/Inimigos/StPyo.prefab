@@ -48,14 +48,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10eb6c8d24c2ba48a1ee574028afccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo
-  vidaMaxima: 500
-  vidaAtual: 500
+  vidaMaxima: 1
+  vidaAtual: 0
   velocidade: 5
+  danoAoEncostar: 1
+  tagAlvo: FimDoCaminho
   resistenciaFagocito: 1
   resistenciaEnzimatico: 1
   resistenciaVerdadeiro: 1
   pontosCaminho: []
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 5723820787823621802}
+  animator: {fileID: 4916168388998046349}
+  nomeTriggerMorte: Morrer
+  duracaoAnimacaoMorte: 0.6
+  duracaoFadeOut: 0.8
 --- !u!58 &8126131942117606141
 CircleCollider2D:
   m_ObjectHideFlags: 0

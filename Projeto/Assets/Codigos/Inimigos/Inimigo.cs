@@ -190,11 +190,19 @@ public class Inimigo : MonoBehaviour
 
     private IEnumerator RotinaMorte()
     {
-        // Dispara a animação de morte no Animator
-        if (animator != null && !string.IsNullOrEmpty(nomeTriggerMorte))
+        if (animator != null)
         {
-            animator.ResetTrigger(hashMorrer);
-            animator.SetTrigger(hashMorrer);
+            // Garante que o Animator está ativo e atualizando
+            animator.enabled = true;
+
+            if (!string.IsNullOrEmpty(nomeTriggerMorte))
+            {
+                animator.SetTrigger(hashMorrer);
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"[Inimigo] Animator não encontrado em {gameObject.name}!");
         }
 
         // Aguarda a animação de morte tocar por completo
