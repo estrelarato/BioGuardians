@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 920883076}
   - component: {fileID: 920883075}
   - component: {fileID: 920883074}
+  - component: {fileID: 920883077}
   m_Layer: 0
   m_Name: BootManager
   m_TagString: Untagged
@@ -161,6 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9db39cdd1a17046bbc60b645bf0d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BootManager
+  nomeCenaMenu: Menu
+  tempoMinimoSplash: 1
 --- !u!4 &920883076
 Transform:
   m_ObjectHideFlags: 0
@@ -176,6 +179,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &920883077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920883073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f679cdd354a3d499718b43d7b233cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  mainMixer: {fileID: 24100000, guid: fd5a221cc22e6fd48b4b1b9c411f2548, type: 2}
+  fonteMusica: {fileID: 0}
+  fonteSFX: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
