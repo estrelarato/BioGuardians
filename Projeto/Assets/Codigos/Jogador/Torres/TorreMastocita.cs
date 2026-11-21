@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TorreMastocita : TorreBase
@@ -7,6 +6,7 @@ public class TorreMastocita : TorreBase
     [Header("Configurações Gerais")]
     public float alcance = 3.5f;
     public float taxaAtaque = 1f;
+    public LayerMask layerInimigos;
 
     [Header("Configurações de Desaceleração")]
     [Range(0.1f, 0.9f)] public float porcentagemLento = 0.4f;
@@ -19,13 +19,15 @@ public class TorreMastocita : TorreBase
     public float tempoCarga = 0.5f;
     public Vector3 escalaInicialTiro = new Vector3(0.1f, 0.1f, 0.1f);
     public Vector3 escalaFinalTiro = Vector3.one;
+    [Tooltip("Segurança: tempo máximo carregando antes de disparar automaticamente caso o Animation Event falhe")]
+    public float tempoMaximoCargaSeguranca = 1.2f;
 
     [Header("Disparo / Projétil")]
     public GameObject prefabMagia;
     public Transform pontoDisparo;
 
     private float tempoProximoAtaque = 0f;
-    private List<Inimigo> inimigosNoAlcance = new List<Inimigo>();
+    private float tempoInicioCarga = 0f;
     private Inimigo alvoAtual;
     private bool estaCarregandoTiro = false;
 
@@ -33,17 +35,25 @@ public class TorreMastocita : TorreBase
     private Magia magiaAtual;
     private Coroutine corrotinaCarga;
 
+    private readonly Collider2D[] bufferInimigos = new Collider2D[20];
+    private float proximoTempoBusca = 0f;
+
     public override float ObterRaioAlcance() => alcance;
 
     void Update()
     {
         if (emConstrucao) return;
 
-        LimparLista();
-        EscolherAlvo();
+        BuscarAlvoNoAlcance();
 
         bool temAlvo = (alvoAtual != null);
         AtualizarAnimacoesEstado(temAlvo);
+
+        if (estaCarregandoTiro && Time.time >= tempoInicioCarga + tempoMaximoCargaSeguranca)
+        {
+            DispararMagia();
+            return;
+        }
 
         if (temAlvo && Time.time >= tempoProximoAtaque && !estaCarregandoTiro)
         {
@@ -51,9 +61,47 @@ public class TorreMastocita : TorreBase
         }
     }
 
+    void BuscarAlvoNoAlcance()
+    {
+        if (alvoAtual != null)
+        {
+            if (alvoAtual.EstaMorto || Vector2.Distance(transform.position, alvoAtual.transform.position) > alcance)
+            {
+                alvoAtual = null;
+            }
+        }
+
+        if (Time.time < proximoTempoBusca) return;
+        proximoTempoBusca = Time.time + 0.15f;
+
+        int quantidade = layerInimigos != 0
+            ? Physics2D.OverlapCircleNonAlloc(transform.position, alcance, bufferInimigos, layerInimigos)
+            : Physics2D.OverlapCircleNonAlloc(transform.position, alcance, bufferInimigos);
+
+        float menorDistanciaSqr = Mathf.Infinity;
+        Inimigo melhorAlvo = null;
+
+        for (int i = 0; i < quantidade; i++)
+        {
+            Inimigo inimigo = bufferInimigos[i].GetComponentInParent<Inimigo>();
+            if (inimigo != null && !inimigo.EstaMorto)
+            {
+                float distanciaSqr = ((Vector2)inimigo.transform.position - (Vector2)transform.position).sqrMagnitude;
+                if (distanciaSqr < menorDistanciaSqr)
+                {
+                    menorDistanciaSqr = distanciaSqr;
+                    melhorAlvo = inimigo;
+                }
+            }
+        }
+
+        alvoAtual = melhorAlvo;
+    }
+
     void IniciarCarga()
     {
         estaCarregandoTiro = true;
+        tempoInicioCarga = Time.time;
         DefinirBoolCarregando(true);
 
         if (prefabMagia != null && pontoDisparo != null)
@@ -69,6 +117,10 @@ public class TorreMastocita : TorreBase
 
             if (corrotinaCarga != null) StopCoroutine(corrotinaCarga);
             corrotinaCarga = StartCoroutine(CrescerMagia());
+        }
+        else if (animadorTorre == null)
+        {
+            DispararMagia();
         }
     }
 
@@ -95,12 +147,26 @@ public class TorreMastocita : TorreBase
 
         DefinirBoolCarregando(false);
 
+        if (alvoAtual == null || alvoAtual.EstaMorto)
+        {
+            proximoTempoBusca = 0f;
+            BuscarAlvoNoAlcance();
+        }
+
         if (magiaObjAtual != null)
         {
-            magiaObjAtual.transform.SetParent(null);
-            if (magiaAtual != null)
+            if (alvoAtual != null)
             {
-                magiaAtual.LiberarTiro();
+                magiaObjAtual.transform.SetParent(null);
+                if (magiaAtual != null)
+                {
+                    magiaAtual.DefinirAlvo(alvoAtual);
+                    magiaAtual.LiberarTiro();
+                }
+            }
+            else
+            {
+                Destroy(magiaObjAtual);
             }
         }
 
@@ -128,46 +194,6 @@ public class TorreMastocita : TorreBase
     void AtualizarAnimacoesEstado(bool emAlerta)
     {
         if (animadorTorre != null) animadorTorre.SetBool("EmAlerta", emAlerta);
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Inimigo inimigo = other.GetComponentInParent<Inimigo>();
-        if (inimigo != null && !inimigosNoAlcance.Contains(inimigo))
-        {
-            inimigosNoAlcance.Add(inimigo);
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        Inimigo inimigo = other.GetComponentInParent<Inimigo>();
-        if (inimigo != null)
-        {
-            inimigosNoAlcance.Remove(inimigo);
-        }
-    }
-
-    void LimparLista() => inimigosNoAlcance.RemoveAll(inimigo => inimigo == null);
-
-    void EscolherAlvo()
-    {
-        float menorDistanciaSqr = Mathf.Infinity;
-        Inimigo melhorAlvo = null;
-
-        foreach (Inimigo inimigo in inimigosNoAlcance)
-        {
-            Vector2 direcao = inimigo.transform.position - transform.position;
-            float distanciaSqr = direcao.sqrMagnitude;
-
-            if (distanciaSqr < menorDistanciaSqr)
-            {
-                menorDistanciaSqr = distanciaSqr;
-                melhorAlvo = inimigo;
-            }
-        }
-
-        alvoAtual = melhorAlvo;
     }
 
     private void OnDrawGizmosSelected()

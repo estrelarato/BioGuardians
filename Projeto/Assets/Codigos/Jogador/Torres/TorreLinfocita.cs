@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TorreLinfocita : TorreBase
@@ -8,6 +7,7 @@ public class TorreLinfocita : TorreBase
     public float alcance = 3f;
     public float taxaAtaque = 1f;
     public float dano = 10f;
+    public LayerMask layerInimigos;
 
     [Header("Tipo de Dano (Biológico)")]
     [Tooltip("Escolha o tipo de dano que esta torre causa aos inimigos")]
@@ -25,38 +25,19 @@ public class TorreLinfocita : TorreBase
     public Transform pontoDisparo;
 
     private float tempoProximoAtaque = 0f;
-    private List<Inimigo> inimigosNoAlcance = new List<Inimigo>();
     private Inimigo alvoAtual;
     private Coroutine corrotinaAtaque;
 
+    private readonly Collider2D[] bufferInimigos = new Collider2D[20];
+    private float proximoTempoBusca = 0f;
+
     public override float ObterRaioAlcance() => alcance;
-
-    void Awake()
-    {
-        SincronizarColliderAlcance();
-    }
-
-    void SincronizarColliderAlcance()
-    {
-        CircleCollider2D[] colisores = GetComponentsInChildren<CircleCollider2D>();
-        float escalaPai = Mathf.Abs(transform.lossyScale.x);
-        if (escalaPai < 0.001f) escalaPai = 1f;
-
-        foreach (CircleCollider2D col in colisores)
-        {
-            if (col.isTrigger)
-            {
-                col.radius = alcance / escalaPai;
-            }
-        }
-    }
 
     void Update()
     {
         if (emConstrucao) return;
 
-        LimparLista();
-        EscolherAlvo();
+        BuscarAlvoNoAlcance();
 
         bool temAlvo = (alvoAtual != null);
         AtualizarAnimacoesEstado(temAlvo);
@@ -65,6 +46,43 @@ public class TorreLinfocita : TorreBase
         {
             Atacar();
         }
+    }
+
+    void BuscarAlvoNoAlcance()
+    {
+        if (alvoAtual != null)
+        {
+            if (alvoAtual.EstaMorto || Vector2.Distance(transform.position, alvoAtual.transform.position) > alcance)
+            {
+                alvoAtual = null;
+            }
+        }
+
+        if (Time.time < proximoTempoBusca) return;
+        proximoTempoBusca = Time.time + 0.15f;
+
+        int quantidade = layerInimigos != 0
+            ? Physics2D.OverlapCircleNonAlloc(transform.position, alcance, bufferInimigos, layerInimigos)
+            : Physics2D.OverlapCircleNonAlloc(transform.position, alcance, bufferInimigos);
+
+        float menorDistanciaSqr = Mathf.Infinity;
+        Inimigo melhorAlvo = null;
+
+        for (int i = 0; i < quantidade; i++)
+        {
+            Inimigo inimigo = bufferInimigos[i].GetComponentInParent<Inimigo>();
+            if (inimigo != null && !inimigo.EstaMorto)
+            {
+                float distanciaSqr = ((Vector2)inimigo.transform.position - (Vector2)transform.position).sqrMagnitude;
+                if (distanciaSqr < menorDistanciaSqr)
+                {
+                    menorDistanciaSqr = distanciaSqr;
+                    melhorAlvo = inimigo;
+                }
+            }
+        }
+
+        alvoAtual = melhorAlvo;
     }
 
     void AtualizarAnimacoesEstado(bool emAlerta)
@@ -113,49 +131,6 @@ public class TorreLinfocita : TorreBase
             projetilNormal.tipoDano = this.tipoDano;
             projetilNormal.DefinirAlvo(alvoAtual);
         }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Inimigo inimigo = other.GetComponentInParent<Inimigo>();
-        if (inimigo != null && !inimigosNoAlcance.Contains(inimigo))
-        {
-            inimigosNoAlcance.Add(inimigo);
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        Inimigo inimigo = other.GetComponentInParent<Inimigo>();
-        if (inimigo != null)
-        {
-            inimigosNoAlcance.Remove(inimigo);
-        }
-    }
-
-    void LimparLista()
-    {
-        inimigosNoAlcance.RemoveAll(inimigo => inimigo == null);
-    }
-
-    void EscolherAlvo()
-    {
-        float menorDistanciaSqr = Mathf.Infinity;
-        Inimigo melhorAlvo = null;
-
-        foreach (Inimigo inimigo in inimigosNoAlcance)
-        {
-            Vector2 direcao = inimigo.transform.position - transform.position;
-            float distanciaSqr = direcao.sqrMagnitude;
-
-            if (distanciaSqr < menorDistanciaSqr)
-            {
-                menorDistanciaSqr = distanciaSqr;
-                melhorAlvo = inimigo;
-            }
-        }
-
-        alvoAtual = melhorAlvo;
     }
 
     private void OnDrawGizmosSelected()
