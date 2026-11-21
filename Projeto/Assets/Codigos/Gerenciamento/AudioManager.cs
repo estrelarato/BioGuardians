@@ -8,15 +8,25 @@ public class AudioManager : MonoBehaviour
     [Header("Mixer Principal")]
     public AudioMixer mainMixer;
 
-    [Header("Fontes de Áudio Globais")]
+    [Header("Fontes de Áudio Globais (4 AudioSources no _BootSystem)")]
     public AudioSource fonteMusica;
-    public AudioSource fonteSFX;
+    public AudioSource fonteTorres;
+    public AudioSource fonteInimigos;
+    public AudioSource fonteUI;
 
-    private const string CHAVE_MUSICA = "PrefVolumeMusica";
-    private const string CHAVE_SFX = "PrefVolumeSFX";
+    // Chaves de Save
+    private const string CHAVE_GERAL = "PrefVolGeral";
+    private const string CHAVE_MUSICA = "PrefVolMusica";
+    private const string CHAVE_TORRES = "PrefVolTorres";
+    private const string CHAVE_INIMIGOS = "PrefVolInimigos";
+    private const string CHAVE_UI = "PrefVolUI";
 
-    public float volumeMusicaAtual { get; private set; } = 0.75f;
-    public float volumeSFXAtual { get; private set; } = 0.75f;
+    // Valores atuais (0.0001 a 1)
+    public float volGeral { get; private set; } = 1f;
+    public float volMusica { get; private set; } = 0.75f;
+    public float volTorres { get; private set; } = 0.8f;
+    public float volInimigos { get; private set; } = 0.8f;
+    public float volUI { get; private set; } = 0.8f;
 
     void Awake()
     {
@@ -33,39 +43,65 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        // Carrega os volumes salvos (padrão 0.75 se for a primeira vez)
+        SetVolumeGeral(PlayerPrefs.GetFloat(CHAVE_GERAL, 1f));
         SetVolumeMusica(PlayerPrefs.GetFloat(CHAVE_MUSICA, 0.75f));
-        SetVolumeSFX(PlayerPrefs.GetFloat(CHAVE_SFX, 0.75f));
+        SetVolumeTorres(PlayerPrefs.GetFloat(CHAVE_TORRES, 0.8f));
+        SetVolumeInimigos(PlayerPrefs.GetFloat(CHAVE_INIMIGOS, 0.8f));
+        SetVolumeUI(PlayerPrefs.GetFloat(CHAVE_UI, 0.8f));
     }
 
-    public void SetVolumeMusica(float valorSlider)
+    private void AplicarVolumeMixer(string parametroExposto, float valorSlider, string chaveSave)
     {
-        volumeMusicaAtual = valorSlider;
-        // Converte escala linear do Slider (0.0001 a 1) para decibéis (-80dB a 0dB)
         float db = Mathf.Log10(Mathf.Clamp(valorSlider, 0.0001f, 1f)) * 20f;
-        mainMixer.SetFloat("VolumeMusica", db);
-
-        PlayerPrefs.SetFloat(CHAVE_MUSICA, valorSlider);
+        mainMixer.SetFloat(parametroExposto, db);
+        PlayerPrefs.SetFloat(chaveSave, valorSlider);
         PlayerPrefs.Save();
     }
 
-    public void SetVolumeSFX(float valorSlider)
+    public void SetVolumeGeral(float valor)
     {
-        volumeSFXAtual = valorSlider;
-        float db = Mathf.Log10(Mathf.Clamp(valorSlider, 0.0001f, 1f)) * 20f;
-        mainMixer.SetFloat("VolumeSFX", db);
-
-        PlayerPrefs.SetFloat(CHAVE_SFX, valorSlider);
-        PlayerPrefs.Save();
+        volGeral = valor;
+        AplicarVolumeMixer("VolumeGeral", valor, CHAVE_GERAL);
     }
 
-    // Atalho prático para tocar sons de clique, torres ou feitiços de qualquer script
-    public void TocarSFX(AudioClip clip)
+    public void SetVolumeMusica(float valor)
     {
-        if (clip != null && fonteSFX != null)
-        {
-            fonteSFX.PlayOneShot(clip);
-        }
+        volMusica = valor;
+        AplicarVolumeMixer("VolumeMusica", valor, CHAVE_MUSICA);
+    }
+
+    public void SetVolumeTorres(float valor)
+    {
+        volTorres = valor;
+        AplicarVolumeMixer("VolumeTorres", valor, CHAVE_TORRES);
+    }
+
+    public void SetVolumeInimigos(float valor)
+    {
+        volInimigos = valor;
+        AplicarVolumeMixer("VolumeInimigos", valor, CHAVE_INIMIGOS);
+    }
+
+    public void SetVolumeUI(float valor)
+    {
+        volUI = valor;
+        AplicarVolumeMixer("VolumeUI", valor, CHAVE_UI);
+    }
+
+    // --- Atalhos para tocar os sons de qualquer script do jogo ---
+    public void TocarSomTorre(AudioClip clip)
+    {
+        if (clip != null && fonteTorres != null) fonteTorres.PlayOneShot(clip);
+    }
+
+    public void TocarSomInimigo(AudioClip clip)
+    {
+        if (clip != null && fonteInimigos != null) fonteInimigos.PlayOneShot(clip);
+    }
+
+    public void TocarSomUI(AudioClip clip)
+    {
+        if (clip != null && fonteUI != null) fonteUI.PlayOneShot(clip);
     }
 
     public void TocarMusica(AudioClip musica)

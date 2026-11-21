@@ -14,14 +14,21 @@ public class MenuTorreUI : MonoBehaviour
     /// </summary>
     public void AbrirMenu(TorreControleVenda torre)
     {
+        // Garante que nunca abra se o Pause ou Opções estiverem ativos
+        if (PauseManager.Instancia != null && PauseManager.Instancia.EstaPausado)
+            return;
+
         torreSelecionada = torre;
 
         if (textoValorVenda != null)
         {
-            textoValorVenda.text = "+" + torreSelecionada.valorVenda ;
+            textoValorVenda.text = "+" + torreSelecionada.valorVenda;
         }
 
-        painelTorre.SetActive(true);
+        if (painelTorre != null)
+        {
+            painelTorre.SetActive(true);
+        }
     }
 
     /// <summary>
@@ -30,7 +37,11 @@ public class MenuTorreUI : MonoBehaviour
     public void FecharMenu()
     {
         torreSelecionada = null;
-        painelTorre.SetActive(false);
+
+        if (painelTorre != null)
+        {
+            painelTorre.SetActive(false);
+        }
     }
 
     /// <summary>

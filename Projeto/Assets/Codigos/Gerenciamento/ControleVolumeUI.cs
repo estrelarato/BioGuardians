@@ -3,30 +3,32 @@ using UnityEngine.UI;
 
 public class ControleVolumeUI : MonoBehaviour
 {
+    [Header("Sliders de Volume")]
+    public Slider sliderGeral;
     public Slider sliderMusica;
-    public Slider sliderSFX;
+    public Slider sliderTorres;
+    public Slider sliderInimigos;
+    public Slider sliderUI;
 
     void OnEnable()
     {
         if (AudioManager.Instancia == null) return;
 
-        // Remove eventos temporariamente para não disparar ao sincronizar o visual
-        if (sliderMusica != null)
-        {
-            sliderMusica.onValueChanged.RemoveAllListeners();
-            sliderMusica.minValue = 0.0001f;
-            sliderMusica.maxValue = 1f;
-            sliderMusica.value = AudioManager.Instancia.volumeMusicaAtual;
-            sliderMusica.onValueChanged.AddListener(AudioManager.Instancia.SetVolumeMusica);
-        }
+        ConfigurarSlider(sliderGeral, AudioManager.Instancia.volGeral, AudioManager.Instancia.SetVolumeGeral);
+        ConfigurarSlider(sliderMusica, AudioManager.Instancia.volMusica, AudioManager.Instancia.SetVolumeMusica);
+        ConfigurarSlider(sliderTorres, AudioManager.Instancia.volTorres, AudioManager.Instancia.SetVolumeTorres);
+        ConfigurarSlider(sliderInimigos, AudioManager.Instancia.volInimigos, AudioManager.Instancia.SetVolumeInimigos);
+        ConfigurarSlider(sliderUI, AudioManager.Instancia.volUI, AudioManager.Instancia.SetVolumeUI);
+    }
 
-        if (sliderSFX != null)
-        {
-            sliderSFX.onValueChanged.RemoveAllListeners();
-            sliderSFX.minValue = 0.0001f;
-            sliderSFX.maxValue = 1f;
-            sliderSFX.value = AudioManager.Instancia.volumeSFXAtual;
-            sliderSFX.onValueChanged.AddListener(AudioManager.Instancia.SetVolumeSFX);
-        }
+    private void ConfigurarSlider(Slider slider, float valorAtual, UnityEngine.Events.UnityAction<float> acao)
+    {
+        if (slider == null) return;
+
+        slider.onValueChanged.RemoveAllListeners();
+        slider.minValue = 0.0001f;
+        slider.maxValue = 1f;
+        slider.value = valorAtual;
+        slider.onValueChanged.AddListener(acao);
     }
 }

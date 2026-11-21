@@ -3,14 +3,35 @@ using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
+    public static PauseManager Instancia { get; private set; }
+
     [Header("Interface do Pause")]
     public GameObject painelPause;
+    [Tooltip("Arraste aqui o painel dos botões das torres para esconder ao abrir Opções")]
+    public GameObject painelTorresHUD;
 
-    [Header("Navegação")]
-    [Tooltip("Índice da cena Menu no Build Settings (padrão = 1)")]
+    [Header("Nomes / Índices das Cenas")]
+    public string nomeCenaOpcoes = "Opções";
     public int buildIndexMenu = 1;
 
     private bool jogoPausado = false;
+    private bool opcoesAbertas = false;
+
+    // Propriedade pública para bloquear cliques no mundo/torres enquanto pausado
+    public bool EstaPausado => jogoPausado || opcoesAbertas;
+
+    void Awake()
+    {
+        Instancia = this;
+    }
+
+    void OnDestroy()
+    {
+        if (Instancia == this)
+        {
+            Instancia = null;
+        }
+    }
 
     void Start()
     {
@@ -22,7 +43,10 @@ public class PauseManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            AlternarPause();
+            if (opcoesAbertas)
+                FecharOpcoes();
+            else
+                AlternarPause();
         }
     }
 
@@ -36,8 +60,14 @@ public class PauseManager : MonoBehaviour
 
     public void PausarJogo()
     {
-        // Evita pausar por cima da tela de Vitória ou Game Over
         if (Time.timeScale == 0f && !jogoPausado) return;
+
+        // Fecha o painel de venda de torre caso estivesse aberto antes de pausar
+        MenuTorreUI menuTorre = FindFirstObjectByType<MenuTorreUI>();
+        if (menuTorre != null)
+        {
+            menuTorre.FecharMenu();
+        }
 
         jogoPausado = true;
         if (painelPause != null) painelPause.SetActive(true);
@@ -51,9 +81,31 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void AbrirOpcoes()
+    {
+        if (opcoesAbertas) return;
+
+        opcoesAbertas = true;
+        if (painelPause != null) painelPause.SetActive(false);
+        if (painelTorresHUD != null) painelTorresHUD.SetActive(false);
+
+        SceneManager.LoadScene(nomeCenaOpcoes, LoadSceneMode.Additive);
+    }
+
+    public void FecharOpcoes()
+    {
+        if (!opcoesAbertas) return;
+
+        opcoesAbertas = false;
+        SceneManager.UnloadSceneAsync(nomeCenaOpcoes);
+
+        if (painelPause != null) painelPause.SetActive(true);
+        if (painelTorresHUD != null) painelTorresHUD.SetActive(true);
+    }
+
     public void VoltarParaMenu()
     {
-        Time.timeScale = 1f; // Sempre descongela o tempo antes de trocar de cena!
+        Time.timeScale = 1f;
         SceneManager.LoadScene(buildIndexMenu);
     }
 
