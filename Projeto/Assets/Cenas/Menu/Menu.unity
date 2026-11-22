@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 7162928}
   - component: {fileID: 7162927}
   - component: {fileID: 7162926}
+  - component: {fileID: 7162929}
   m_Layer: 5
   m_Name: B_Sair
   m_TagString: Untagged
@@ -240,6 +241,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7162924}
   m_CullTransparentMesh: 1
+--- !u!114 &7162929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14911da5bda8074a9b6c5f825654526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SomBotaoUI
+  somClique: {fileID: 8300000, guid: b1e2398647279ef43ae0ca2a67b707fe, type: 3}
+  somHover: {fileID: 0}
 --- !u!1 &111168407
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +532,7 @@ GameObject:
   - component: {fileID: 165806489}
   - component: {fileID: 165806488}
   - component: {fileID: 165806487}
+  - component: {fileID: 165806491}
   m_Layer: 5
   m_Name: "Op\xE7\xF5es"
   m_TagString: Untagged
@@ -650,6 +666,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165806485}
   m_CullTransparentMesh: 1
+--- !u!114 &165806491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165806485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14911da5bda8074a9b6c5f825654526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SomBotaoUI
+  somClique: {fileID: 8300000, guid: b1e2398647279ef43ae0ca2a67b707fe, type: 3}
+  somHover: {fileID: 0}
 --- !u!1 &258715085
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +916,7 @@ GameObject:
   - component: {fileID: 608289184}
   - component: {fileID: 608289183}
   - component: {fileID: 608289182}
+  - component: {fileID: 608289185}
   m_Layer: 5
   m_Name: B_Jogar (1)
   m_TagString: Untagged
@@ -1019,6 +1050,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608289179}
   m_CullTransparentMesh: 1
+--- !u!114 &608289185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608289179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14911da5bda8074a9b6c5f825654526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SomBotaoUI
+  somClique: {fileID: 8300000, guid: b1e2398647279ef43ae0ca2a67b707fe, type: 3}
+  somHover: {fileID: 0}
 --- !u!1 &635038267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,8 +1648,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -945, y: 408.92}
-  m_SizeDelta: {x: 244.54, y: 72.17}
+  m_AnchoredPosition: {x: -710.5, y: 463.3}
+  m_SizeDelta: {x: 494.4, y: 145.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1147222804
 MonoBehaviour:
@@ -1625,7 +1670,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1636,7 +1681,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 8047864441610107940, guid: a39b7ac67828ec64fbbbc45ab47aa308, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1694,8 +1739,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 6944679929654441133, guid: 23e976e4bb8b50047bcd8fe8b9378e0c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2103,6 +2148,7 @@ GameObject:
   - component: {fileID: 1469947362}
   - component: {fileID: 1469947361}
   - component: {fileID: 1469947360}
+  - component: {fileID: 1469947364}
   m_Layer: 5
   m_Name: carrega teste
   m_TagString: Untagged
@@ -2236,6 +2282,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469947358}
   m_CullTransparentMesh: 1
+--- !u!114 &1469947364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469947358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14911da5bda8074a9b6c5f825654526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SomBotaoUI
+  somClique: {fileID: 8300000, guid: b1e2398647279ef43ae0ca2a67b707fe, type: 3}
+  somHover: {fileID: 0}
 --- !u!1 &1520740153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,6 +2309,7 @@ GameObject:
   - component: {fileID: 1520740157}
   - component: {fileID: 1520740156}
   - component: {fileID: 1520740155}
+  - component: {fileID: 1520740159}
   m_Layer: 5
   m_Name: B_Dici
   m_TagString: Untagged
@@ -2382,6 +2443,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520740153}
   m_CullTransparentMesh: 1
+--- !u!114 &1520740159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520740153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14911da5bda8074a9b6c5f825654526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SomBotaoUI
+  somClique: {fileID: 8300000, guid: b1e2398647279ef43ae0ca2a67b707fe, type: 3}
+  somHover: {fileID: 0}
 --- !u!1 &1569095935
 GameObject:
   m_ObjectHideFlags: 0

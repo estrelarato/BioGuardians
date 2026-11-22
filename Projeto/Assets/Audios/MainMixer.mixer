@@ -53,7 +53,7 @@ AudioMixerController:
   - guid: 3708e1a5ef0ce8747a7a491adeba70bb
     name: VolumeTorres
   - guid: 0de1e0e643b36d64e9a615cbd7f5e373
-    name: VolumeInimigos
+    name: VolumeUI
   m_AudioMixerGroupViews:
   - guids:
     - 3367816518d15144b9735462d47a85fc
