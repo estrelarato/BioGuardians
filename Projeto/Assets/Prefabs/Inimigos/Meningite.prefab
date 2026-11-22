@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 808266177262145352}
   - component: {fileID: 4248061381952918336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269670800549538924}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Meningite
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7059644670034673366}
   - component: {fileID: 8126131942117606141}
   - component: {fileID: 1235117435448341527}
+  - component: {fileID: 6787261195404341825}
   m_Layer: 6
   m_Name: StPyo
   m_TagString: Inimigo
@@ -125,6 +126,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6787261195404341825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341494652975857643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684a62e6363ffea4c8204504fa6b0aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1 &2152733022235534967
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +265,7 @@ GameObject:
   - component: {fileID: 8878649937766107342}
   - component: {fileID: 7520334374813462698}
   - component: {fileID: 4320329944599272249}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +369,7 @@ GameObject:
   - component: {fileID: 2340642843199288451}
   - component: {fileID: 3551325506359990248}
   - component: {fileID: 381621906409043740}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel.sllider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +496,7 @@ GameObject:
   - component: {fileID: 6197922888932685164}
   - component: {fileID: 5583743927658680147}
   - component: {fileID: 7028363665970915788}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel.fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

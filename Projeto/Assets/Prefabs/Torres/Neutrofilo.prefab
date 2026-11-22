@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6631114379722092956}
   - component: {fileID: 3775125865929017371}
   - component: {fileID: 6476210397199971464}
-  m_Layer: 0
+  - component: {fileID: -1538344739056171989}
+  m_Layer: 7
   m_Name: Neutrofilo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6673050267026638081, guid: b877aaab83b65cb47959d1ff49819e53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -170,3 +171,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-1538344739056171989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4349345500968376248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684a62e6363ffea4c8204504fa6b0aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort

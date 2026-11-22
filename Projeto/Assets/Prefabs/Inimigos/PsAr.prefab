@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9034795969507711685}
   - component: {fileID: 2459819583458857074}
   - component: {fileID: 2149532207941762040}
+  - component: {fileID: -2701071604380776415}
   m_Layer: 6
   m_Name: PsAr
   m_TagString: Inimigo
@@ -93,7 +94,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -136,6 +137,18 @@ MonoBehaviour:
   nomeTriggerMorte: Morrer
   duracaoAnimacaoMorte: 0.6
   duracaoFadeOut: 0.8
+--- !u!114 &-2701071604380776415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480608993905014199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684a62e6363ffea4c8204504fa6b0aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1 &1599382621867183103
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +161,7 @@ GameObject:
   - component: {fileID: 5137109092780137189}
   - component: {fileID: 4953530879247964346}
   - component: {fileID: 7760912341412405958}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel.sllider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +356,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1675171864662081879, guid: 93e5109af19e03745a136769a174c220, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -390,7 +403,7 @@ GameObject:
   - component: {fileID: 3009537316271050212}
   - component: {fileID: 1090859274635756600}
   - component: {fileID: 425245343430953558}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +507,7 @@ GameObject:
   - component: {fileID: 3594045572828873474}
   - component: {fileID: 4456368645621592233}
   - component: {fileID: 3154883494256229498}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel.fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -730,17 +730,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61cb88c2008e57448951f9848ec8b58a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SequenciaQuadrinhosFade
-  quadrinhos:
+  todosQuadrinhos:
   - {fileID: 1696766592}
   - {fileID: 1337721520}
   - {fileID: 492768255}
   - {fileID: 383593562}
   - {fileID: 1685815966}
   - {fileID: 204198735}
+  quadrosPorPagina: 6
   atrasoInicial: 0.5
   duracaoFadeIn: 1
   intervaloEntreQuadros: 1.5
-  esperaFinalAntesDaFase: 2.5
+  pausaAntesDeLimparPagina: 2
+  duracaoFadeOutPagina: 0.6
   nomeProximaFase: "0 - Pulm\xF5es"
   permitirPularComClique: 1
 --- !u!1 &1337721520

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8243125253308424820}
   - component: {fileID: 848894621174398229}
   - component: {fileID: 6043736655720849914}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel.fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 1002364751504616288}
   - component: {fileID: 1342377899026888706}
   - component: {fileID: 329430430584594914}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel.sllider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 396761829581874095}
   - component: {fileID: 6278409196105528436}
   - component: {fileID: 5315531127011883497}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -698653419552390060, guid: 316b7d56b21280941b40489e0fa49959, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -343,8 +343,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1293665070557290276}
   - component: {fileID: 3156737887097236587}
+  - component: {fileID: 7705227343785796532}
   - component: {fileID: 7128058878835641984}
   - component: {fileID: 1265937616911518389}
+  - component: {fileID: 8366872074116152907}
   m_Layer: 6
   m_Name: Hemacia zumbi
   m_TagString: Inimigo
@@ -396,6 +398,21 @@ MonoBehaviour:
   nomeTriggerMorte: Morrer
   duracaoAnimacaoMorte: 0.6
   duracaoFadeOut: 0.8
+--- !u!114 &7705227343785796532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5922205029458505422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3db550ff5e8e11479d5e4b8bb20daca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HemaciaZumbi
+  prefabProtozoarioFilhote: {fileID: 364171454443061022, guid: 369d373c69fcdf04cab6cb960345b291, type: 3}
+  quantidadeFilhotes: 3
+  raioEspalhamento: 0.3
 --- !u!50 &7128058878835641984
 Rigidbody2D:
   serializedVersion: 5
@@ -460,6 +477,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.14009261}
   m_Size: {x: 0.5, y: 1.130753}
   m_Direction: 0
+--- !u!114 &8366872074116152907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5922205029458505422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684a62e6363ffea4c8204504fa6b0aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1 &8241395244574586050
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +501,7 @@ GameObject:
   - component: {fileID: 2988174421870498052}
   - component: {fileID: 6623559423401248497}
   - component: {fileID: 4329061932828257171}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

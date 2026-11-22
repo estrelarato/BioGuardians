@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1454529245364099647}
   - component: {fileID: 3007145136672837595}
   - component: {fileID: 7712201341690858166}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel.fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 8805578051811260120}
   - component: {fileID: 4818197929529856091}
   - component: {fileID: 5217112512168599186}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel.sllider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: -3252438036928407084}
   - component: {fileID: 927395286723556017}
   - component: {fileID: 4752510279511920213}
+  - component: {fileID: -4653605210910868419}
   m_Layer: 6
   m_Name: StAu
   m_TagString: Inimigo
@@ -284,7 +285,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -343,6 +344,18 @@ MonoBehaviour:
   nomeTriggerMorte: Morrer
   duracaoAnimacaoMorte: 0.6
   duracaoFadeOut: 0.8
+--- !u!114 &-4653605210910868419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4031656386603330090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684a62e6363ffea4c8204504fa6b0aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1 &5406329054365896073
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +368,7 @@ GameObject:
   - component: {fileID: 4904822916337452410}
   - component: {fileID: 251470229948929992}
   - component: {fileID: 3502873090369417592}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +540,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6403697995241277246, guid: f4da977e89977c246b04128af06aad12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

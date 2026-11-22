@@ -111,7 +111,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7111396506342550342, guid: c3ef2cc47b26b474898221242545fe97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 8221823506810447784}
   - component: {fileID: 7687980509940701915}
   - component: {fileID: 4499015786424242000}
+  - component: {fileID: -3646854704847255872}
   m_Layer: 0
   m_Name: Torre Linfocito
   m_TagString: Untagged
@@ -175,7 +176,7 @@ Transform:
   m_GameObject: {fileID: 8036786002787417478}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.52336, y: 18.34483, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 7.1528454, y: 7.1528454, z: 7.1528454}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -202,9 +203,12 @@ MonoBehaviour:
   corCirculoAlcance: {r: 0.2, g: 0.8, b: 1, a: 0.75}
   larguraLinhaAlcance: 0.06
   segmentosCirculo: 48
-  alcance: 3
+  alcance: 7
   taxaAtaque: 1
   dano: 10
+  layerInimigos:
+    serializedVersion: 2
+    m_Bits: 0
   tipoDano: 0
   animadorTorre: {fileID: 5351430111261900132}
   animadorAtirador: {fileID: 4169132924200490439}
@@ -245,8 +249,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: 0, y: 0.06990225}
+  m_Radius: 0.15048887
 --- !u!50 &7687980509940701915
 Rigidbody2D:
   serializedVersion: 5
@@ -287,6 +291,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TorreControleVenda
   valorVenda: 10
+--- !u!114 &-3646854704847255872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036786002787417478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684a62e6363ffea4c8204504fa6b0aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1 &8658346951230163916
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +383,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 19
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 4efa7438ae75cd54a9d56d5f0e8ce4b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

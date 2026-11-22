@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 230401612672801739}
   - component: {fileID: -7115474797452171072}
   - component: {fileID: 6856869340700760153}
+  - component: {fileID: 2689536417289989119}
   m_Layer: 6
   m_Name: protozoario hemacia
   m_TagString: Inimigo
@@ -207,3 +208,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2689536417289989119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364171454443061022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684a62e6363ffea4c8204504fa6b0aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort

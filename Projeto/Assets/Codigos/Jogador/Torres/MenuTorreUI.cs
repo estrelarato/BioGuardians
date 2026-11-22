@@ -14,8 +14,11 @@ public class MenuTorreUI : MonoBehaviour
     /// </summary>
     public void AbrirMenu(TorreControleVenda torre)
     {
+        bool estaPausado = (PauseManager.Instancia != null && PauseManager.Instancia.EstaPausado);
+        Debug.Log("[MENU] Entrou no AbrirMenu! Pause ativo? " + estaPausado);
+
         // Garante que nunca abra se o Pause ou Opções estiverem ativos
-        if (PauseManager.Instancia != null && PauseManager.Instancia.EstaPausado)
+        if (estaPausado)
             return;
 
         torreSelecionada = torre;
@@ -28,6 +31,11 @@ public class MenuTorreUI : MonoBehaviour
         if (painelTorre != null)
         {
             painelTorre.SetActive(true);
+            Debug.Log("[MENU] SetActive(true) executado! Ativo na hierarquia agora? " + painelTorre.activeInHierarchy);
+        }
+        else
+        {
+            Debug.LogError("[MENU] ERRO: O campo painelTorre está vazio (None)!");
         }
     }
 
