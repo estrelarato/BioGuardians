@@ -2512,31 +2512,8 @@ MonoBehaviour:
     quantidade: 5
     intervalo: 2
   - prefabsInimigos:
-    - {fileID: 189617772217006032, guid: 3202a4a7e0ae55c419b8c15534df8c54, type: 3}
-    - {fileID: 4031656386603330090, guid: e7076698ed6674f45b6cdbbefa3b7ed2, type: 3}
-    - {fileID: 4031656386603330090, guid: e7076698ed6674f45b6cdbbefa3b7ed2, type: 3}
-    quantidade: 10
-    intervalo: 1.5
-  - prefabsInimigos:
-    - {fileID: 189617772217006032, guid: 3202a4a7e0ae55c419b8c15534df8c54, type: 3}
-    - {fileID: 4031656386603330090, guid: e7076698ed6674f45b6cdbbefa3b7ed2, type: 3}
-    - {fileID: 480608993905014199, guid: 98311370ca446024bb8a22e2db7264b6, type: 3}
-    quantidade: 15
-    intervalo: 1.5
-  - prefabsInimigos:
-    - {fileID: 189617772217006032, guid: 3202a4a7e0ae55c419b8c15534df8c54, type: 3}
-    - {fileID: 4031656386603330090, guid: e7076698ed6674f45b6cdbbefa3b7ed2, type: 3}
-    - {fileID: 480608993905014199, guid: 98311370ca446024bb8a22e2db7264b6, type: 3}
-    - {fileID: 1341494652975857643, guid: c1424548a9522e649afd2472bc49d534, type: 3}
-    quantidade: 15
-    intervalo: 1
-  - prefabsInimigos:
-    - {fileID: 189617772217006032, guid: 3202a4a7e0ae55c419b8c15534df8c54, type: 3}
-    - {fileID: 4031656386603330090, guid: e7076698ed6674f45b6cdbbefa3b7ed2, type: 3}
-    - {fileID: 480608993905014199, guid: 98311370ca446024bb8a22e2db7264b6, type: 3}
-    - {fileID: 1341494652975857643, guid: c1424548a9522e649afd2472bc49d534, type: 3}
-    - {fileID: 5922205029458505422, guid: 86b7559f20fa0ed4d95f577527be6ab0, type: 3}
-    quantidade: 20
+    - {fileID: 6960274273149767985, guid: 459d8a025c47cbb4eabe2faa0025d93d, type: 3}
+    quantidade: 1
     intervalo: 1
   pontosSpawn:
   - {fileID: 1127754969}

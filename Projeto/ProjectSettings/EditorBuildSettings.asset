@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: "Assets/Cenas/Menu/Op\xE7\xF5es.unity"
     guid: ba38c56c1ab6f6446a6982ab4a6cdf9b
   - enabled: 1
-    path: "Assets/Cenas/Fases/0- Pulm\xF5es.unity"
+    path: "Assets/Cenas/Fases/0 - Pulm\xF5es.unity"
     guid: d496ab97f2c5e384d9fcdde445182471
   - enabled: 1
     path: Assets/Cenas/Fases/1 - Pele.unity
